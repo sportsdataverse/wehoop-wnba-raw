@@ -19,6 +19,6 @@ do
     git add wnba/*  >> /dev/null
     git pull  >> /dev/null
     git commit -m "WNBA Raw Update (Start: $i End: $i)"  >> /dev/null || echo "No changes to commit"
-    git pull  >> /dev/null
+    git pull --rebase >> /dev/null
     git push  >> /dev/nulldone
 done
