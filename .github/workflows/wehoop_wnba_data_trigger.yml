@@ -13,4 +13,6 @@ jobs:
                   repository: sportsdataverse/wehoop-wnba-data
                   event-type: daily_wnba_data
                   client-payload: '{"ref": "refs/heads/main",
-                                    "event_name": "daily_wnba_data"}'
+                                    "event_name": "daily_wnba_data",
+                                    "commit_message": "${{ github.event.head_commit.message }}"
+                                    }'
