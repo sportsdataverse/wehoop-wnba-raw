@@ -3555,36 +3555,20 @@
 "uid": "s:40~l:59~e:401507290~c:401507290",
 "date": "2023-08-06T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Sat, August 5th at 10:00 PM EDT",
-"shortDetail": "8/5 - 10:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "NBA TV"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "11",
 "uid": "s:40~l:59~t:11",
@@ -3626,10 +3610,11 @@
 }
 ]
 },
-"score": "0"
+"score": "91"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "14",
 "uid": "s:40~l:59~t:14",
@@ -3671,7 +3656,7 @@
 }
 ]
 },
-"score": "0"
+"score": "97"
 }
 ],
 "links": [
@@ -23076,8 +23061,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 9.5,
+"displayValue": "9.5"
 },
 {
 "name": "losses",
@@ -23086,8 +23071,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 11.0,
-"displayValue": "11"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "streak",
@@ -23096,8 +23081,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -23106,8 +23091,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5769231,
-"displayValue": ".577"
+"value": 0.5555556,
+"displayValue": ".556"
 },
 {
 "name": "wins",
@@ -23147,8 +23132,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 11.5,
-"displayValue": "11.5"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "losses",
@@ -23157,8 +23142,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 14.0,
-"displayValue": "14"
+"value": 15.0,
+"displayValue": "15"
 },
 {
 "name": "streak",
@@ -23167,8 +23152,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -23177,8 +23162,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.4814815,
-"displayValue": ".481"
+"value": 0.4642857,
+"displayValue": ".464"
 },
 {
 "name": "wins",
@@ -23277,10 +23262,10 @@
 ]
 },
 {
-"team": "Phoenix",
-"link": "http://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
-"id": "11",
-"uid": "s:40~l:59~t:11",
+"team": "Seattle",
+"link": "http://www.espn.com/wnba/team/_/name/sea/seattle-storm",
+"id": "14",
+"uid": "s:40~l:59~t:14",
 "stats": [
 {
 "name": "gamesBehind",
@@ -23289,8 +23274,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 17.0,
-"displayValue": "17"
+"value": 17.5,
+"displayValue": "17.5"
 },
 {
 "name": "losses",
@@ -23299,8 +23284,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 19.0,
-"displayValue": "19"
+"value": 20.0,
+"displayValue": "20"
 },
 {
 "name": "streak",
@@ -23319,8 +23304,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.26923078,
-"displayValue": ".269"
+"value": 0.25925925,
+"displayValue": ".259"
 },
 {
 "name": "wins",
@@ -23335,23 +23320,35 @@
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/scoreboard/sea.png",
 "width": 500,
 "height": 500,
 "alt": "",
 "rel": [
 "full",
-"default"
+"scoreboard"
 ],
-"lastUpdated": "2023-05-10T21:43Z"
+"lastUpdated": "2021-03-08T15:24Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/sea.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2021-03-08T15:25Z"
 }
 ]
 },
 {
-"team": "Seattle",
-"link": "http://www.espn.com/wnba/team/_/name/sea/seattle-storm",
-"id": "14",
-"uid": "s:40~l:59~t:14",
+"team": "Phoenix",
+"link": "http://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
+"id": "11",
+"uid": "s:40~l:59~t:11",
 "stats": [
 {
 "name": "gamesBehind",
@@ -23360,8 +23357,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 18.0,
-"displayValue": "18"
+"value": 17.5,
+"displayValue": "17.5"
 },
 {
 "name": "losses",
@@ -23390,8 +23387,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.23076923,
-"displayValue": ".231"
+"value": 0.25925925,
+"displayValue": ".259"
 },
 {
 "name": "wins",
@@ -23400,33 +23397,21 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/scoreboard/sea.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
 "width": 500,
 "height": 500,
 "alt": "",
 "rel": [
 "full",
-"scoreboard"
+"default"
 ],
-"lastUpdated": "2021-03-08T15:24Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/sea.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2021-03-08T15:25Z"
+"lastUpdated": "2023-05-10T21:43Z"
 }
 ]
 }
