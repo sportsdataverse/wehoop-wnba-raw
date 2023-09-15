@@ -3797,7 +3797,7 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "",
+"summary": "CONN leads series 1-0",
 "completed": false,
 "totalCompetitions": 5,
 "events": [
@@ -3806,36 +3806,20 @@
 "uid": "s:40~l:59~e:401578549~c:401578549",
 "date": "2023-09-14T00:00:00Z",
 "timeValid": true,
-"status": "in",
+"status": "post",
 "statusType": {
-"id": "2",
-"name": "STATUS_IN_PROGRESS",
-"state": "in",
-"completed": false,
-"description": "In Progress",
-"detail": "7:00 - 2nd Quarter",
-"shortDetail": "7:00 - 2nd"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN2"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "18",
 "uid": "s:40~l:59~t:18",
@@ -3877,10 +3861,11 @@
 }
 ]
 },
-"score": "22"
+"score": "90"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "8",
 "uid": "s:40~l:59~t:8",
@@ -3922,34 +3907,34 @@
 }
 ]
 },
-"score": "24"
+"score": "60"
 }
 ],
 "links": [
 {
 "language": "en-US",
 "rel": [
-"live",
+"summary",
 "desktop",
 "event"
 ],
-"href": "https://www.espn.com/wnba/game?gameId=401578549",
+"href": "https://www.espn.com/wnba/game/_/gameId/401578549",
 "text": "Gamecast",
-"shortText": "Gamecast",
+"shortText": "Summary",
 "isExternal": false,
 "isPremium": false
 },
 {
 "language": "en-US",
 "rel": [
-"live",
+"summary",
 "sportscenter",
 "app",
 "event"
 ],
 "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578549",
 "text": "Gamecast",
-"shortText": "Gamecast",
+"shortText": "Summary",
 "isExternal": false,
 "isPremium": false
 }
@@ -6658,7 +6643,7 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "",
+"summary": "CONN leads series 1-0",
 "completed": false,
 "totalCompetitions": 5,
 "competitors": [
@@ -6674,7 +6659,7 @@
 {
 "id": "18",
 "uid": "s:40~l:59~t:18",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2023/teams/18?lang=en&region=us"
