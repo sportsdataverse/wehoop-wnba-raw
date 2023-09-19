@@ -26712,9 +26712,9 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "LV leads series 1-0",
-"completed": false,
-"totalCompetitions": 5,
+"summary": "LV Wins series 2-0",
+"completed": true,
+"totalCompetitions": 3,
 "competitors": [
 {
 "id": "19",
@@ -26728,7 +26728,7 @@
 {
 "id": "17",
 "uid": "s:40~l:59~t:17",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2023/teams/17?lang=en&region=us"
@@ -26743,10 +26743,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578554?lang=en&region=us",
 "id": "401578554"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578558?lang=en&region=us",
-"id": "401578558"
 }
 ]
 }
@@ -30493,9 +30489,9 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "LV leads series 1-0",
-"completed": false,
-"totalCompetitions": 5,
+"summary": "LV Wins series 2-0",
+"completed": true,
+"totalCompetitions": 3,
 "events": [
 {
 "id": "401578550",
@@ -30641,36 +30637,20 @@
 "uid": "s:40~l:59~e:401578554~c:401578554",
 "date": "2023-09-17T19:00:00Z",
 "timeValid": true,
-"status": "in",
+"status": "post",
 "statusType": {
-"id": "2",
-"name": "STATUS_IN_PROGRESS",
-"state": "in",
-"completed": false,
-"description": "In Progress",
-"detail": "3:49 - 4th Quarter",
-"shortDetail": "3:49 - 4th"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ABC"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "17",
 "uid": "s:40~l:59~t:17",
@@ -30712,10 +30692,11 @@
 }
 ]
 },
-"score": "82"
+"score": "92"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "19",
 "uid": "s:40~l:59~t:19",
@@ -30757,161 +30738,7 @@
 }
 ]
 },
-"score": "62"
-}
-],
-"links": [
-{
-"language": "en-US",
-"rel": [
-"live",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/game?gameId=401578554",
-"text": "Gamecast",
-"shortText": "Gamecast",
-"isExternal": false,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"live",
-"sportscenter",
-"app",
-"event"
-],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578554",
-"text": "Gamecast",
-"shortText": "Gamecast",
-"isExternal": false,
-"isPremium": false
-}
-]
-},
-{
-"id": "401578558",
-"uid": "s:40~l:59~e:401578558~c:401578558",
-"date": "2023-09-20T04:00:00Z",
-"timeValid": false,
-"status": "pre",
-"statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "9/20 - TBD",
-"shortDetail": "TBD"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
-"competitors": [
-{
-"homeAway": "home",
-"team": {
-"id": "19",
-"uid": "s:40~l:59~t:19",
-"displayName": "Chicago Sky",
-"abbreviation": "CHI",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/chi/chicago-sky",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/chi",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/chi.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-},
-{
-"homeAway": "away",
-"team": {
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"displayName": "Las Vegas Aces",
-"abbreviation": "LV",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/lv",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-11T15:21Z"
-}
-]
-},
-"score": "0"
+"score": "70"
 }
 ],
 "links": [
@@ -30922,7 +30749,7 @@
 "desktop",
 "event"
 ],
-"href": "https://www.espn.com/wnba/game/_/gameId/401578558",
+"href": "https://www.espn.com/wnba/game/_/gameId/401578554",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
@@ -30936,7 +30763,7 @@
 "app",
 "event"
 ],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578558",
+"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578554",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
