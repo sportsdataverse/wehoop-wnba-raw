@@ -3761,36 +3761,21 @@
 "uid": "s:40~l:59~e:401578555~c:401578555",
 "date": "2023-09-19T23:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, September 19th at 7:00 PM EDT",
-"shortDetail": "9/19 - 7:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final/OT",
+"shortDetail": "Final/OT",
+"altDetail": "OT"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "9",
 "uid": "s:40~l:59~t:9",
@@ -3832,10 +3817,11 @@
 }
 ]
 },
-"score": "0"
+"score": "90"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "16",
 "uid": "s:40~l:59~t:16",
@@ -3877,7 +3863,7 @@
 }
 ]
 },
-"score": "0"
+"score": "85"
 }
 ],
 "links": [
@@ -3903,160 +3889,6 @@
 "event"
 ],
 "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578555",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-}
-]
-},
-{
-"id": "401578559",
-"uid": "s:40~l:59~e:401578559~c:401578559",
-"date": "2023-09-22T04:00:00Z",
-"timeValid": false,
-"status": "pre",
-"statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "9/22 - TBD",
-"shortDetail": "TBD"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN2"
-},
-"lang": "en",
-"region": "us"
-}
-],
-"competitors": [
-{
-"homeAway": "home",
-"team": {
-"id": "16",
-"uid": "s:40~l:59~t:16",
-"displayName": "Washington Mystics",
-"abbreviation": "WSH",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/wsh/washington-mystics",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/wsh",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/wsh.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-11T15:21Z"
-}
-]
-},
-"score": "0"
-},
-{
-"homeAway": "away",
-"team": {
-"id": "9",
-"uid": "s:40~l:59~t:9",
-"displayName": "New York Liberty",
-"abbreviation": "NY",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/ny",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-}
-],
-"links": [
-{
-"language": "en-US",
-"rel": [
-"summary",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/game/_/gameId/401578559",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"summary",
-"sportscenter",
-"app",
-"event"
-],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578559",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
@@ -6320,10 +6152,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578555?lang=en&region=us",
 "id": "401578555"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578559?lang=en&region=us",
-"id": "401578559"
 }
 ]
 }

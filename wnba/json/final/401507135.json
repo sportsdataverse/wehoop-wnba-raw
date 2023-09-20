@@ -31609,14 +31609,14 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "DAL leads series 1-0",
-"completed": false,
+"summary": "DAL Wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "3",
 "uid": "s:40~l:59~t:3",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2023/teams/3?lang=en&region=us"
@@ -31640,10 +31640,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578556?lang=en&region=us",
 "id": "401578556"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401578560?lang=en&region=us",
-"id": "401578560"
 }
 ]
 }
@@ -34994,8 +34990,8 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "DAL leads series 1-0",
-"completed": false,
+"summary": "DAL Wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "events": [
 {
@@ -35142,36 +35138,20 @@
 "uid": "s:40~l:59~e:401578556~c:401578556",
 "date": "2023-09-20T01:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, September 19th at 9:00 PM EDT",
-"shortDetail": "9/19 - 9:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "3",
 "uid": "s:40~l:59~t:3",
@@ -35213,10 +35193,11 @@
 }
 ]
 },
-"score": "0"
+"score": "101"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "20",
 "uid": "s:40~l:59~t:20",
@@ -35258,7 +35239,7 @@
 }
 ]
 },
-"score": "0"
+"score": "74"
 }
 ],
 "links": [
@@ -35284,160 +35265,6 @@
 "event"
 ],
 "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578556",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-}
-]
-},
-{
-"id": "401578560",
-"uid": "s:40~l:59~e:401578560~c:401578560",
-"date": "2023-09-22T04:00:00Z",
-"timeValid": false,
-"status": "pre",
-"statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "9/22 - TBD",
-"shortDetail": "TBD"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN2"
-},
-"lang": "en",
-"region": "us"
-}
-],
-"competitors": [
-{
-"homeAway": "home",
-"team": {
-"id": "20",
-"uid": "s:40~l:59~t:20",
-"displayName": "Atlanta Dream",
-"abbreviation": "ATL",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/atl/atlanta-dream",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/atl",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/atl.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-},
-{
-"homeAway": "away",
-"team": {
-"id": "3",
-"uid": "s:40~l:59~t:3",
-"displayName": "Dallas Wings",
-"abbreviation": "DAL",
-"links": [
-{
-"href": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/dal",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/dal.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-11T15:21Z"
-}
-]
-},
-"score": "0"
-}
-],
-"links": [
-{
-"language": "en-US",
-"rel": [
-"summary",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/game/_/gameId/401578560",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"summary",
-"sportscenter",
-"app",
-"event"
-],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401578560",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
