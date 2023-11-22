@@ -13,9 +13,10 @@ do
     git pull  >> /dev/null
     git config --local user.email "action@github.com"
     git config --local user.name "Github Action"
-    python3 python/scrape_wnba_schedules.py -s $i -e $i
+    python3 python/scrape_wnba_schedules.py -s $i -e $i -r $RESCRAPE
     python3 python/scrape_wnba_json.py -s $i -e $i -r $RESCRAPE
     git pull  >> /dev/null
+    git add .
     git add wnba/*  >> /dev/null
     git pull  >> /dev/null
     git commit -m "WNBA Raw Update (Start: $i End: $i)"  >> /dev/null || echo "No changes to commit"
