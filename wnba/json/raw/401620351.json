@@ -2080,8 +2080,8 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
-"completed": false,
+"summary": "LV wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "events": [
 {
@@ -2367,51 +2367,20 @@
 "uid": "s:40~l:59~e:401620404~c:401620404",
 "date": "2024-08-31T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Fri, August 30th at 10:00 PM EDT",
-"shortDetail": "8/30 - 10:00 PM EDT"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ION"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
 "id": "3",
-"type": "Away"
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "17",
 "uid": "s:40~l:59~t:17",
@@ -2453,10 +2422,11 @@
 }
 ]
 },
-"score": "0"
+"score": "83"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "20",
 "uid": "s:40~l:59~t:20",
@@ -2498,7 +2468,7 @@
 }
 ]
 },
-"score": "0"
+"score": "72"
 }
 ],
 "links": [
@@ -4779,8 +4749,8 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
-"completed": false,
+"summary": "LV wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
@@ -4795,7 +4765,7 @@
 {
 "id": "17",
 "uid": "s:40~l:59~t:17",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2024/teams/17?lang=en&region=us"
@@ -20125,8 +20095,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 8.0,
-"displayValue": "8"
+"value": 9.0,
+"displayValue": "9"
 },
 {
 "name": "streak",
@@ -20135,8 +20105,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 7.0,
-"displayValue": "W7"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -20145,8 +20115,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.7419355,
-"displayValue": ".742"
+"value": 0.71875,
+"displayValue": ".719"
 },
 {
 "name": "wins",
@@ -20174,6 +20144,77 @@
 ]
 },
 {
+"team": "Las Vegas",
+"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+"id": "17",
+"uid": "s:40~l:59~t:17",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 3.5,
+"displayValue": "3.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 12.0,
+"displayValue": "12"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.61290324,
+"displayValue": ".613"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 19.0,
+"displayValue": "19"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-05-01T20:55Z"
+}
+]
+},
+{
 "team": "Seattle",
 "link": "https://www.espn.com/wnba/team/_/name/sea/seattle-storm",
 "id": "14",
@@ -20196,8 +20237,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 11.0,
-"displayValue": "11"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "streak",
@@ -20206,8 +20247,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -20216,8 +20257,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6333333,
-"displayValue": ".633"
+"value": 0.61290324,
+"displayValue": ".613"
 },
 {
 "name": "wins",
@@ -20257,77 +20298,6 @@
 ]
 },
 {
-"team": "Las Vegas",
-"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 4.5,
-"displayValue": "4.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 12.0,
-"displayValue": "12"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6,
-"displayValue": ".600"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 18.0,
-"displayValue": "18"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-05-01T20:55Z"
-}
-]
-},
-{
 "team": "Phoenix",
 "link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
 "id": "11",
@@ -20340,8 +20310,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 7.5,
-"displayValue": "7.5"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "name": "losses",
@@ -20411,8 +20381,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 14.5,
-"displayValue": "14.5"
+"value": 13.5,
+"displayValue": "13.5"
 },
 {
 "name": "losses",
@@ -20431,8 +20401,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": 3.0,
+"displayValue": "W3"
 },
 {
 "name": "winPercent",
@@ -20441,8 +20411,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.26666668,
-"displayValue": ".267"
+"value": 0.29032257,
+"displayValue": ".290"
 },
 {
 "name": "wins",
@@ -20451,8 +20421,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 8.0,
-"displayValue": "8"
+"value": 9.0,
+"displayValue": "9"
 }
 ],
 "logo": [
@@ -20482,8 +20452,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 16.0,
-"displayValue": "16"
+"value": 15.5,
+"displayValue": "15.5"
 },
 {
 "name": "losses",
@@ -20581,8 +20551,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -20591,8 +20561,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.8125,
-"displayValue": ".813"
+"value": 0.8181818,
+"displayValue": ".818"
 },
 {
 "name": "wins",
@@ -20601,8 +20571,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 26.0,
-"displayValue": "26"
+"value": 27.0,
+"displayValue": "27"
 }
 ],
 "logo": [
@@ -20632,8 +20602,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 3.0,
-"displayValue": "3"
+"value": 3.5,
+"displayValue": "3.5"
 },
 {
 "name": "losses",
@@ -20723,8 +20693,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": 3.0,
+"displayValue": "W3"
 },
 {
 "name": "winPercent",
@@ -20733,8 +20703,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.48387095,
-"displayValue": ".484"
+"value": 0.5,
+"displayValue": ".500"
 },
 {
 "name": "wins",
@@ -20743,8 +20713,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 15.0,
-"displayValue": "15"
+"value": 16.0,
+"displayValue": "16"
 }
 ],
 "logo": [
@@ -20774,8 +20744,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 15.0,
+"displayValue": "15"
 },
 {
 "name": "losses",
@@ -20784,8 +20754,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 19.0,
-"displayValue": "19"
+"value": 20.0,
+"displayValue": "20"
 },
 {
 "name": "streak",
@@ -20794,8 +20764,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": -5.0,
+"displayValue": "L5"
 },
 {
 "name": "winPercent",
@@ -20804,8 +20774,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.36666667,
-"displayValue": ".367"
+"value": 0.3548387,
+"displayValue": ".355"
 },
 {
 "name": "wins",
@@ -20845,8 +20815,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 15.0,
-"displayValue": "15"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "losses",
@@ -20855,8 +20825,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 20.0,
-"displayValue": "20"
+"value": 21.0,
+"displayValue": "21"
 },
 {
 "name": "streak",
@@ -20865,8 +20835,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -3.0,
-"displayValue": "L3"
+"value": -4.0,
+"displayValue": "L4"
 },
 {
 "name": "winPercent",
@@ -20875,8 +20845,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.33333334,
-"displayValue": ".333"
+"value": 0.32258064,
+"displayValue": ".323"
 },
 {
 "name": "wins",
@@ -20916,8 +20886,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 16.5,
-"displayValue": "16.5"
+"value": 17.0,
+"displayValue": "17"
 },
 {
 "name": "losses",
