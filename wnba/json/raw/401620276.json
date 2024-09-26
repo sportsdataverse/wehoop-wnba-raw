@@ -2803,8 +2803,8 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "MIN leads series 1-0",
-"completed": false,
+"summary": "MIN wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "events": [
 {
@@ -2951,36 +2951,20 @@
 "uid": "s:40~l:59~e:401721260~c:401721260",
 "date": "2024-09-26T01:30:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Wed, September 25th at 9:30 PM EDT",
-"shortDetail": "9/25 - 9:30 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "8",
 "uid": "s:40~l:59~t:8",
@@ -3022,10 +3006,11 @@
 }
 ]
 },
-"score": "0"
+"score": "101"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "11",
 "uid": "s:40~l:59~t:11",
@@ -3067,7 +3052,7 @@
 }
 ]
 },
-"score": "0"
+"score": "88"
 }
 ],
 "links": [
@@ -3093,160 +3078,6 @@
 "event"
 ],
 "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401721260",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-}
-]
-},
-{
-"id": "401721263",
-"uid": "s:40~l:59~e:401721263~c:401721263",
-"date": "2024-09-27T04:00:00Z",
-"timeValid": false,
-"status": "pre",
-"statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "9/27 - TBD",
-"shortDetail": "TBD"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN2"
-},
-"lang": "en",
-"region": "us"
-}
-],
-"competitors": [
-{
-"homeAway": "home",
-"team": {
-"id": "11",
-"uid": "s:40~l:59~t:11",
-"displayName": "Phoenix Mercury",
-"abbreviation": "PHX",
-"links": [
-{
-"href": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/phx",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/phx.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-},
-{
-"homeAway": "away",
-"team": {
-"id": "8",
-"uid": "s:40~l:59~t:8",
-"displayName": "Minnesota Lynx",
-"abbreviation": "MIN",
-"links": [
-{
-"href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/min",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/min.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-}
-],
-"links": [
-{
-"language": "en-US",
-"rel": [
-"summary",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/game/_/gameId/401721263/lynx-mercury",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"summary",
-"sportscenter",
-"app",
-"event"
-],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401721263",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
@@ -5599,8 +5430,8 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "MIN leads series 1-0",
-"completed": false,
+"summary": "MIN wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
@@ -5615,7 +5446,7 @@
 {
 "id": "8",
 "uid": "s:40~l:59~t:8",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2024/teams/8?lang=en&region=us"
@@ -5630,10 +5461,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401721260?lang=en&region=us",
 "id": "401721260"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401721263?lang=en&region=us",
-"id": "401721263"
 }
 ],
 "startDate": "2024-09-22T21:00Z"
@@ -20502,9 +20329,6 @@
 },
 "seo": {
 "href": "http://espn.com/video/clip/_/id/40302604"
-},
-"dsi": {
-"href": "http://espn.com/video/clip?id=5f1cd1432dd9b"
 }
 },
 "mobile": {
@@ -20523,6 +20347,9 @@
 }
 },
 "api": {
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/40302604"
+},
 "artwork": {
 "href": "https://artwork.api.espn.com/artwork/collections/media/720b89f8-08df-4483-87dd-100caabe55ce"
 }
@@ -20858,9 +20685,11 @@
 "href": "http://www.espn.com/wnba/recap?gameId=401620276"
 },
 "mobile": {
-"href": "http://m.espn.go.com/wnba/story?storyId=40302793",
-"dsi": {
-"href": "http://m.espn.go.com/wnba/story?storyId=3e6695c1c06e9"
+"href": "http://m.espn.go.com/wnba/story?storyId=40302793"
+},
+"api": {
+"self": {
+"href": "https://content.core.api.espn.com/v1/sports/news/40302793"
 }
 },
 "app": {
@@ -21050,9 +20879,6 @@
 },
 "seo": {
 "href": "http://espn.com/video/clip/_/id/40301587"
-},
-"dsi": {
-"href": "http://espn.com/video/clip?id=88392f322c1b3"
 }
 },
 "mobile": {
@@ -21071,6 +20897,9 @@
 }
 },
 "api": {
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/40301587"
+},
 "artwork": {
 "href": "https://artwork.api.espn.com/artwork/collections/media/c5cfad55-1356-4d1c-82d4-b3e9a217f3d0"
 }
@@ -21260,9 +21089,6 @@
 },
 "seo": {
 "href": "http://espn.com/video/clip/_/id/40301495"
-},
-"dsi": {
-"href": "http://espn.com/video/clip?id=99883718dbbd2"
 }
 },
 "mobile": {
@@ -21281,6 +21107,9 @@
 }
 },
 "api": {
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/40301495"
+},
 "artwork": {
 "href": "https://artwork.api.espn.com/artwork/collections/media/69e7a6af-d42a-4898-87b9-f3b19a88c888"
 }
@@ -21470,9 +21299,6 @@
 },
 "seo": {
 "href": "http://espn.com/video/clip/_/id/40302658"
-},
-"dsi": {
-"href": "http://espn.com/video/clip?id=77e00aa38866e"
 }
 },
 "mobile": {
@@ -21491,6 +21317,9 @@
 }
 },
 "api": {
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/40302658"
+},
 "artwork": {
 "href": "https://artwork.api.espn.com/artwork/collections/media/f82e97b8-6aa2-460c-83f3-9d7061b09036"
 }
