@@ -1928,11 +1928,25 @@
 "position": {
 "abbreviation": "G"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Out",
+"injuries": {
+"status": "Out",
+"date": "2025-07-08T22:07Z",
+"type": {
+"id": "4",
+"name": "INJURY_STATUS_OUT",
+"description": "out",
+"abbreviation": "O"
+},
+"details": {
+"fantasyStatus": {
+"description": "OUT",
+"abbreviation": "OUT"
+},
+"type": "Hip",
+"side": "Left",
+"returnDate": "2025-07-13"
+}
 }
 },
 "statistics": [
@@ -2139,11 +2153,25 @@
 "position": {
 "abbreviation": "C"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Day-To-Day",
+"injuries": {
+"status": "Day-To-Day",
+"date": "2025-07-09T02:38Z",
+"type": {
+"id": "6",
+"name": "INJURY_STATUS_DAYTODAY",
+"description": "day-to-day",
+"abbreviation": "DD"
+},
+"details": {
+"fantasyStatus": {
+"description": "GTD",
+"abbreviation": "GTD"
+},
+"type": "Wrist",
+"side": "Right",
+"returnDate": "2025-07-10"
+}
 }
 },
 "statistics": [
@@ -2292,11 +2320,25 @@
 "position": {
 "abbreviation": "C"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Day-To-Day",
+"injuries": {
+"status": "Day-To-Day",
+"date": "2025-07-09T02:38Z",
+"type": {
+"id": "6",
+"name": "INJURY_STATUS_DAYTODAY",
+"description": "day-to-day",
+"abbreviation": "DD"
+},
+"details": {
+"fantasyStatus": {
+"description": "GTD",
+"abbreviation": "GTD"
+},
+"type": "Wrist",
+"side": "Right",
+"returnDate": "2025-07-10"
+}
 }
 },
 "statistics": [
@@ -2339,7 +2381,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "NY leads series 1-0",
+"summary": "NY leads series 2-0",
 "completed": false,
 "totalCompetitions": 3,
 "events": [
@@ -2487,51 +2529,20 @@
 "uid": "s:40~l:59~e:401736233~c:401736233",
 "date": "2025-07-09T00:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, July 8th at 8:00 PM EDT",
-"shortDetail": "7/8 - 8:00 PM EDT"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
 "id": "3",
-"type": "Away"
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "9",
 "uid": "s:40~l:59~t:9",
@@ -2573,10 +2584,11 @@
 }
 ]
 },
-"score": "0"
+"score": "87"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "17",
 "uid": "s:40~l:59~t:17",
@@ -2618,7 +2630,7 @@
 }
 ]
 },
-"score": "0"
+"score": "78"
 }
 ],
 "links": [
@@ -5471,14 +5483,14 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "NY leads series 1-0",
+"summary": "NY leads series 2-0",
 "completed": false,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "9",
 "uid": "s:40~l:59~t:9",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/9?lang=en&region=us"
@@ -24491,8 +24503,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 7.5,
-"displayValue": "7.5"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "name": "losses",
@@ -24501,8 +24513,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 9.0,
-"displayValue": "9"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "name": "streak",
@@ -24511,8 +24523,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -24521,8 +24533,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
+"value": 0.47368422,
+"displayValue": ".474"
 },
 {
 "name": "wins",
@@ -24732,8 +24744,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -24742,8 +24754,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6666667,
-"displayValue": ".667"
+"value": 0.68421054,
+"displayValue": ".684"
 },
 {
 "name": "wins",
@@ -24752,8 +24764,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 12.0,
-"displayValue": "12"
+"value": 13.0,
+"displayValue": "13"
 }
 ],
 "logo": [
@@ -24783,8 +24795,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 0.5,
-"displayValue": "0.5"
+"value": 1.0,
+"displayValue": "1"
 },
 {
 "name": "losses",
@@ -24854,8 +24866,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 3.0,
-"displayValue": "3"
+"value": 3.5,
+"displayValue": "3.5"
 },
 {
 "name": "losses",
@@ -24945,8 +24957,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -24955,8 +24967,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.44444445,
-"displayValue": ".444"
+"value": 0.47368422,
+"displayValue": ".474"
 },
 {
 "name": "wins",
@@ -24965,8 +24977,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 8.0,
-"displayValue": "8"
+"value": 9.0,
+"displayValue": "9"
 }
 ],
 "logo": [
@@ -24996,8 +25008,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 6.5,
-"displayValue": "6.5"
+"value": 7.5,
+"displayValue": "7.5"
 },
 {
 "name": "losses",
@@ -25006,8 +25018,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 12.0,
-"displayValue": "12"
+"value": 13.0,
+"displayValue": "13"
 },
 {
 "name": "streak",
@@ -25016,8 +25028,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -25026,8 +25038,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.29411766,
-"displayValue": ".294"
+"value": 0.2777778,
+"displayValue": ".278"
 },
 {
 "name": "wins",
@@ -25067,8 +25079,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 10.0,
-"displayValue": "10"
+"value": 10.5,
+"displayValue": "10.5"
 },
 {
 "name": "losses",
