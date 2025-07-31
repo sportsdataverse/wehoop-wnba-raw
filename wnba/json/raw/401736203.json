@@ -2157,7 +2157,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
+"summary": "ATL leads series 2-1",
 "completed": false,
 "totalCompetitions": 4,
 "events": [
@@ -2444,81 +2444,20 @@
 "uid": "s:40~l:59~e:401736282~c:401736282",
 "date": "2025-07-31T00:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Wed, July 30th at 8:00 PM EDT",
-"shortDetail": "7/30 - 8:00 PM EDT"
-},
-"broadcasts": [
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN3"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "KFAA-TV"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
 "id": "3",
-"type": "Away"
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"media": {
-"shortName": "PeachtreeTV"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "3",
 "uid": "s:40~l:59~t:3",
@@ -2560,10 +2499,11 @@
 }
 ]
 },
-"score": "0"
+"score": "85"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "20",
 "uid": "s:40~l:59~t:20",
@@ -2605,7 +2545,7 @@
 }
 ]
 },
-"score": "0"
+"score": "88"
 }
 ],
 "links": [
@@ -2812,7 +2752,252 @@
 ],
 "broadcasts": [],
 "predictor": {},
-"pickcenter": [],
+"pickcenter": [
+{
+"provider": {
+"id": "58",
+"name": "ESPN BET",
+"priority": 1,
+"logos": [
+{
+"href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Light.svg",
+"rel": [
+"light"
+]
+},
+{
+"href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Dark.svg",
+"rel": [
+"dark"
+]
+}
+]
+},
+"details": "ATL -8.5",
+"overUnder": 169.5,
+"spread": 8.5,
+"overOdds": -105.0,
+"underOdds": -115.0,
+"awayTeamOdds": {
+"favorite": true,
+"underdog": false,
+"moneyLine": -400,
+"spreadOdds": -120.0,
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/20?lang=en&region=us"
+},
+"teamId": "20",
+"favoriteAtOpen": true
+},
+"homeTeamOdds": {
+"favorite": false,
+"underdog": true,
+"moneyLine": 310,
+"spreadOdds": 100.0,
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/3?lang=en&region=us"
+},
+"teamId": "3",
+"favoriteAtOpen": false
+},
+"links": [
+{
+"language": "en-US",
+"rel": [
+"home",
+"desktop",
+"bets",
+"espn-bet"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=ef26fac7-c51e-43b9-ab33-3f7022c08f10&odds_numerator[0]=41&odds_denominator[0]=10",
+"text": "Home Bet",
+"shortText": "Home Bet",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"away",
+"desktop",
+"bets",
+"espn-bet"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=a5db241a-3e09-4032-80f7-acd7e5d7dd58&odds_numerator[0]=5&odds_denominator[0]=4",
+"text": "Away Bet",
+"shortText": "Away Bet",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"homeSpread",
+"desktop",
+"bets"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=53817980-1f3c-4e2f-b9d1-d693b71ee806&odds_numerator[0]=2&odds_denominator[0]=1",
+"text": "Home Point Spread",
+"shortText": "Home Point Spread",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"awaySpread",
+"desktop",
+"bets"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=667f50fa-385d-4594-81df-8cf42d504ae8&odds_numerator[0]=11&odds_denominator[0]=6",
+"text": "Away Point Spread",
+"shortText": "Away Point Spread",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"over",
+"desktop",
+"bets"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=fd8d2192-7c83-4655-be38-bcbea57b9d90&odds_numerator[0]=41&odds_denominator[0]=21",
+"text": "Over Odds",
+"shortText": "Over Odds",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"under",
+"desktop",
+"bets"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63&market_selection_id[0]=912d4c18-06eb-4926-ab90-199600ac1cb2&odds_numerator[0]=43&odds_denominator[0]=23",
+"text": "Under Odds",
+"shortText": "Under Odds",
+"isExternal": true,
+"isPremium": false
+},
+{
+"language": "en-US",
+"rel": [
+"game",
+"desktop",
+"bets"
+],
+"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/28fb64ab-f3df-4dcf-b763-ef9f1b59ab63",
+"text": "Game",
+"shortText": "Game",
+"isExternal": true,
+"isPremium": false
+}
+],
+"moneyline": {
+"displayName": "Moneyline",
+"shortDisplayName": "ML",
+"home": {
+"close": {
+"odds": "+310",
+"outcome": "WIN",
+"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
+"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
+},
+"open": {
+"odds": "+450"
+}
+},
+"away": {
+"close": {
+"odds": "-400",
+"outcome": "LOSS"
+},
+"open": {
+"odds": "-700"
+}
+}
+},
+"pointSpread": {
+"displayName": "Spread",
+"shortDisplayName": "Spread",
+"home": {
+"close": {
+"line": "+8.5",
+"odds": "EVEN",
+"outcome": "WIN",
+"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
+"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
+},
+"open": {
+"line": "+10.5",
+"odds": "-110"
+}
+},
+"away": {
+"close": {
+"line": "-8.5",
+"odds": "-120",
+"outcome": "LOSS"
+},
+"open": {
+"line": "-10.5",
+"odds": "-110"
+}
+}
+},
+"total": {
+"displayName": "Total Points",
+"shortDisplayName": "Total",
+"over": {
+"close": {
+"line": "o169.5",
+"odds": "-105",
+"outcome": "LOSS"
+},
+"open": {
+"line": "o165.5",
+"odds": "-115"
+}
+},
+"under": {
+"close": {
+"line": "u169.5",
+"odds": "-115",
+"outcome": "WIN",
+"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
+"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
+},
+"open": {
+"line": "u165.5",
+"odds": "-105"
+}
+}
+},
+"link": {
+"text": "See All on ESPN BET Sportsbook",
+"language": "en-US",
+"rel": [
+"main",
+"desktop",
+"bets"
+],
+"href": "https://www.espnbet.com",
+"isExternal": true,
+"isPremium": false
+},
+"header": {
+"logo": {
+"dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+"light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+"exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+"exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+},
+"text": "ESPN Bet Sportsbook"
+}
+}
+],
 "againstTheSpread": [
 {
 "team": {
@@ -5324,7 +5509,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
+"summary": "ATL leads series 2-1",
 "completed": false,
 "totalCompetitions": 4,
 "competitors": [
@@ -5340,7 +5525,7 @@
 {
 "id": "20",
 "uid": "s:40~l:59~t:20",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/20?lang=en&region=us"
@@ -21562,8 +21747,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 8.0,
-"displayValue": "8"
+"value": 9.0,
+"displayValue": "9"
 },
 {
 "name": "streak",
@@ -21572,8 +21757,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": -3.0,
+"displayValue": "L3"
 },
 {
 "name": "winPercent",
@@ -21582,8 +21767,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.68,
-"displayValue": ".680"
+"value": 0.65384614,
+"displayValue": ".654"
 },
 {
 "name": "wins",
@@ -21623,8 +21808,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 1.5,
+"displayValue": "1.5"
 },
 {
 "name": "losses",
@@ -21643,8 +21828,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -21653,8 +21838,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5769231,
-"displayValue": ".577"
+"value": 0.5925926,
+"displayValue": ".593"
 },
 {
 "name": "wins",
@@ -21663,8 +21848,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 15.0,
-"displayValue": "15"
+"value": 16.0,
+"displayValue": "16"
 }
 ],
 "logo": [
@@ -21694,8 +21879,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 3.5,
-"displayValue": "3.5"
+"value": 2.5,
+"displayValue": "2.5"
 },
 {
 "name": "losses",
@@ -21714,8 +21899,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": 3.0,
+"displayValue": "W3"
 },
 {
 "name": "winPercent",
@@ -21724,8 +21909,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.53846157,
-"displayValue": ".538"
+"value": 0.5555556,
+"displayValue": ".556"
 },
 {
 "name": "wins",
@@ -21734,8 +21919,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 14.0,
-"displayValue": "14"
+"value": 15.0,
+"displayValue": "15"
 }
 ],
 "logo": [
@@ -21765,8 +21950,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 4.5,
-"displayValue": "4.5"
+"value": 4.0,
+"displayValue": "4"
 },
 {
 "name": "losses",
@@ -21836,8 +22021,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 10.5,
-"displayValue": "10.5"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "name": "losses",
@@ -21907,8 +22092,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 12.5,
+"displayValue": "12.5"
 },
 {
 "name": "losses",
@@ -22006,8 +22191,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -22016,8 +22201,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.8148148,
-"displayValue": ".815"
+"value": 0.8214286,
+"displayValue": ".821"
 },
 {
 "name": "wins",
@@ -22026,8 +22211,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 22.0,
-"displayValue": "22"
+"value": 23.0,
+"displayValue": "23"
 }
 ],
 "logo": [
@@ -22057,8 +22242,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "name": "losses",
@@ -22067,8 +22252,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 9.0,
-"displayValue": "9"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "name": "streak",
@@ -22077,8 +22262,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -22087,8 +22272,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64,
-"displayValue": ".640"
+"value": 0.61538464,
+"displayValue": ".615"
 },
 {
 "name": "wins",
@@ -22128,8 +22313,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 6.0,
-"displayValue": "6"
+"value": 6.5,
+"displayValue": "6.5"
 },
 {
 "name": "losses",
@@ -22211,8 +22396,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 8.5,
+"displayValue": "8.5"
 },
 {
 "name": "losses",
@@ -22282,8 +22467,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 9.5,
+"displayValue": "9.5"
 },
 {
 "name": "losses",
@@ -22365,8 +22550,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 10.5,
-"displayValue": "10.5"
+"value": 11.0,
+"displayValue": "11"
 },
 {
 "name": "losses",
@@ -22436,8 +22621,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 15.0,
+"displayValue": "15"
 },
 {
 "name": "losses",
@@ -22446,8 +22631,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 19.0,
-"displayValue": "19"
+"value": 20.0,
+"displayValue": "20"
 },
 {
 "name": "streak",
@@ -22456,8 +22641,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -22466,8 +22651,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.2962963,
-"displayValue": ".296"
+"value": 0.2857143,
+"displayValue": ".286"
 },
 {
 "name": "wins",
