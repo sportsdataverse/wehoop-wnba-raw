@@ -3175,3 +3175,26 @@ INFO:__main__:Scraping WNBA PBP for 2025...
 INFO:__main__:Number of Games: 180
 INFO:__main__:0.7898204604784648 minutes to download 180 game play-by-plays.
 INFO:__main__:Finished WNBA PBP for 2025...
+INFO:__main__:Scraping WNBA schedules for year 2025...
+INFO:__main__:0.5127366542816162 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping WNBA PBP for 2025...
+INFO:__main__:Number of Games: 181
+ERROR:__main__:KeyError: game_id =  game_id = 401736233
+ Traceback (most recent call last):
+  File "python/scrape_wnba_json.py", line 78, in download_game
+    result = sdv.wnba.helper_wnba_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/wnba/wnba_pbp.py", line 101, in helper_wnba_pbp
+    pbp_txt, init = helper_wnba_game_data(pbp_txt, init)
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/wnba/wnba_pbp.py", line 138, in helper_wnba_game_data
+    pbp_txt["teamInfo"] = pbp_txt["header"]["competitions"][0]
+KeyError: 'competitions'
+Traceback (most recent call last):
+  File "python/scrape_wnba_json.py", line 78, in download_game
+    result = sdv.wnba.helper_wnba_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/wnba/wnba_pbp.py", line 101, in helper_wnba_pbp
+    pbp_txt, init = helper_wnba_game_data(pbp_txt, init)
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/wnba/wnba_pbp.py", line 138, in helper_wnba_game_data
+    pbp_txt["teamInfo"] = pbp_txt["header"]["competitions"][0]
+KeyError: 'competitions'
+INFO:__main__:0.8082834362983704 minutes to download 181 game play-by-plays.
+INFO:__main__:Finished WNBA PBP for 2025...
