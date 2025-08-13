@@ -1536,24 +1536,11 @@
 "position": {
 "abbreviation": "G"
 },
-"status": "Day-To-Day",
-"injuries": {
-"status": "Day-To-Day",
-"date": "2025-08-11T20:58Z",
-"type": {
-"id": "6",
-"name": "INJURY_STATUS_DAYTODAY",
-"description": "day-to-day",
-"abbreviation": "DD"
-},
-"details": {
-"fantasyStatus": {
-"description": "GTD",
-"abbreviation": "GTD"
-},
-"type": "Back",
-"returnDate": "2025-08-12"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -1621,24 +1608,11 @@
 "position": {
 "abbreviation": "G"
 },
-"status": "Day-To-Day",
-"injuries": {
-"status": "Day-To-Day",
-"date": "2025-08-11T20:58Z",
-"type": {
-"id": "6",
-"name": "INJURY_STATUS_DAYTODAY",
-"description": "day-to-day",
-"abbreviation": "DD"
-},
-"details": {
-"fantasyStatus": {
-"description": "GTD",
-"abbreviation": "GTD"
-},
-"type": "Back",
-"returnDate": "2025-08-12"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -2032,8 +2006,8 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "IND leads series 3-0",
-"completed": false,
+"summary": "IND wins series 3-1",
+"completed": true,
 "totalCompetitions": 4,
 "events": [
 {
@@ -2458,66 +2432,20 @@
 "uid": "s:40~l:59~e:401736316~c:401736316",
 "date": "2025-08-12T23:30:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, August 12th at 7:30 PM EDT",
-"shortDetail": "8/12 - 7:30 PM EDT"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN+"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
 "id": "3",
-"type": "Away"
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "5",
 "uid": "s:40~l:59~t:5",
@@ -2559,10 +2487,11 @@
 }
 ]
 },
-"score": "0"
+"score": "80"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "3",
 "uid": "s:40~l:59~t:3",
@@ -2604,7 +2533,7 @@
 }
 ]
 },
-"score": "0"
+"score": "81"
 }
 ],
 "links": [
@@ -5293,14 +5222,14 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "IND leads series 3-0",
-"completed": false,
+"summary": "IND wins series 3-1",
+"completed": true,
 "totalCompetitions": 4,
 "competitors": [
 {
 "id": "3",
 "uid": "s:40~l:59~t:3",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/3?lang=en&region=us"
@@ -22925,8 +22854,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -22935,8 +22864,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6451613,
-"displayValue": ".645"
+"value": 0.65625,
+"displayValue": ".656"
 },
 {
 "name": "wins",
@@ -22945,8 +22874,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 20.0,
-"displayValue": "20"
+"value": 21.0,
+"displayValue": "21"
 }
 ],
 "logo": [
@@ -22976,8 +22905,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": 0.5,
+"displayValue": "0.5"
 },
 {
 "name": "losses",
@@ -23047,8 +22976,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 3.5,
+"displayValue": "3.5"
 },
 {
 "name": "losses",
@@ -23057,8 +22986,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 14.0,
-"displayValue": "14"
+"value": 15.0,
+"displayValue": "15"
 },
 {
 "name": "streak",
@@ -23067,8 +22996,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -23077,8 +23006,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5625,
-"displayValue": ".563"
+"value": 0.54545456,
+"displayValue": ".545"
 },
 {
 "name": "wins",
@@ -23118,8 +23047,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 6.0,
-"displayValue": "6"
+"value": 6.5,
+"displayValue": "6.5"
 },
 {
 "name": "losses",
@@ -23189,8 +23118,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 12.0,
-"displayValue": "12"
+"value": 12.5,
+"displayValue": "12.5"
 },
 {
 "name": "losses",
@@ -23260,8 +23189,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 15.0,
-"displayValue": "15"
+"value": 15.5,
+"displayValue": "15.5"
 },
 {
 "name": "losses",
@@ -23718,8 +23647,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 11.5,
-"displayValue": "11.5"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "losses",
@@ -23728,8 +23657,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 16.0,
-"displayValue": "16"
+"value": 17.0,
+"displayValue": "17"
 },
 {
 "name": "streak",
@@ -23738,8 +23667,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -23748,8 +23677,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.48387095,
-"displayValue": ".484"
+"value": 0.46875,
+"displayValue": ".469"
 },
 {
 "name": "wins",
@@ -23789,8 +23718,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 19.0,
-"displayValue": "19"
+"value": 18.5,
+"displayValue": "18.5"
 },
 {
 "name": "losses",
@@ -23809,8 +23738,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -5.0,
-"displayValue": "L5"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -23819,8 +23748,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.25,
-"displayValue": ".250"
+"value": 0.27272728,
+"displayValue": ".273"
 },
 {
 "name": "wins",
@@ -23829,8 +23758,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 8.0,
-"displayValue": "8"
+"value": 9.0,
+"displayValue": "9"
 }
 ],
 "logo": [
