@@ -2296,7 +2296,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "WSH leads series 2-0",
+"summary": "WSH leads series 2-1",
 "completed": false,
 "totalCompetitions": 4,
 "events": [
@@ -2583,66 +2583,20 @@
 "uid": "s:40~l:59~e:401736334~c:401736334",
 "date": "2025-08-19T23:30:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, August 19th at 7:30 PM EDT",
-"shortDetail": "8/19 - 7:30 PM EDT"
-},
-"broadcasts": [
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
 "id": "3",
-"type": "Away"
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "MNMT"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "NBC Sports BO"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "16",
 "uid": "s:40~l:59~t:16",
@@ -2684,10 +2638,11 @@
 }
 ]
 },
-"score": "0"
+"score": "69"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "18",
 "uid": "s:40~l:59~t:18",
@@ -2729,7 +2684,7 @@
 }
 ]
 },
-"score": "0"
+"score": "80"
 }
 ],
 "links": [
@@ -5793,7 +5748,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "WSH leads series 2-0",
+"summary": "WSH leads series 2-1",
 "completed": false,
 "totalCompetitions": 4,
 "competitors": [
@@ -5809,7 +5764,7 @@
 {
 "id": "18",
 "uid": "s:40~l:59~t:18",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/18?lang=en&region=us"
@@ -23381,6 +23336,77 @@
 "standings": {
 "entries": [
 {
+"team": "New York",
+"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
+"id": "9",
+"uid": "s:40~l:59~t:9",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 13.0,
+"displayValue": "13"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.62857145,
+"displayValue": ".629"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 22.0,
+"displayValue": "22"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
 "team": "Atlanta",
 "link": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream",
 "id": "20",
@@ -23403,8 +23429,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 12.0,
-"displayValue": "12"
+"value": 13.0,
+"displayValue": "13"
 },
 {
 "name": "streak",
@@ -23413,8 +23439,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -23423,8 +23449,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64705884,
-"displayValue": ".647"
+"value": 0.62857145,
+"displayValue": ".629"
 },
 {
 "name": "wins",
@@ -23452,77 +23478,6 @@
 ]
 },
 {
-"team": "New York",
-"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
-"id": "9",
-"uid": "s:40~l:59~t:9",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 13.0,
-"displayValue": "13"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -2.0,
-"displayValue": "L2"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.61764705,
-"displayValue": ".618"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 21.0,
-"displayValue": "21"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
 "team": "Indiana",
 "link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
 "id": "5",
@@ -23535,8 +23490,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 3.5,
-"displayValue": "3.5"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -23616,8 +23571,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 18.0,
-"displayValue": "18"
+"value": 19.0,
+"displayValue": "19"
 },
 {
 "name": "streak",
@@ -23626,8 +23581,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -23636,8 +23591,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.47058824,
-"displayValue": ".471"
+"value": 0.45714286,
+"displayValue": ".457"
 },
 {
 "name": "wins",
@@ -23687,8 +23642,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 25.0,
-"displayValue": "25"
+"value": 26.0,
+"displayValue": "26"
 },
 {
 "name": "streak",
@@ -23697,8 +23652,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": -5.0,
+"displayValue": "L5"
 },
 {
 "name": "winPercent",
@@ -23707,8 +23662,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.24242425,
-"displayValue": ".242"
+"value": 0.23529412,
+"displayValue": ".235"
 },
 {
 "name": "wins",
@@ -23748,8 +23703,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 15.5,
-"displayValue": "15.5"
+"value": 14.5,
+"displayValue": "14.5"
 },
 {
 "name": "losses",
@@ -23768,8 +23723,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -23778,8 +23733,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.18181819,
-"displayValue": ".182"
+"value": 0.20588236,
+"displayValue": ".206"
 },
 {
 "name": "wins",
@@ -23788,8 +23743,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [
