@@ -2824,7 +2824,7 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "LV leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 3,
 "events": [
@@ -2995,36 +2995,20 @@
 "uid": "s:40~l:59~e:401820317~c:401820317",
 "date": "2025-09-17T01:30:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Tue, September 16th at 9:30 PM EDT",
-"shortDetail": "9/16 - 9:30 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": true,
 "team": {
 "id": "14",
 "uid": "s:40~l:59~t:14",
@@ -3089,10 +3073,11 @@
 }
 ]
 },
-"score": "0"
+"score": "86"
 },
 {
 "homeAway": "away",
+"winner": false,
 "team": {
 "id": "17",
 "uid": "s:40~l:59~t:17",
@@ -3134,7 +3119,7 @@
 }
 ]
 },
-"score": "0"
+"score": "83"
 }
 ],
 "links": [
@@ -3170,8 +3155,8 @@
 {
 "id": "401820321",
 "uid": "s:40~l:59~e:401820321~c:401820321",
-"date": "2025-09-18T04:00:00Z",
-"timeValid": false,
+"date": "2025-09-19T01:30:00Z",
+"timeValid": true,
 "status": "pre",
 "statusType": {
 "id": "1",
@@ -3179,8 +3164,8 @@
 "state": "pre",
 "completed": false,
 "description": "Scheduled",
-"detail": "9/18 - TBD",
-"shortDetail": "TBD"
+"detail": "Thu, September 18th at 9:30 PM EDT",
+"shortDetail": "9/18 - 9:30 PM EDT"
 },
 "broadcasts": [
 {
@@ -3194,6 +3179,21 @@
 },
 "media": {
 "shortName": "ESPN2"
+},
+"lang": "en",
+"region": "us"
+},
+{
+"type": {
+"id": "6",
+"shortName": "Subscription Package"
+},
+"market": {
+"id": "3",
+"type": "Away"
+},
+"media": {
+"shortName": "WNBA League Pass"
 },
 "lang": "en",
 "region": "us"
@@ -6088,7 +6088,7 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "LV leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 3,
 "competitors": [
@@ -6104,7 +6104,7 @@
 {
 "id": "14",
 "uid": "s:40~l:59~t:14",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/14?lang=en&region=us"
