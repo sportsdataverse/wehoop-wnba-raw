@@ -25943,14 +25943,14 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "MIN leads series 1-0",
-"completed": false,
+"summary": "MIN wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "8",
 "uid": "s:40~l:59~t:8",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/8?lang=en&region=us"
@@ -25974,10 +25974,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401820319?lang=en&region=us",
 "id": "401820319"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401820323?lang=en&region=us",
-"id": "401820323"
 }
 ],
 "startDate": "2025-09-14T17:00Z"
@@ -29610,8 +29606,8 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "MIN leads series 1-0",
-"completed": false,
+"summary": "MIN wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "events": [
 {
@@ -29781,36 +29777,20 @@
 "uid": "s:40~l:59~e:401820319~c:401820319",
 "date": "2025-09-18T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Wed, September 17th at 10:00 PM EDT",
-"shortDetail": "9/17 - 10:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "129689",
 "uid": "s:40~l:59~t:129689",
@@ -29875,10 +29855,11 @@
 }
 ]
 },
-"score": "0"
+"score": "74"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "8",
 "uid": "s:40~l:59~t:8",
@@ -29920,7 +29901,7 @@
 }
 ]
 },
-"score": "0"
+"score": "75"
 }
 ],
 "links": [
@@ -29946,183 +29927,6 @@
 "event"
 ],
 "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401820319",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-}
-]
-},
-{
-"id": "401820323",
-"uid": "s:40~l:59~e:401820323~c:401820323",
-"date": "2025-09-19T04:00:00Z",
-"timeValid": false,
-"status": "pre",
-"statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "9/19 - TBD",
-"shortDetail": "TBD"
-},
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ESPN2"
-},
-"lang": "en",
-"region": "us"
-}
-],
-"competitors": [
-{
-"homeAway": "home",
-"team": {
-"id": "8",
-"uid": "s:40~l:59~t:8",
-"displayName": "Minnesota Lynx",
-"abbreviation": "MIN",
-"links": [
-{
-"href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/min",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/min.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-05-10T21:45Z"
-}
-]
-},
-"score": "0"
-},
-{
-"homeAway": "away",
-"team": {
-"id": "129689",
-"uid": "s:40~l:59~t:129689",
-"displayName": "Golden State Valkyries",
-"abbreviation": "GS",
-"links": [
-{
-"href": "https://www.espn.com/wnba/team/_/name/gs/golden-state-valkyries",
-"text": "Clubhouse"
-},
-{
-"href": "https://www.espn.com/wnba/team/schedule/_/name/gs",
-"text": "Schedule"
-}
-],
-"logo": "https://a.espncdn.com/i/teamlogos/wnba/500/gs.png",
-"logos": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/gs.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-10-31T17:07Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/gs.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2024-10-31T17:06Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/scoreboard/gs.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard"
-],
-"lastUpdated": "2024-10-31T17:07Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/gs.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2024-10-31T17:06Z"
-}
-]
-},
-"score": "0"
-}
-],
-"links": [
-{
-"language": "en-US",
-"rel": [
-"summary",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/game/_/gameId/401820323/valkyries-lynx",
-"text": "Gamecast",
-"shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"summary",
-"sportscenter",
-"app",
-"event"
-],
-"href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=wnba&gameId=401820323",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
@@ -31072,14 +30876,14 @@
 "type": "playoff",
 "title": "Playoff Series",
 "description": "Playoff Series",
-"summary": "MIN leads series 1-0",
-"completed": false,
+"summary": "MIN wins series 2-0",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "8",
 "uid": "s:40~l:59~t:8",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/8?lang=en&region=us"
@@ -31103,10 +30907,6 @@
 {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401820319?lang=en&region=us",
 "id": "401820319"
-},
-{
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/401820323?lang=en&region=us",
-"id": "401820323"
 }
 ],
 "startDate": "2025-09-14T17:00Z"
