@@ -23,7 +23,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "44.2",
+"displayValue": "44",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -34,7 +34,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "36.4",
+"displayValue": "36",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -45,7 +45,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "84.6",
+"displayValue": "85",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -177,7 +177,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "56.1",
+"displayValue": "56",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -188,7 +188,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "50.0",
+"displayValue": "50",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -199,7 +199,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "86.7",
+"displayValue": "87",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -330,76 +330,64 @@
 "names": [
 "MIN",
 "PTS",
-"OREB",
-"DREB",
+"FG",
+"3PT",
+"FT",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"FG",
-"FG%",
-"3PT",
-"3PT%",
-"FT",
-"FT%",
+"OREB",
+"DREB",
 "PF",
 "+/-"
 ],
 "keys": [
 "minutes",
 "points",
-"offensiveRebounds",
-"defensiveRebounds",
+"fieldGoalsMade-fieldGoalsAttempted",
+"threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+"freeThrowsMade-freeThrowsAttempted",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fieldGoalsMade-fieldGoalsAttempted",
-"fieldGoalPct",
-"threePointFieldGoalsMade-threePointFieldGoalsAttempted",
-"threePointFieldGoalPct",
-"freeThrowsMade-freeThrowsAttempted",
-"freeThrowPct",
+"offensiveRebounds",
+"defensiveRebounds",
 "fouls",
 "plusMinus"
 ],
 "labels": [
 "MIN",
 "PTS",
-"OREB",
-"DREB",
+"FG",
+"3PT",
+"FT",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"FG",
-"FG%",
-"3PT",
-"3PT%",
-"FT",
-"FT%",
+"OREB",
+"DREB",
 "PF",
 "+/-"
 ],
 "descriptions": [
 "Minutes",
 "Points",
-"Offensive Rebounds",
-"Defensive Rebounds",
+"Field Goals Made/Attempted",
+"3-Point Field Goals Made/Attempted",
+"Free Throws Made/Attempted",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Field Goals Made/Attempted",
-"Field Goal Percentage",
-"3-Point Field Goals Made/Attempted",
-"3-Point Field Goal Percentage",
-"Free Throws Made/Attempted",
-"Free Throw Percentage",
+"Offensive Rebounds",
+"Defensive Rebounds",
 "Personal Fouls",
 "Teams net points while player is on the court."
 ],
@@ -441,19 +429,16 @@
 "stats": [
 "32",
 "17",
-"0",
-"7",
+"7-12",
+"0-3",
+"3-4",
 "7",
 "2",
 "0",
+"0",
 "1",
 "0",
-"7-12",
-"58.3",
-"0-3",
-"0.0",
-"3-4",
-"75.0",
+"7",
 "2",
 "+3"
 ]
@@ -495,19 +480,16 @@
 "stats": [
 "34",
 "15",
-"5",
-"4",
+"6-15",
+"0-1",
+"3-4",
 "9",
 "4",
 "0",
-"1",
 "0",
-"6-15",
-"40.0",
-"0-1",
-"0.0",
-"3-4",
-"75.0",
+"1",
+"5",
+"4",
 "3",
 "-3"
 ]
@@ -549,19 +531,16 @@
 "stats": [
 "31",
 "34",
-"1",
-"1",
+"11-19",
+"7-12",
+"5-5",
 "2",
 "6",
+"2",
 "1",
 "0",
-"2",
-"11-19",
-"57.9",
-"7-12",
-"58.3",
-"5-5",
-"100.0",
+"1",
+"1",
 "3",
 "+3"
 ]
@@ -603,19 +582,16 @@
 "stats": [
 "26",
 "8",
-"0",
-"1",
-"1",
-"2",
-"2",
-"0",
-"0",
 "3-7",
-"42.9",
 "2-4",
-"50.0",
 "0-0",
-"0.0",
+"1",
+"2",
+"0",
+"2",
+"0",
+"0",
+"1",
 "0",
 "-11"
 ]
@@ -657,19 +633,16 @@
 "stats": [
 "30",
 "15",
-"2",
-"3",
+"6-13",
+"3-7",
+"0-0",
 "5",
 "6",
-"0",
-"0",
 "1",
-"6-13",
-"46.2",
-"3-7",
-"42.9",
-"0-0",
-"0.0",
+"0",
+"0",
+"2",
+"3",
 "3",
 "+1"
 ]
@@ -711,19 +684,16 @@
 "stats": [
 "6",
 "2",
-"0",
-"1",
-"1",
-"1",
-"0",
-"0",
-"0",
 "1-4",
-"25.0",
 "0-2",
-"0.0",
 "0-0",
-"0.0",
+"1",
+"1",
+"0",
+"0",
+"0",
+"0",
+"1",
 "0",
 "-6"
 ]
@@ -751,12 +721,12 @@
 "href": "https://a.espncdn.com/i/headshots/wnba/players/full/4280877.png",
 "alt": "Chloe Bibby"
 },
-"jersey": "55",
 "position": {
 "name": "Forward",
 "displayName": "Forward",
 "abbreviation": "F"
-}
+},
+"jersey": "55"
 },
 "starter": false,
 "didNotPlay": false,
@@ -765,19 +735,16 @@
 "stats": [
 "3",
 "0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
 "0-1",
-"0.0",
 "0-1",
-"0.0",
 "0-0",
-"0.0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
 "0",
 "-7"
 ]
@@ -819,19 +786,16 @@
 "stats": [
 "4",
 "0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
 "0-0",
-"0.0",
 "0-0",
-"0.0",
 "0-0",
-"0.0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
 "1",
 "-4"
 ]
@@ -873,19 +837,16 @@
 "stats": [
 "13",
 "0",
-"0",
-"0",
+"0-3",
+"0-1",
+"0-0",
 "0",
 "1",
 "0",
 "0",
 "0",
-"0-3",
-"0.0",
-"0-1",
-"0.0",
-"0-0",
-"0.0",
+"0",
+"0",
 "1",
 "-17"
 ]
@@ -927,19 +888,16 @@
 "stats": [
 "21",
 "0",
-"2",
-"0",
-"2",
-"1",
-"1",
-"0",
-"1",
 "0-3",
-"0.0",
 "0-2",
-"0.0",
 "0-0",
-"0.0",
+"2",
+"1",
+"1",
+"1",
+"0",
+"2",
+"0",
 "3",
 "-4"
 ]
@@ -1020,19 +978,16 @@
 "totals": [
 "",
 "91",
-"10",
-"17",
+"34-77",
+"12-33",
+"11-13",
 "27",
 "23",
 "4",
-"2",
 "4",
-"34-77",
-"44.2",
-"12-33",
-"36.4",
-"11-13",
-"84.6",
+"2",
+"10",
+"17",
 "16",
 ""
 ]
@@ -1059,76 +1014,64 @@
 "names": [
 "MIN",
 "PTS",
-"OREB",
-"DREB",
+"FG",
+"3PT",
+"FT",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"FG",
-"FG%",
-"3PT",
-"3PT%",
-"FT",
-"FT%",
+"OREB",
+"DREB",
 "PF",
 "+/-"
 ],
 "keys": [
 "minutes",
 "points",
-"offensiveRebounds",
-"defensiveRebounds",
+"fieldGoalsMade-fieldGoalsAttempted",
+"threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+"freeThrowsMade-freeThrowsAttempted",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fieldGoalsMade-fieldGoalsAttempted",
-"fieldGoalPct",
-"threePointFieldGoalsMade-threePointFieldGoalsAttempted",
-"threePointFieldGoalPct",
-"freeThrowsMade-freeThrowsAttempted",
-"freeThrowPct",
+"offensiveRebounds",
+"defensiveRebounds",
 "fouls",
 "plusMinus"
 ],
 "labels": [
 "MIN",
 "PTS",
-"OREB",
-"DREB",
+"FG",
+"3PT",
+"FT",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"FG",
-"FG%",
-"3PT",
-"3PT%",
-"FT",
-"FT%",
+"OREB",
+"DREB",
 "PF",
 "+/-"
 ],
 "descriptions": [
 "Minutes",
 "Points",
-"Offensive Rebounds",
-"Defensive Rebounds",
+"Field Goals Made/Attempted",
+"3-Point Field Goals Made/Attempted",
+"Free Throws Made/Attempted",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Field Goals Made/Attempted",
-"Field Goal Percentage",
-"3-Point Field Goals Made/Attempted",
-"3-Point Field Goal Percentage",
-"Free Throws Made/Attempted",
-"Free Throw Percentage",
+"Offensive Rebounds",
+"Defensive Rebounds",
 "Personal Fouls",
 "Teams net points while player is on the court."
 ],
@@ -1170,19 +1113,16 @@
 "stats": [
 "29",
 "16",
-"3",
-"4",
+"8-12",
+"0-1",
+"0-0",
 "7",
 "3",
-"0",
-"0",
 "1",
-"8-12",
-"66.7",
-"0-1",
-"0.0",
-"0-0",
-"0.0",
+"0",
+"0",
+"3",
+"4",
 "4",
 "-2"
 ]
@@ -1224,19 +1164,16 @@
 "stats": [
 "26",
 "19",
-"0",
-"5",
+"7-8",
+"5-5",
+"0-0",
 "5",
 "1",
 "0",
+"0",
 "2",
 "0",
-"7-8",
-"87.5",
-"5-5",
-"100.0",
-"0-0",
-"0.0",
+"5",
 "3",
 "-7"
 ]
@@ -1278,19 +1215,16 @@
 "stats": [
 "32",
 "25",
-"1",
-"4",
+"10-18",
+"3-5",
+"2-2",
 "5",
 "2",
 "0",
 "0",
 "0",
-"10-18",
-"55.6",
-"3-5",
-"60.0",
-"2-2",
-"100.0",
+"1",
+"4",
 "0",
 "+10"
 ]
@@ -1332,19 +1266,16 @@
 "stats": [
 "34",
 "25",
-"0",
-"1",
+"7-11",
+"3-5",
+"8-10",
 "1",
 "11",
-"0",
-"0",
 "3",
-"7-11",
-"63.6",
-"3-5",
-"60.0",
-"8-10",
-"80.0",
+"0",
+"0",
+"0",
+"1",
 "2",
 "+15"
 ]
@@ -1386,19 +1317,16 @@
 "stats": [
 "32",
 "5",
-"1",
-"7",
+"2-6",
+"1-5",
+"0-0",
 "8",
 "7",
-"0",
-"0",
 "2",
-"2-6",
-"33.3",
-"1-5",
-"20.0",
-"0-0",
-"0.0",
+"0",
+"0",
+"1",
+"7",
 "2",
 "+6"
 ]
@@ -1440,19 +1368,16 @@
 "stats": [
 "16",
 "0",
-"1",
-"2",
+"0-6",
+"0-2",
+"0-0",
 "3",
 "0",
+"2",
 "0",
 "5",
+"1",
 "2",
-"0-6",
-"0.0",
-"0-2",
-"0.0",
-"0-0",
-"0.0",
 "2",
 "+12"
 ]
@@ -1494,19 +1419,16 @@
 "stats": [
 "10",
 "3",
-"0",
-"0",
-"0",
-"0",
+"1-2",
+"1-2",
+"0-0",
 "0",
 "0",
 "2",
-"1-2",
-"50.0",
-"1-2",
-"50.0",
-"0-0",
-"0.0",
+"0",
+"0",
+"0",
+"0",
 "2",
 "+2"
 ]
@@ -1548,19 +1470,16 @@
 "stats": [
 "17",
 "7",
-"1",
-"2",
+"2-3",
+"0-1",
+"3-3",
 "3",
+"1",
 "1",
 "1",
 "0",
 "1",
-"2-3",
-"66.7",
-"0-1",
-"0.0",
-"3-3",
-"100.0",
+"2",
 "1",
 "+14"
 ]
@@ -1588,12 +1507,12 @@
 "href": "https://a.espncdn.com/i/headshots/wnba/players/full/4703794.png",
 "alt": "Sarah Ashlee Barker"
 },
-"jersey": "13",
 "position": {
 "name": "Guard",
 "displayName": "Guard",
 "abbreviation": "G"
-}
+},
+"jersey": "13"
 },
 "starter": false,
 "didNotPlay": false,
@@ -1602,19 +1521,16 @@
 "stats": [
 "4",
 "0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
-"0",
 "0-0",
-"0.0",
 "0-0",
-"0.0",
 "0-0",
-"0.0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
+"0",
 "0",
 "-5"
 ]
@@ -1730,19 +1646,16 @@
 "totals": [
 "",
 "100",
-"7",
-"25",
+"37-66",
+"13-26",
+"13-15",
 "32",
 "25",
+"11",
 "1",
 "7",
-"11",
-"37-66",
-"56.1",
-"13-26",
-"50.0",
-"13-15",
-"86.7",
+"7",
+"25",
 "16",
 ""
 ]
@@ -1760,6 +1673,8 @@
 "clock": 600.0
 },
 "overtime": {
+"displayName": "Quarter",
+"slug": "quarter",
 "clock": 300.0
 }
 },
@@ -1871,6 +1786,7 @@
 "leaders": [
 {
 "displayValue": "25",
+"value": 25.0,
 "athlete": {
 "id": "4433630",
 "uid": "s:40~l:59~a:4433630",
@@ -1894,29 +1810,21 @@
 "href": "https://a.espncdn.com/i/headshots/wnba/players/full/4433630.png",
 "alt": "Rickea Jackson"
 },
-"jersey": "2",
+"jersey": "5",
 "position": {
+"name": "Forward",
+"displayName": "Forward",
 "abbreviation": "F"
 },
-"status": "Out",
-"injuries": {
-"status": "Out",
-"date": "2025-09-12T00:30Z",
-"type": {
-"id": "4",
-"name": "INJURY_STATUS_OUT",
-"description": "out",
-"abbreviation": "O"
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/6?lang=en&region=us",
+"id": "6"
 },
-"details": {
-"fantasyStatus": {
-"description": "OUT",
-"abbreviation": "OUT"
-},
-"type": "Lower Leg",
-"side": "Right",
-"returnDate": "2026-05-01"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -1962,6 +1870,7 @@
 "leaders": [
 {
 "displayValue": "11",
+"value": 11.0,
 "athlete": {
 "id": "3065570",
 "uid": "s:40~l:59~a:3065570",
@@ -1987,7 +1896,13 @@
 },
 "jersey": "10",
 "position": {
+"name": "Guard",
+"displayName": "Guard",
 "abbreviation": "G"
+},
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/6?lang=en&region=us",
+"id": "6"
 },
 "status": {
 "id": "1",
@@ -2048,6 +1963,7 @@
 "leaders": [
 {
 "displayValue": "8",
+"value": 8.0,
 "athlete": {
 "id": "4001679",
 "uid": "s:40~l:59~a:4001679",
@@ -2071,29 +1987,21 @@
 "href": "https://a.espncdn.com/i/headshots/wnba/players/full/4001679.png",
 "alt": "Julie Allemand"
 },
-"jersey": "20",
+"jersey": "22",
 "position": {
+"name": "Guard",
+"displayName": "Guard",
 "abbreviation": "G"
 },
-"status": "Out",
-"injuries": {
-"status": "Out",
-"date": "2025-09-12T00:37Z",
-"type": {
-"id": "4",
-"name": "INJURY_STATUS_OUT",
-"description": "out",
-"abbreviation": "O"
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/6?lang=en&region=us",
+"id": "6"
 },
-"details": {
-"fantasyStatus": {
-"description": "OUT",
-"abbreviation": "OUT"
-},
-"type": "Ankle",
-"side": "Left",
-"returnDate": "2026-05-01"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -2184,6 +2092,7 @@
 "leaders": [
 {
 "displayValue": "34",
+"value": 34.0,
 "athlete": {
 "id": "3142191",
 "uid": "s:40~l:59~a:3142191",
@@ -2209,7 +2118,13 @@
 },
 "jersey": "0",
 "position": {
+"name": "Guard",
+"displayName": "Guard",
 "abbreviation": "G"
+},
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/5?lang=en&region=us",
+"id": "5"
 },
 "status": {
 "id": "1",
@@ -2261,6 +2176,7 @@
 "leaders": [
 {
 "displayValue": "6",
+"value": 6.0,
 "athlete": {
 "id": "3142191",
 "uid": "s:40~l:59~a:3142191",
@@ -2286,7 +2202,13 @@
 },
 "jersey": "0",
 "position": {
+"name": "Guard",
+"displayName": "Guard",
 "abbreviation": "G"
+},
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/5?lang=en&region=us",
+"id": "5"
 },
 "status": {
 "id": "1",
@@ -2347,6 +2269,7 @@
 "leaders": [
 {
 "displayValue": "9",
+"value": 9.0,
 "athlete": {
 "id": "4432831",
 "uid": "s:40~l:59~a:4432831",
@@ -2372,13 +2295,33 @@
 },
 "jersey": "7",
 "position": {
+"name": "Forward",
+"displayName": "Forward",
 "abbreviation": "F"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"team": {
+"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/5?lang=en&region=us",
+"id": "5"
+},
+"status": "Out",
+"injuries": {
+"status": "Out",
+"date": "2026-04-29T21:13Z",
+"type": {
+"id": "4",
+"name": "INJURY_STATUS_OUT",
+"description": "out",
+"abbreviation": "O"
+},
+"details": {
+"fantasyStatus": {
+"description": "OUT",
+"abbreviation": "OUT",
+"displayDescription": "Out"
+},
+"type": "Lower Leg",
+"returnDate": "2026-05-02"
+}
 }
 },
 "statistics": [
@@ -2429,6 +2372,9 @@
 "summary": "LA wins series 3-1",
 "completed": true,
 "totalCompetitions": 4,
+"seriesLabel": "Regular Season",
+"seriesScore": "3-1",
+"shortSummary": "LA wins season",
 "events": [
 {
 "id": "401736207",
@@ -2445,6 +2391,7 @@
 "detail": "Final",
 "shortDetail": "Final"
 },
+"neutralSite": false,
 "competitors": [
 {
 "homeAway": "home",
@@ -2584,6 +2531,7 @@
 "detail": "Final",
 "shortDetail": "Final"
 },
+"neutralSite": false,
 "competitors": [
 {
 "homeAway": "home",
@@ -2723,6 +2671,7 @@
 "detail": "Final",
 "shortDetail": "Final"
 },
+"neutralSite": false,
 "competitors": [
 {
 "homeAway": "home",
@@ -2862,6 +2811,7 @@
 "detail": "Final",
 "shortDetail": "Final"
 },
+"neutralSite": false,
 "competitors": [
 {
 "homeAway": "home",
@@ -2991,252 +2941,7 @@
 ],
 "broadcasts": [],
 "predictor": {},
-"pickcenter": [
-{
-"provider": {
-"id": "58",
-"name": "ESPN BET",
-"priority": 1,
-"logos": [
-{
-"href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Light.svg",
-"rel": [
-"light"
-]
-},
-{
-"href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Dark.svg",
-"rel": [
-"dark"
-]
-}
-]
-},
-"details": "IND -2.5",
-"overUnder": 178.5,
-"spread": 2.5,
-"overOdds": -115.0,
-"underOdds": -105.0,
-"awayTeamOdds": {
-"favorite": true,
-"underdog": false,
-"moneyLine": -135,
-"spreadOdds": -105.0,
-"team": {
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/5?lang=en&region=us"
-},
-"teamId": "5",
-"favoriteAtOpen": false
-},
-"homeTeamOdds": {
-"favorite": false,
-"underdog": true,
-"moneyLine": 115,
-"spreadOdds": -115.0,
-"team": {
-"$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2025/teams/6?lang=en&region=us"
-},
-"teamId": "6",
-"favoriteAtOpen": true
-},
-"links": [
-{
-"language": "en-US",
-"rel": [
-"home",
-"desktop",
-"bets",
-"espn-bet"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=f4ce6a47-9f7c-47f1-a1e8-766087cd0496&odds_numerator[0]=43&odds_denominator[0]=20",
-"text": "Home Bet",
-"shortText": "Home Bet",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"away",
-"desktop",
-"bets",
-"espn-bet"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=7a0165bb-1560-4111-80e0-76e4eed4d9b1&odds_numerator[0]=47&odds_denominator[0]=27",
-"text": "Away Bet",
-"shortText": "Away Bet",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"homeSpread",
-"desktop",
-"bets"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=f5faf981-4289-49fa-a9c3-3a4ef1bb76a0&odds_numerator[0]=43&odds_denominator[0]=23",
-"text": "Home Point Spread",
-"shortText": "Home Point Spread",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"awaySpread",
-"desktop",
-"bets"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=c0571090-0823-44ff-a43a-2a23dd96bd7f&odds_numerator[0]=41&odds_denominator[0]=21",
-"text": "Away Point Spread",
-"shortText": "Away Point Spread",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"over",
-"desktop",
-"bets"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=d7576b29-095a-4376-9ce1-e090df3c6f1f&odds_numerator[0]=43&odds_denominator[0]=23",
-"text": "Over Odds",
-"shortText": "Over Odds",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"under",
-"desktop",
-"bets"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38&market_selection_id[0]=cc55b819-a1d7-4e73-a0c7-f44c76cec209&odds_numerator[0]=41&odds_denominator[0]=21",
-"text": "Under Odds",
-"shortText": "Under Odds",
-"isExternal": true,
-"isPremium": false
-},
-{
-"language": "en-US",
-"rel": [
-"game",
-"desktop",
-"bets"
-],
-"href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/wnba/event/44502baf-a108-4aae-a726-adbe12147b38",
-"text": "Game",
-"shortText": "Game",
-"isExternal": true,
-"isPremium": false
-}
-],
-"moneyline": {
-"displayName": "Moneyline",
-"shortDisplayName": "ML",
-"home": {
-"close": {
-"odds": "+115",
-"outcome": "WIN",
-"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
-"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
-},
-"open": {
-"odds": "-125"
-}
-},
-"away": {
-"close": {
-"odds": "-135",
-"outcome": "LOSS"
-},
-"open": {
-"odds": "+105"
-}
-}
-},
-"pointSpread": {
-"displayName": "Spread",
-"shortDisplayName": "Spread",
-"home": {
-"close": {
-"line": "+2.5",
-"odds": "-115",
-"outcome": "WIN",
-"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
-"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
-},
-"open": {
-"line": "-1.5",
-"odds": "-110"
-}
-},
-"away": {
-"close": {
-"line": "-2.5",
-"odds": "-105",
-"outcome": "LOSS"
-},
-"open": {
-"line": "+1.5",
-"odds": "-110"
-}
-}
-},
-"total": {
-"displayName": "Total",
-"shortDisplayName": "Total",
-"over": {
-"close": {
-"line": "o178.5",
-"odds": "-115",
-"outcome": "WIN",
-"icon": "https://a.espncdn.com/i/espnbet/espn-bet-checkmark-bold.png",
-"iconDark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-checkmark-bold.png"
-},
-"open": {
-"line": "o173.5",
-"odds": "-110"
-}
-},
-"under": {
-"close": {
-"line": "u178.5",
-"odds": "-105",
-"outcome": "LOSS"
-},
-"open": {
-"line": "u173.5",
-"odds": "-110"
-}
-}
-},
-"link": {
-"text": "See All on ESPN BET Sportsbook",
-"language": "en-US",
-"rel": [
-"main",
-"desktop",
-"bets"
-],
-"href": "https://www.espnbet.com",
-"isExternal": true,
-"isPremium": false
-},
-"header": {
-"logo": {
-"dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
-"light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
-"exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
-"exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
-},
-"text": "ESPN Bet Sportsbook"
-}
-}
-],
+"pickcenter": [],
 "againstTheSpread": [
 {
 "team": {
@@ -5150,7 +4855,7 @@
 "uid": "s:40~l:59~e:401736298",
 "season": {
 "year": 2025,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5221,7 +4926,7 @@
 "full",
 "primary_logo_on_white_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/primary_logo_on_black_color.png",
@@ -5232,7 +4937,7 @@
 "full",
 "primary_logo_on_black_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/primary_logo_on_primary_color.png",
@@ -5243,7 +4948,7 @@
 "full",
 "primary_logo_on_primary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/primary_logo_on_secondary_color.png",
@@ -5254,7 +4959,29 @@
 "full",
 "primary_logo_on_secondary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/primary_logo_black.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"primary_logo_black"
+],
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/primary_logo_white.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"primary_logo_white"
+],
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_on_white_color.png",
@@ -5265,7 +4992,7 @@
 "full",
 "secondary_logo_on_white_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_on_black_color.png",
@@ -5276,7 +5003,7 @@
 "full",
 "secondary_logo_on_black_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_on_primary_color.png",
@@ -5287,7 +5014,7 @@
 "full",
 "secondary_logo_on_primary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_on_secondary_color.png",
@@ -5298,7 +5025,29 @@
 "full",
 "secondary_logo_on_secondary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_black.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"secondary_logo_black"
+],
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737/logos/secondary_logo_white.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"secondary_logo_white"
+],
+"lastUpdated": "2026-02-13T16:17Z"
 }
 ],
 "links": [
@@ -5390,7 +5139,7 @@
 "full",
 "primary_logo_on_white_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/primary_logo_on_black_color.png",
@@ -5401,7 +5150,7 @@
 "full",
 "primary_logo_on_black_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/primary_logo_on_primary_color.png",
@@ -5412,7 +5161,7 @@
 "full",
 "primary_logo_on_primary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/primary_logo_on_secondary_color.png",
@@ -5423,7 +5172,29 @@
 "full",
 "primary_logo_on_secondary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/primary_logo_black.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"primary_logo_black"
+],
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/primary_logo_white.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"primary_logo_white"
+],
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_on_white_color.png",
@@ -5434,7 +5205,7 @@
 "full",
 "secondary_logo_on_white_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_on_black_color.png",
@@ -5445,7 +5216,7 @@
 "full",
 "secondary_logo_on_black_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_on_primary_color.png",
@@ -5456,7 +5227,7 @@
 "full",
 "secondary_logo_on_primary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
 },
 {
 "href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_on_secondary_color.png",
@@ -5467,7 +5238,29 @@
 "full",
 "secondary_logo_on_secondary_color"
 ],
-"lastUpdated": "2024-12-03T20:50Z"
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_black.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"secondary_logo_black"
+],
+"lastUpdated": "2026-02-13T16:17Z"
+},
+{
+"href": "https://a.espncdn.com/guid/bfef1bdd-c2d1-310d-dd9f-645b90575da9/logos/secondary_logo_white.png",
+"width": 4096,
+"height": 4096,
+"alt": "",
+"rel": [
+"full",
+"secondary_logo_white"
+],
+"lastUpdated": "2026-02-13T16:17Z"
 }
 ],
 "links": [
@@ -5863,6 +5656,22 @@
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:59&section=odds",
 "text": "Odds"
 }
+],
+"logos": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/leagues/500/wnba.png",
+"rel": [
+"full",
+"default"
+]
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/leagues/500-dark/wnba.png",
+"rel": [
+"full",
+"dark"
+]
+}
 ]
 }
 },
@@ -5911,7 +5720,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Jump Ball"
 },
 {
 "id": "4017362987",
@@ -5952,7 +5763,9 @@
 "coordinate": {
 "x": 45,
 "y": 14
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "4017362988",
@@ -5993,7 +5806,9 @@
 "coordinate": {
 "x": 3,
 "y": 9
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629810",
@@ -6034,7 +5849,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629812",
@@ -6063,7 +5880,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629814",
@@ -6104,7 +5923,9 @@
 "coordinate": {
 "x": 21,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629816",
@@ -6140,7 +5961,9 @@
 "coordinate": {
 "x": 22,
 "y": 10
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "40173629818",
@@ -6181,7 +6004,9 @@
 "coordinate": {
 "x": 16,
 "y": 16
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629821",
@@ -6222,7 +6047,9 @@
 "coordinate": {
 "x": 2,
 "y": 3
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629823",
@@ -6258,7 +6085,9 @@
 "coordinate": {
 "x": 28,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629824",
@@ -6299,7 +6128,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629826",
@@ -6340,7 +6171,9 @@
 "coordinate": {
 "x": 28,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629828",
@@ -6376,7 +6209,9 @@
 "coordinate": {
 "x": 24,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "40173629830",
@@ -6412,7 +6247,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629831",
@@ -6448,7 +6285,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629832",
@@ -6484,7 +6323,9 @@
 "coordinate": {
 "x": 24,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629833",
@@ -6520,7 +6361,9 @@
 "coordinate": {
 "x": 25,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "40173629835",
@@ -6561,7 +6404,9 @@
 "coordinate": {
 "x": 37,
 "y": 22
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "40173629837",
@@ -6597,7 +6442,9 @@
 "coordinate": {
 "x": 25,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629838",
@@ -6633,7 +6480,9 @@
 "coordinate": {
 "x": 25,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629839",
@@ -6669,7 +6518,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629840",
@@ -6705,7 +6556,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629841",
@@ -6741,7 +6594,9 @@
 "coordinate": {
 "x": 28,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629842",
@@ -6777,7 +6632,9 @@
 "coordinate": {
 "x": 28,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629843",
@@ -6818,7 +6675,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629845",
@@ -6854,7 +6713,9 @@
 "coordinate": {
 "x": 16,
 "y": 24
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629846",
@@ -6890,7 +6751,9 @@
 "coordinate": {
 "x": 16,
 "y": 24
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629847",
@@ -6931,7 +6794,9 @@
 "coordinate": {
 "x": 26,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629849",
@@ -6967,7 +6832,9 @@
 "coordinate": {
 "x": 46,
 "y": 14
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629850",
@@ -7003,7 +6870,9 @@
 "coordinate": {
 "x": 46,
 "y": 14
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629851",
@@ -7039,7 +6908,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629852",
@@ -7080,7 +6951,9 @@
 "coordinate": {
 "x": 15,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "40173629854",
@@ -7121,7 +6994,9 @@
 "coordinate": {
 "x": 24,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629857",
@@ -7162,7 +7037,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "40173629859",
@@ -7198,7 +7075,9 @@
 "coordinate": {
 "x": 27,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629860",
@@ -7234,7 +7113,9 @@
 "coordinate": {
 "x": 27,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629861",
@@ -7270,7 +7151,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629862",
@@ -7306,7 +7189,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629863",
@@ -7342,7 +7227,9 @@
 "coordinate": {
 "x": 32,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629864",
@@ -7378,7 +7265,9 @@
 "coordinate": {
 "x": 32,
 "y": 23
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629865",
@@ -7419,7 +7308,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629867",
@@ -7455,7 +7346,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629868",
@@ -7491,7 +7384,9 @@
 "coordinate": {
 "x": 25,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629869",
@@ -7527,7 +7422,9 @@
 "coordinate": {
 "x": 25,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629870",
@@ -7563,7 +7460,9 @@
 "coordinate": {
 "x": 22,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "40173629872",
@@ -7589,7 +7488,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "40173629873",
@@ -7615,7 +7516,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Challenge"
 },
 {
 "id": "40173629874",
@@ -7651,7 +7554,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "40173629875",
@@ -7687,7 +7592,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "40173629876",
@@ -7723,7 +7630,9 @@
 "coordinate": {
 "x": 48,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629877",
@@ -7759,7 +7668,9 @@
 "coordinate": {
 "x": 48,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629878",
@@ -7795,7 +7706,9 @@
 "coordinate": {
 "x": 28,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629879",
@@ -7831,7 +7744,9 @@
 "coordinate": {
 "x": 28,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629880",
@@ -7867,7 +7782,9 @@
 "coordinate": {
 "x": 26,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "40173629881",
@@ -7903,7 +7820,9 @@
 "coordinate": {
 "x": 26,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629882",
@@ -7944,7 +7863,9 @@
 "coordinate": {
 "x": 49,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629884",
@@ -7980,7 +7901,9 @@
 "coordinate": {
 "x": 28,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "40173629885",
@@ -8016,7 +7939,9 @@
 "coordinate": {
 "x": 45,
 "y": 14
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629886",
@@ -8052,7 +7977,9 @@
 "coordinate": {
 "x": 45,
 "y": 14
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629887",
@@ -8088,7 +8015,9 @@
 "coordinate": {
 "x": 11,
 "y": 38
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "40173629888",
@@ -8129,7 +8058,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "40173629889",
@@ -8170,7 +8101,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "40173629890",
@@ -8211,7 +8144,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "40173629894",
@@ -8247,7 +8182,9 @@
 "coordinate": {
 "x": 2,
 "y": 3
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "40173629895",
@@ -8276,7 +8213,9 @@
 "coordinate": {
 "x": 2,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "40173629897",
@@ -8317,7 +8256,9 @@
 "coordinate": {
 "x": 36,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "40173629899",
@@ -8353,7 +8294,9 @@
 "coordinate": {
 "x": 17,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298100",
@@ -8389,7 +8332,9 @@
 "coordinate": {
 "x": 17,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298101",
@@ -8425,7 +8370,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298102",
@@ -8466,7 +8413,9 @@
 "coordinate": {
 "x": 28,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298104",
@@ -8507,7 +8456,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298106",
@@ -8543,7 +8494,9 @@
 "coordinate": {
 "x": 37,
 "y": 24
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298107",
@@ -8579,7 +8532,9 @@
 "coordinate": {
 "x": 37,
 "y": 24
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298108",
@@ -8615,7 +8570,9 @@
 "coordinate": {
 "x": 23,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298109",
@@ -8656,7 +8613,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298112",
@@ -8692,7 +8651,9 @@
 "coordinate": {
 "x": 29,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298113",
@@ -8728,7 +8689,9 @@
 "coordinate": {
 "x": 29,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298114",
@@ -8764,7 +8727,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298117",
@@ -8800,7 +8765,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298118",
@@ -8841,7 +8808,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298119",
@@ -8882,7 +8851,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298122",
@@ -8918,7 +8889,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298123",
@@ -8954,7 +8927,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298124",
@@ -8990,7 +8965,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298125",
@@ -9031,7 +9008,9 @@
 "coordinate": {
 "x": 24,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298127",
@@ -9067,7 +9046,9 @@
 "coordinate": {
 "x": 24,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298128",
@@ -9103,7 +9084,9 @@
 "coordinate": {
 "x": 28,
 "y": 27
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298129",
@@ -9132,7 +9115,9 @@
 "coordinate": {
 "x": 28,
 "y": 27
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298130",
@@ -9158,7 +9143,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of 1st"
 },
 {
 "id": "401736298131",
@@ -9199,7 +9186,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298132",
@@ -9240,7 +9229,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298133",
@@ -9281,7 +9272,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298138",
@@ -9317,7 +9310,9 @@
 "coordinate": {
 "x": 2,
 "y": 5
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298139",
@@ -9346,7 +9341,9 @@
 "coordinate": {
 "x": 2,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298141",
@@ -9387,7 +9384,9 @@
 "coordinate": {
 "x": 22,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298143",
@@ -9416,7 +9415,9 @@
 "coordinate": {
 "x": 22,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298145",
@@ -9457,7 +9458,9 @@
 "coordinate": {
 "x": 9,
 "y": 19
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298147",
@@ -9493,7 +9496,9 @@
 "coordinate": {
 "x": 13,
 "y": 22
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298148",
@@ -9529,7 +9534,9 @@
 "coordinate": {
 "x": 13,
 "y": 22
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298149",
@@ -9565,7 +9572,9 @@
 "coordinate": {
 "x": 33,
 "y": 24
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298150",
@@ -9601,7 +9610,9 @@
 "coordinate": {
 "x": 33,
 "y": 24
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298151",
@@ -9642,7 +9653,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298153",
@@ -9683,7 +9696,9 @@
 "coordinate": {
 "x": 20,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298155",
@@ -9719,7 +9734,9 @@
 "coordinate": {
 "x": 20,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298156",
@@ -9755,7 +9772,9 @@
 "coordinate": {
 "x": 23,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298157",
@@ -9796,7 +9815,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298159",
@@ -9837,7 +9858,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298161",
@@ -9873,7 +9896,9 @@
 "coordinate": {
 "x": 27,
 "y": 10
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298163",
@@ -9909,7 +9934,9 @@
 "coordinate": {
 "x": 22,
 "y": 11
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298164",
@@ -9938,7 +9965,9 @@
 "coordinate": {
 "x": 22,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298166",
@@ -9979,7 +10008,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298168",
@@ -10015,7 +10046,9 @@
 "coordinate": {
 "x": 26,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298169",
@@ -10051,7 +10084,9 @@
 "coordinate": {
 "x": 26,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298170",
@@ -10087,7 +10122,9 @@
 "coordinate": {
 "x": 10,
 "y": 20
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298171",
@@ -10123,7 +10160,9 @@
 "coordinate": {
 "x": 10,
 "y": 20
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298172",
@@ -10159,7 +10198,9 @@
 "coordinate": {
 "x": 26,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298173",
@@ -10195,7 +10236,9 @@
 "coordinate": {
 "x": 26,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298175",
@@ -10236,7 +10279,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298177",
@@ -10272,7 +10317,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298187",
@@ -10313,7 +10360,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298178",
@@ -10354,7 +10403,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298180",
@@ -10395,7 +10446,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298182",
@@ -10436,7 +10489,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298184",
@@ -10477,7 +10532,9 @@
 "coordinate": {
 "x": 26,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298186",
@@ -10506,7 +10563,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298189",
@@ -10547,7 +10606,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298190",
@@ -10588,7 +10649,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298193",
@@ -10624,7 +10687,9 @@
 "coordinate": {
 "x": 21,
 "y": 17
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298195",
@@ -10665,7 +10730,9 @@
 "coordinate": {
 "x": 21,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298197",
@@ -10701,7 +10768,9 @@
 "coordinate": {
 "x": 21,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298198",
@@ -10737,7 +10806,9 @@
 "coordinate": {
 "x": 32,
 "y": 13
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298199",
@@ -10766,7 +10837,9 @@
 "coordinate": {
 "x": 32,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298200",
@@ -10795,7 +10868,9 @@
 "coordinate": {
 "x": 15,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298201",
@@ -10836,7 +10911,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298203",
@@ -10872,7 +10949,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298204",
@@ -10913,7 +10992,9 @@
 "coordinate": {
 "x": 13,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298206",
@@ -10949,7 +11030,9 @@
 "coordinate": {
 "x": 23,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298207",
@@ -10985,7 +11068,9 @@
 "coordinate": {
 "x": 23,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298208",
@@ -11021,7 +11106,9 @@
 "coordinate": {
 "x": 23,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298209",
@@ -11057,7 +11144,9 @@
 "coordinate": {
 "x": 23,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298210",
@@ -11093,7 +11182,9 @@
 "coordinate": {
 "x": 25,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298212",
@@ -11134,7 +11225,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298213",
@@ -11175,7 +11268,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298216",
@@ -11211,7 +11306,9 @@
 "coordinate": {
 "x": 14,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298218",
@@ -11247,7 +11344,9 @@
 "coordinate": {
 "x": 14,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298219",
@@ -11288,7 +11387,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298221",
@@ -11324,7 +11425,9 @@
 "coordinate": {
 "x": 11,
 "y": 21
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298222",
@@ -11360,7 +11463,9 @@
 "coordinate": {
 "x": 11,
 "y": 21
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298223",
@@ -11396,7 +11501,9 @@
 "coordinate": {
 "x": 28,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298225",
@@ -11437,7 +11544,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298227",
@@ -11478,7 +11587,9 @@
 "coordinate": {
 "x": 2,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298229",
@@ -11514,7 +11625,9 @@
 "coordinate": {
 "x": 8,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298231",
@@ -11543,7 +11656,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298232",
@@ -11584,7 +11699,9 @@
 "coordinate": {
 "x": 25,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298235",
@@ -11620,7 +11737,9 @@
 "coordinate": {
 "x": 32,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298237",
@@ -11646,7 +11765,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Challenge"
 },
 {
 "id": "401736298238",
@@ -11682,7 +11803,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "Missed FT"
 },
 {
 "id": "401736298239",
@@ -11711,7 +11834,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298240",
@@ -11747,7 +11872,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298241",
@@ -11788,7 +11915,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298243",
@@ -11824,7 +11953,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298244",
@@ -11860,7 +11991,9 @@
 "coordinate": {
 "x": 26,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298245",
@@ -11896,7 +12029,9 @@
 "coordinate": {
 "x": 26,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298246",
@@ -11937,7 +12072,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298248",
@@ -11973,7 +12110,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298249",
@@ -12009,7 +12148,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298250",
@@ -12038,7 +12179,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298252",
@@ -12074,7 +12217,9 @@
 "coordinate": {
 "x": 23,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298253",
@@ -12110,7 +12255,9 @@
 "coordinate": {
 "x": 23,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298254",
@@ -12151,7 +12298,9 @@
 "coordinate": {
 "x": 21,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298257",
@@ -12187,7 +12336,9 @@
 "coordinate": {
 "x": 28,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298259",
@@ -12223,7 +12374,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298260",
@@ -12264,7 +12417,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298262",
@@ -12300,7 +12455,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298264",
@@ -12329,7 +12486,9 @@
 "coordinate": {
 "x": 33,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298265",
@@ -12365,7 +12524,9 @@
 "coordinate": {
 "x": 9,
 "y": 20
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298266",
@@ -12401,7 +12562,9 @@
 "coordinate": {
 "x": 9,
 "y": 20
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298267",
@@ -12437,7 +12600,9 @@
 "coordinate": {
 "x": 23,
 "y": 27
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298268",
@@ -12473,7 +12638,9 @@
 "coordinate": {
 "x": 23,
 "y": 27
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298269",
@@ -12509,7 +12676,9 @@
 "coordinate": {
 "x": 5,
 "y": 15
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298270",
@@ -12538,7 +12707,9 @@
 "coordinate": {
 "x": 5,
 "y": 15
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298271",
@@ -12564,7 +12735,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Halftime"
 },
 {
 "id": "401736298272",
@@ -12605,7 +12778,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298273",
@@ -12646,7 +12821,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298278",
@@ -12682,7 +12859,9 @@
 "coordinate": {
 "x": 29,
 "y": 13
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298279",
@@ -12718,7 +12897,9 @@
 "coordinate": {
 "x": 29,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298280",
@@ -12754,7 +12935,9 @@
 "coordinate": {
 "x": 23,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298282",
@@ -12783,7 +12966,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298283",
@@ -12824,7 +13009,9 @@
 "coordinate": {
 "x": 26,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298285",
@@ -12860,7 +13047,9 @@
 "coordinate": {
 "x": 36,
 "y": 13
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298286",
@@ -12896,7 +13085,9 @@
 "coordinate": {
 "x": 36,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298287",
@@ -12932,7 +13123,9 @@
 "coordinate": {
 "x": 25,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298289",
@@ -12968,7 +13161,9 @@
 "coordinate": {
 "x": 15,
 "y": 17
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298290",
@@ -13004,7 +13199,9 @@
 "coordinate": {
 "x": 36,
 "y": 15
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298292",
@@ -13045,7 +13242,9 @@
 "coordinate": {
 "x": 38,
 "y": 22
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298294",
@@ -13081,7 +13280,9 @@
 "coordinate": {
 "x": 27,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298295",
@@ -13122,7 +13323,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298297",
@@ -13158,7 +13361,9 @@
 "coordinate": {
 "x": 41,
 "y": 19
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298298",
@@ -13194,7 +13399,9 @@
 "coordinate": {
 "x": 41,
 "y": 19
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298299",
@@ -13230,7 +13437,9 @@
 "coordinate": {
 "x": 28,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298300",
@@ -13266,7 +13475,9 @@
 "coordinate": {
 "x": 28,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298301",
@@ -13302,7 +13513,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298302",
@@ -13338,7 +13551,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298303",
@@ -13374,7 +13589,9 @@
 "coordinate": {
 "x": 2,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298304",
@@ -13410,7 +13627,9 @@
 "coordinate": {
 "x": 26,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298306",
@@ -13446,7 +13665,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "Missed FT"
 },
 {
 "id": "401736298307",
@@ -13475,7 +13696,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298308",
@@ -13511,7 +13734,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298309",
@@ -13552,7 +13777,9 @@
 "coordinate": {
 "x": 23,
 "y": 19
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298311",
@@ -13588,7 +13815,9 @@
 "coordinate": {
 "x": 26,
 "y": 12
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298312",
@@ -13624,7 +13853,9 @@
 "coordinate": {
 "x": 26,
 "y": 12
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298313",
@@ -13665,7 +13896,9 @@
 "coordinate": {
 "x": 18,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298315",
@@ -13701,7 +13934,9 @@
 "coordinate": {
 "x": 27,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298317",
@@ -13737,7 +13972,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "Missed FT"
 },
 {
 "id": "401736298318",
@@ -13766,7 +14003,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298319",
@@ -13802,7 +14041,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298320",
@@ -13838,7 +14079,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298321",
@@ -13874,7 +14117,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298322",
@@ -13910,7 +14155,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298323",
@@ -13951,7 +14198,9 @@
 "coordinate": {
 "x": 24,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298325",
@@ -13992,7 +14241,9 @@
 "coordinate": {
 "x": 27,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298327",
@@ -14028,7 +14279,9 @@
 "coordinate": {
 "x": 26,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298328",
@@ -14064,7 +14317,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298329",
@@ -14100,7 +14355,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298330",
@@ -14141,7 +14398,9 @@
 "coordinate": {
 "x": 2,
 "y": 8
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298332",
@@ -14170,7 +14429,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298333",
@@ -14211,7 +14472,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298334",
@@ -14252,7 +14515,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298337",
@@ -14293,7 +14558,9 @@
 "coordinate": {
 "x": 30,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298339",
@@ -14329,7 +14596,9 @@
 "coordinate": {
 "x": 23,
 "y": 18
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298340",
@@ -14365,7 +14634,9 @@
 "coordinate": {
 "x": 23,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298341",
@@ -14401,7 +14672,9 @@
 "coordinate": {
 "x": 23,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298342",
@@ -14437,7 +14710,9 @@
 "coordinate": {
 "x": 34,
 "y": 30
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298344",
@@ -14478,7 +14753,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298346",
@@ -14519,7 +14796,9 @@
 "coordinate": {
 "x": 24,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298348",
@@ -14548,7 +14827,9 @@
 "coordinate": {
 "x": 24,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298350",
@@ -14584,7 +14865,9 @@
 "coordinate": {
 "x": 23,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298352",
@@ -14620,7 +14903,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "Missed FT"
 },
 {
 "id": "401736298353",
@@ -14649,7 +14934,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298354",
@@ -14685,7 +14972,9 @@
 "coordinate": {
 "x": 24,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298355",
@@ -14721,7 +15010,9 @@
 "coordinate": {
 "x": 24,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298357",
@@ -14757,7 +15048,9 @@
 "coordinate": {
 "x": 26,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298358",
@@ -14793,7 +15086,9 @@
 "coordinate": {
 "x": 24,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298359",
@@ -14829,7 +15124,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298360",
@@ -14865,7 +15162,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298361",
@@ -14894,7 +15193,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298362",
@@ -14930,7 +15231,9 @@
 "coordinate": {
 "x": 24,
 "y": 15
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298363",
@@ -14966,7 +15269,9 @@
 "coordinate": {
 "x": 4,
 "y": 12
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298364",
@@ -15002,7 +15307,9 @@
 "coordinate": {
 "x": 4,
 "y": 12
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298365",
@@ -15038,7 +15345,9 @@
 "coordinate": {
 "x": 22,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298367",
@@ -15074,7 +15383,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298368",
@@ -15115,7 +15426,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298369",
@@ -15156,7 +15469,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298372",
@@ -15192,7 +15507,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298373",
@@ -15228,7 +15545,9 @@
 "coordinate": {
 "x": 14,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298374",
@@ -15264,7 +15583,9 @@
 "coordinate": {
 "x": 24,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298376",
@@ -15300,7 +15621,9 @@
 "coordinate": {
 "x": 24,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298377",
@@ -15336,7 +15659,9 @@
 "coordinate": {
 "x": 28,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298378",
@@ -15372,7 +15697,9 @@
 "coordinate": {
 "x": 28,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298379",
@@ -15408,7 +15735,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298396",
@@ -15449,7 +15778,9 @@
 "coordinate": {
 "x": 33,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298384",
@@ -15478,7 +15809,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Challenge"
 },
 {
 "id": "401736298385",
@@ -15507,7 +15840,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Challenge"
 },
 {
 "id": "401736298398",
@@ -15536,7 +15871,9 @@
 "coordinate": {
 "x": 33,
 "y": 1
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298386",
@@ -15577,7 +15914,9 @@
 "coordinate": {
 "x": 26,
 "y": 9
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298387",
@@ -15613,7 +15952,9 @@
 "coordinate": {
 "x": 27,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298388",
@@ -15642,7 +15983,9 @@
 "coordinate": {
 "x": 27,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298393",
@@ -15678,7 +16021,9 @@
 "coordinate": {
 "x": 33,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298394",
@@ -15714,7 +16059,9 @@
 "coordinate": {
 "x": 33,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298395",
@@ -15743,7 +16090,9 @@
 "coordinate": {
 "x": 28,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298399",
@@ -15769,7 +16118,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of 3rd"
 },
 {
 "id": "401736298401",
@@ -15810,7 +16161,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298402",
@@ -15851,7 +16204,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298403",
@@ -15892,7 +16247,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298404",
@@ -15933,7 +16290,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298410",
@@ -15969,7 +16328,9 @@
 "coordinate": {
 "x": 31,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298411",
@@ -16005,7 +16366,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298412",
@@ -16041,7 +16404,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298414",
@@ -16077,7 +16442,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298415",
@@ -16113,7 +16480,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298416",
@@ -16149,7 +16518,9 @@
 "coordinate": {
 "x": 13,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298417",
@@ -16185,7 +16556,9 @@
 "coordinate": {
 "x": 13,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298418",
@@ -16221,7 +16594,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298419",
@@ -16257,7 +16632,9 @@
 "coordinate": {
 "x": 19,
 "y": 11
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298420",
@@ -16293,7 +16670,9 @@
 "coordinate": {
 "x": 19,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298421",
@@ -16329,7 +16708,9 @@
 "coordinate": {
 "x": 43,
 "y": 21
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298422",
@@ -16365,7 +16746,9 @@
 "coordinate": {
 "x": 43,
 "y": 21
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298423",
@@ -16401,7 +16784,9 @@
 "coordinate": {
 "x": 35,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298424",
@@ -16437,7 +16822,9 @@
 "coordinate": {
 "x": 24,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298425",
@@ -16473,7 +16860,9 @@
 "coordinate": {
 "x": 24,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298426",
@@ -16509,7 +16898,9 @@
 "coordinate": {
 "x": 27,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298428",
@@ -16545,7 +16936,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298429",
@@ -16586,7 +16979,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298430",
@@ -16627,7 +17022,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298431",
@@ -16668,7 +17065,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298432",
@@ -16709,7 +17108,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298433",
@@ -16750,7 +17151,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298439",
@@ -16786,7 +17189,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298440",
@@ -16827,7 +17232,9 @@
 "coordinate": {
 "x": 23,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298443",
@@ -16863,7 +17270,9 @@
 "coordinate": {
 "x": 24,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298444",
@@ -16899,7 +17308,9 @@
 "coordinate": {
 "x": 24,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298445",
@@ -16935,7 +17346,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298446",
@@ -16976,7 +17389,9 @@
 "coordinate": {
 "x": 38,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298448",
@@ -17017,7 +17432,9 @@
 "coordinate": {
 "x": 36,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298450",
@@ -17046,7 +17463,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298451",
@@ -17087,7 +17506,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298452",
@@ -17128,7 +17549,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298455",
@@ -17164,7 +17587,9 @@
 "coordinate": {
 "x": 45,
 "y": 15
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298456",
@@ -17200,7 +17625,9 @@
 "coordinate": {
 "x": 45,
 "y": 15
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298457",
@@ -17236,7 +17663,9 @@
 "coordinate": {
 "x": 14,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298458",
@@ -17272,7 +17701,9 @@
 "coordinate": {
 "x": 14,
 "y": 23
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298459",
@@ -17308,7 +17739,9 @@
 "coordinate": {
 "x": 21,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298460",
@@ -17349,7 +17782,9 @@
 "coordinate": {
 "x": 47,
 "y": 14
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298462",
@@ -17390,7 +17825,9 @@
 "coordinate": {
 "x": 31,
 "y": 18
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298464",
@@ -17426,7 +17863,9 @@
 "coordinate": {
 "x": 27,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298466",
@@ -17455,7 +17894,9 @@
 "coordinate": {
 "x": 19,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298467",
@@ -17496,7 +17937,9 @@
 "coordinate": {
 "x": 2,
 "y": 3
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298469",
@@ -17532,7 +17975,9 @@
 "coordinate": {
 "x": 8,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298471",
@@ -17568,7 +18013,9 @@
 "coordinate": {
 "x": 30,
 "y": 23
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298472",
@@ -17609,7 +18056,9 @@
 "coordinate": {
 "x": 32,
 "y": 27
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298474",
@@ -17645,7 +18094,9 @@
 "coordinate": {
 "x": 36,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298476",
@@ -17681,7 +18132,9 @@
 "coordinate": {
 "x": 36,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298477",
@@ -17722,7 +18175,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298478",
@@ -17763,7 +18218,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298481",
@@ -17799,7 +18256,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298482",
@@ -17835,7 +18294,9 @@
 "coordinate": {
 "x": 25,
 "y": 27
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298484",
@@ -17871,7 +18332,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298485",
@@ -17907,7 +18370,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298486",
@@ -17943,7 +18408,9 @@
 "coordinate": {
 "x": 13,
 "y": 19
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298488",
@@ -17984,7 +18451,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298490",
@@ -18025,7 +18494,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401736298492",
@@ -18061,7 +18532,9 @@
 "coordinate": {
 "x": 47,
 "y": 14
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298493",
@@ -18090,7 +18563,9 @@
 "coordinate": {
 "x": 47,
 "y": 14
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298495",
@@ -18116,7 +18591,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298496",
@@ -18152,7 +18629,9 @@
 "coordinate": {
 "x": 27,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298497",
@@ -18188,7 +18667,9 @@
 "coordinate": {
 "x": 27,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298498",
@@ -18229,7 +18710,9 @@
 "coordinate": {
 "x": 5,
 "y": 15
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298500",
@@ -18265,7 +18748,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "Missed FG"
 },
 {
 "id": "401736298501",
@@ -18301,7 +18786,9 @@
 "coordinate": {
 "x": 29,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298502",
@@ -18342,7 +18829,9 @@
 "coordinate": {
 "x": 35,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298504",
@@ -18378,7 +18867,9 @@
 "coordinate": {
 "x": 9,
 "y": 21
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298505",
@@ -18414,7 +18905,9 @@
 "coordinate": {
 "x": 9,
 "y": 21
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298506",
@@ -18450,7 +18943,9 @@
 "coordinate": {
 "x": 23,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298507",
@@ -18486,7 +18981,9 @@
 "coordinate": {
 "x": 23,
 "y": 25
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298508",
@@ -18527,7 +19024,9 @@
 "coordinate": {
 "x": 48,
 "y": 2
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401736298510",
@@ -18563,7 +19062,9 @@
 "coordinate": {
 "x": 30,
 "y": 22
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298512",
@@ -18592,7 +19093,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401736298513",
@@ -18633,7 +19136,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298515",
@@ -18669,7 +19174,9 @@
 "coordinate": {
 "x": 25,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298517",
@@ -18705,7 +19212,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298518",
@@ -18746,7 +19255,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298520",
@@ -18782,7 +19293,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298521",
@@ -18823,7 +19336,9 @@
 "coordinate": {
 "x": 23,
 "y": 29
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401736298523",
@@ -18859,7 +19374,9 @@
 "coordinate": {
 "x": 31,
 "y": 26
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "Missed 3PT"
 },
 {
 "id": "401736298524",
@@ -18895,7 +19412,9 @@
 "coordinate": {
 "x": 31,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401736298525",
@@ -18931,7 +19450,9 @@
 "coordinate": {
 "x": 21,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401736298527",
@@ -18967,7 +19488,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298528",
@@ -19008,7 +19531,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298529",
@@ -19049,7 +19574,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298530",
@@ -19090,7 +19617,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401736298534",
@@ -19126,7 +19655,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401736298535",
@@ -19152,7 +19683,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of 4th"
 },
 {
 "id": "401736298536",
@@ -19178,7 +19711,9 @@
 "coordinate": {
 "x": -214748340,
 "y": -214748365
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of Game"
 }
 ],
 "article": {
@@ -19208,461 +19743,7 @@
 "url": "https://a.espncdn.com/media/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.jpg"
 }
 ],
-"video": [
-{
-"id": 45911483,
-"dataSourceIdentifier": "35e890f2673de",
-"cerebroId": "6892d4021b3ab26bee04d4c4",
-"pccId": "1ce2c3f0-0951-457f-9f62-27e2615b7b7d",
-"source": "espn",
-"headline": "What a shot by Aari McDonald",
-"caption": "Aari McDonald nails it from behind the arc, 08/05/2025",
-"title": "What a shot by Aari McDonald",
-"description": "Aari McDonald nails it from behind the arc, 08/05/2025",
-"lastModified": "2025-08-08T04:09:53Z",
-"originalPublishDate": "2025-08-06T04:03:09Z",
-"premium": false,
-"syndicatable": true,
-"duration": 11,
-"videoRatio": "16:9,9:16",
-"timeRestrictions": {
-"embargoDate": "2025-08-06T04:03:09Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"SR",
-"MH",
-"CD",
-"SZ",
-"SS",
-"SN",
-"ZA",
-"ZM",
-"AU",
-"PE",
-"CV",
-"RW",
-"BB",
-"BI",
-"CL",
-"GA",
-"NG",
-"BQ",
-"TZ",
-"AS",
-"NE",
-"GW",
-"SL",
-"BO",
-"GU",
-"TG",
-"GP",
-"SV",
-"NI",
-"US",
-"MP",
-"PR",
-"VI",
-"UM",
-"TT",
-"PY",
-"MX",
-"GF",
-"GN",
-"CM",
-"MQ",
-"GM",
-"AI",
-"PW",
-"MG",
-"KY",
-"UY",
-"GD",
-"ML",
-"TC",
-"GY",
-"MU",
-"DO",
-"NZ",
-"CO",
-"MW",
-"RE",
-"GH",
-"LS",
-"PA",
-"AW",
-"GQ",
-"BJ",
-"ER",
-"CG",
-"KE",
-"BW",
-"AO",
-"BS",
-"VE",
-"EC",
-"AR",
-"CI",
-"HT",
-"NA",
-"KM",
-"UG",
-"CU",
-"MZ",
-"LC",
-"BM",
-"VG",
-"AG",
-"LR",
-"VC",
-"FJ",
-"MS",
-"BF",
-"CR",
-"BR",
-"JM",
-"BZ",
-"GB",
-"UK",
-"GT",
-"HN",
-"ST",
-"SC",
-"ZW",
-"AM",
-"FM",
-"SX",
-"CF",
-"ET",
-"KN",
-"MF"
-]
-},
-"gameId": 401736298,
-"plays": [
-{
-"id": 401736298498
-}
-],
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.jpg",
-"images": [
-{
-"name": "Poster Image",
-"caption": "",
-"alt": "",
-"credit": "",
-"height": 324,
-"width": 576,
-"url": "https://media.video-cdn.espn.com/images/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.jpg"
-}
-],
-"posterImages": {
-"default": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_default.jpg",
-"width": 576,
-"height": 324
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.jpg"
-},
-"wide": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_5x2.jpg"
-},
-"square": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_1x1.jpg"
-},
-"vertical": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_9x16.jpg"
-},
-"verticalFirstFrame": {
-"href": "https://service-pkgespn.akamaized.net/opp/img/espn/9x16/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/thumb-1-w406-h720-f4.jpg"
-}
-},
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911483",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911483",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=35e890f2673de"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911483"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1ce2c3f0-0951-457f-9f62-27e2615b7b7d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911483",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911483"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1ce2c3f0-0951-457f-9f62-27e2615b7b7d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911483"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1ce2c3f0-0951-457f-9f62-27e2615b7b7d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911483"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911483"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/1ce2c3f0-0951-457f-9f62-27e2615b7b7d"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/1ce2c3f0-0951-457f-9f62-27e2615b7b7d/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/a2e4c232-48ea-42a2-9891-42d4b89fa94b/a2e4c232-48ea-42a2-9891-42d4b89fa94b_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911483&videoDSI=35e890f2673de"
-}
-},
-"categories": [
-{
-"id": 5846,
-"type": "team",
-"uid": "s:40~l:59~t:6",
-"guid": "fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737",
-"description": "Los Angeles Sparks",
-"sportId": 59,
-"teamId": 6,
-"team": {
-"id": 6,
-"description": "Los Angeles Sparks",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
-}
-}
-}
-}
-},
-{
-"id": 5840,
-"type": "team",
-"uid": "s:40~l:59~t:5",
-"guid": "bfef1bdd-c2d1-310d-dd9f-645b90575da9",
-"description": "Indiana Fever",
-"sportId": 59,
-"teamId": 5,
-"team": {
-"id": 5,
-"description": "Indiana Fever",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever"
-}
-}
-}
-}
-},
-{
-"type": "event",
-"uid": "s:40~l:59~e:401736298",
-"guid": "d35dabc4-8e24-3634-8f9d-b572e6e0510d",
-"description": "Indiana Fever @ Los Angeles Sparks",
-"eventId": 401736298,
-"event": {
-"id": 401736298,
-"sport": "basketball",
-"league": "wnba",
-"description": "Indiana Fever @ Los Angeles Sparks",
-"links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401736298"
-}
-},
-"mobile": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401736298"
-}
-}
-}
-}
-},
-{
-"id": 469330,
-"type": "athlete",
-"uid": "s:40~l:59~a:4066553",
-"guid": "a50ad2c4-d114-e54b-0cb0-3936da6c79e1",
-"description": "Aari McDonald",
-"sportId": 59,
-"athleteId": 4066553,
-"athlete": {
-"id": 4066553,
-"description": "Aari McDonald",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/wnba/player/_/id/4066553/aari-mcdonald"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/wnba/player/_/id/4066553/aari-mcdonald"
-}
-}
-}
-}
-},
-{
-"id": 116550,
-"type": "topic",
-"guid": "fe879255-6324-4784-385f-a1a18c22b5cc",
-"description": "espnw",
-"sportId": 0,
-"topicId": 5
-},
-{
-"id": 711827,
-"type": "editorialindicator",
-"guid": "26380a67-7938-32a0-9c82-33abab9f7ad4",
-"description": "3 Star Rating"
-},
-{
-"id": 518087,
-"type": "topic",
-"guid": "6630c533-d8f8-4b4f-8228-138d2ff23ef5",
-"description": "fantasy wnba",
-"sportId": 0,
-"topicId": 862
-},
-{
-"id": 9579,
-"type": "league",
-"uid": "s:40~l:59",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68",
-"description": "WNBA",
-"sportId": 59,
-"leagueId": 59,
-"league": {
-"id": 59,
-"description": "WNBA",
-"abbreviation": "WNBA",
-"links": {
-"web": {
-"leagues": {
-"href": "https://www.espn.com/wnba/"
-}
-},
-"mobile": {
-"leagues": {
-"href": "https://www.espn.com/wnba/"
-}
-}
-}
-}
-},
-{
-"type": "guid",
-"guid": "fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737"
-},
-{
-"type": "guid",
-"guid": "bfef1bdd-c2d1-310d-dd9f-645b90575da9"
-},
-{
-"type": "guid",
-"guid": "d35dabc4-8e24-3634-8f9d-b572e6e0510d"
-},
-{
-"type": "guid",
-"guid": "a50ad2c4-d114-e54b-0cb0-3936da6c79e1"
-},
-{
-"type": "guid",
-"guid": "fe879255-6324-4784-385f-a1a18c22b5cc"
-},
-{
-"type": "guid",
-"guid": "26380a67-7938-32a0-9c82-33abab9f7ad4"
-},
-{
-"type": "guid",
-"guid": "6630c533-d8f8-4b4f-8228-138d2ff23ef5"
-},
-{
-"type": "guid",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68"
-}
-],
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (What a shot by Aari McDonald) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_what_a_shot_by_aari_mcdonald"
-},
-"contributingPartner": "wsc",
-"contributingSystem": "wsc"
-}
-],
+"video": [],
 "categories": [
 {
 "id": 5840,
@@ -19815,2013 +19896,6 @@
 },
 "videos": [
 {
-"id": 45911515,
-"cerebroId": "6892d6e71fdd1f6f84acb468",
-"source": "espn",
-"headline": "Kelsey Plum leads Sparks past the Fever",
-"description": "Kelsey Plum notches a 25-point, 11-assist double-double in the Sparks' win over the Fever.",
-"lastModified": "2025-08-06T04:20:42Z",
-"originalPublishDate": "2025-08-06T04:15:28Z",
-"duration": 74,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T04:15:28Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"PY",
-"UM",
-"KE",
-"CL",
-"GT",
-"GF",
-"KM",
-"AS",
-"AR",
-"TC",
-"NZ",
-"GB",
-"UK",
-"LS",
-"MP",
-"LC",
-"UG",
-"AO",
-"MH",
-"ET",
-"MF",
-"BW",
-"SS",
-"AW",
-"TG",
-"VE",
-"SC",
-"BQ",
-"MG",
-"HN",
-"PR",
-"NI",
-"MS",
-"MU",
-"BZ",
-"NE",
-"CI",
-"GH",
-"PE",
-"BF",
-"CD",
-"RE",
-"RW",
-"KN",
-"BR",
-"ER",
-"CV",
-"TT",
-"KY",
-"VC",
-"UY",
-"GY",
-"SZ",
-"BJ",
-"GN",
-"SV",
-"BM",
-"PW",
-"ML",
-"GA",
-"AI",
-"MZ",
-"GP",
-"GU",
-"AM",
-"MX",
-"GM",
-"CG",
-"LR",
-"ZA",
-"AG",
-"SX",
-"ZM",
-"PA",
-"GQ",
-"BS",
-"BI",
-"MQ",
-"TZ",
-"MW",
-"US",
-"VI",
-"BO",
-"FM",
-"DO",
-"VG",
-"CM",
-"ZW",
-"CR",
-"CF",
-"HT",
-"CU",
-"EC",
-"SR",
-"JM",
-"FJ",
-"ST",
-"NA",
-"CO",
-"SN",
-"AU",
-"SL",
-"GD",
-"GW",
-"NG",
-"BB"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911515",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911515",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=fef4b1d082a8c"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911515"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/608ac78a-dfe4-4096-89e1-2fc4315a1545/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911515",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911515"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/608ac78a-dfe4-4096-89e1-2fc4315a1545/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911515"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/608ac78a-dfe4-4096-89e1-2fc4315a1545/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911515"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911515"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/608ac78a-dfe4-4096-89e1-2fc4315a1545"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/608ac78a-dfe4-4096-89e1-2fc4315a1545/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/58080d51-09c6-4360-93bd-72ff59cb61aa/58080d51-09c6-4360-93bd-72ff59cb61aa_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911515&videoDSI=fef4b1d082a8c"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "Final Game Highlight",
-"trackingName": "WNBA_One-Play (Kelsey Plum leads Sparks past the Fever) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_los_angeles_sparks_vs_indiana_fever_game_highlights"
-}
-},
-{
-"id": 45911147,
-"cerebroId": "6892be281fdd1f6f84aca03d",
-"source": "espn",
-"headline": "Cameron Brink sends the shot away",
-"description": "Cameron Brink sends the shot away, 08/05/2025",
-"lastModified": "2025-08-06T02:34:36Z",
-"originalPublishDate": "2025-08-06T02:29:55Z",
-"duration": 17,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T02:29:55Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"PY",
-"UM",
-"KE",
-"CL",
-"GT",
-"GF",
-"KM",
-"AS",
-"AR",
-"TC",
-"NZ",
-"GB",
-"UK",
-"LS",
-"MP",
-"LC",
-"UG",
-"AO",
-"MH",
-"ET",
-"MF",
-"BW",
-"SS",
-"AW",
-"TG",
-"VE",
-"SC",
-"BQ",
-"MG",
-"HN",
-"PR",
-"NI",
-"MS",
-"MU",
-"BZ",
-"NE",
-"CI",
-"GH",
-"PE",
-"BF",
-"CD",
-"RE",
-"RW",
-"KN",
-"BR",
-"ER",
-"CV",
-"TT",
-"KY",
-"VC",
-"UY",
-"GY",
-"SZ",
-"BJ",
-"GN",
-"SV",
-"BM",
-"PW",
-"ML",
-"GA",
-"AI",
-"MZ",
-"GP",
-"GU",
-"AM",
-"MX",
-"GM",
-"CG",
-"LR",
-"ZA",
-"AG",
-"SX",
-"ZM",
-"PA",
-"GQ",
-"BS",
-"BI",
-"MQ",
-"TZ",
-"MW",
-"US",
-"VI",
-"BO",
-"FM",
-"DO",
-"VG",
-"CM",
-"ZW",
-"CR",
-"CF",
-"HT",
-"CU",
-"EC",
-"SR",
-"JM",
-"FJ",
-"ST",
-"NA",
-"CO",
-"SN",
-"AU",
-"SL",
-"GD",
-"GW",
-"NG",
-"BB"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911147",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911147",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=6738610e39ead"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911147"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b8d1db09-5430-4a28-a578-dfc13db060e3/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911147",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911147"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b8d1db09-5430-4a28-a578-dfc13db060e3/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911147"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b8d1db09-5430-4a28-a578-dfc13db060e3/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911147"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911147"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/b8d1db09-5430-4a28-a578-dfc13db060e3"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/b8d1db09-5430-4a28-a578-dfc13db060e3/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/168f7e26-82a8-44c3-8cc5-1a0f516b39c6/168f7e26-82a8-44c3-8cc5-1a0f516b39c6_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911147&videoDSI=6738610e39ead"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Cameron Brink sends the shot away) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_cameron_brink_sends_the_shot_away"
-}
-},
-{
-"id": 45911184,
-"cerebroId": "6892c10247d5b94de5bab15a",
-"source": "espn",
-"headline": "What a shot by Kelsey Plum",
-"description": "Kelsey Plum nails it from behind the arc, 08/05/2025",
-"lastModified": "2025-08-06T02:50:01Z",
-"originalPublishDate": "2025-08-06T02:42:03Z",
-"duration": 14,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T02:42:03Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"GB",
-"UK",
-"ST",
-"MS",
-"AO",
-"GA",
-"KM",
-"CO",
-"KE",
-"BI",
-"CR",
-"FJ",
-"GW",
-"AI",
-"MQ",
-"HN",
-"PE",
-"SS",
-"SV",
-"FM",
-"TT",
-"ZW",
-"GH",
-"CU",
-"GD",
-"CM",
-"MU",
-"GM",
-"PR",
-"AU",
-"BZ",
-"RW",
-"UM",
-"KN",
-"AR",
-"BM",
-"GN",
-"ET",
-"MF",
-"SN",
-"MX",
-"MW",
-"CV",
-"CD",
-"ER",
-"SC",
-"PW",
-"VC",
-"SX",
-"HT",
-"NG",
-"AG",
-"JM",
-"BW",
-"VG",
-"CL",
-"ML",
-"GQ",
-"AS",
-"UG",
-"MP",
-"US",
-"GU",
-"VI",
-"GY",
-"BS",
-"LS",
-"MZ",
-"SZ",
-"NZ",
-"BB",
-"DO",
-"TZ",
-"BQ",
-"MG",
-"NE",
-"ZA",
-"AW",
-"CG",
-"LR",
-"GP",
-"MH",
-"SR",
-"ZM",
-"BF",
-"BJ",
-"KY",
-"PA",
-"CI",
-"SL",
-"VE",
-"PY",
-"TC",
-"LC",
-"BR",
-"NA",
-"EC",
-"GT",
-"GF",
-"AM",
-"CF",
-"NI",
-"BO",
-"UY",
-"RE",
-"TG"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911184",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911184",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=439a2a4875a65"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911184"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/065c5fa8-f983-4dfc-ad52-2e7d4b8861b5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911184",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911184"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/065c5fa8-f983-4dfc-ad52-2e7d4b8861b5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911184"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/065c5fa8-f983-4dfc-ad52-2e7d4b8861b5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911184"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911184"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/065c5fa8-f983-4dfc-ad52-2e7d4b8861b5"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/065c5fa8-f983-4dfc-ad52-2e7d4b8861b5/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/56a8abd4-5dac-4df8-8bc0-9b3787687b3a/56a8abd4-5dac-4df8-8bc0-9b3787687b3a_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911184&videoDSI=439a2a4875a65"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (What a shot by Kelsey Plum) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_what_a_shot_by_kelsey_plum"
-}
-},
-{
-"id": 45911307,
-"cerebroId": "6892c9d91fdd1f6f84acb19b",
-"source": "espn",
-"headline": "Azura Stevens drills the trey",
-"description": "Azura Stevens drills the trey, 08/05/2025",
-"lastModified": "2025-08-06T03:29:48Z",
-"originalPublishDate": "2025-08-06T03:19:46Z",
-"duration": 16,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T03:19:46Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"PY",
-"UM",
-"KE",
-"CL",
-"GT",
-"GF",
-"KM",
-"AS",
-"AR",
-"TC",
-"NZ",
-"GB",
-"UK",
-"LS",
-"MP",
-"LC",
-"UG",
-"AO",
-"MH",
-"ET",
-"MF",
-"BW",
-"SS",
-"AW",
-"TG",
-"VE",
-"SC",
-"BQ",
-"MG",
-"HN",
-"PR",
-"NI",
-"MS",
-"MU",
-"BZ",
-"NE",
-"CI",
-"GH",
-"PE",
-"BF",
-"CD",
-"RE",
-"RW",
-"KN",
-"BR",
-"ER",
-"CV",
-"TT",
-"KY",
-"VC",
-"UY",
-"GY",
-"SZ",
-"BJ",
-"GN",
-"SV",
-"BM",
-"PW",
-"ML",
-"GA",
-"AI",
-"MZ",
-"GP",
-"GU",
-"AM",
-"MX",
-"GM",
-"CG",
-"LR",
-"ZA",
-"AG",
-"SX",
-"ZM",
-"PA",
-"GQ",
-"BS",
-"BI",
-"MQ",
-"TZ",
-"MW",
-"US",
-"VI",
-"BO",
-"FM",
-"DO",
-"VG",
-"CM",
-"ZW",
-"CR",
-"CF",
-"HT",
-"CU",
-"EC",
-"SR",
-"JM",
-"FJ",
-"ST",
-"NA",
-"CO",
-"SN",
-"AU",
-"SL",
-"GD",
-"GW",
-"NG",
-"BB"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911307",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911307",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=9d7e3c4db1f4b"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911307"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cacdba19-678d-46b8-81a9-64275fe9b584/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911307",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911307"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cacdba19-678d-46b8-81a9-64275fe9b584/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911307"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cacdba19-678d-46b8-81a9-64275fe9b584/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911307"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911307"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/cacdba19-678d-46b8-81a9-64275fe9b584"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/cacdba19-678d-46b8-81a9-64275fe9b584/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/6d51822b-a70b-4f69-8b86-b5091d6e25c7/6d51822b-a70b-4f69-8b86-b5091d6e25c7_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911307&videoDSI=9d7e3c4db1f4b"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Azura Stevens drills the trey) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_azura_stevens_drills_the_trey"
-}
-},
-{
-"id": 45911314,
-"cerebroId": "6892ca661b3ab26bee04d379",
-"source": "espn",
-"headline": "Kelsey Mitchell sinks it from downtown",
-"description": "Kelsey Mitchell sinks it from downtown, 08/05/2025",
-"lastModified": "2025-08-06T03:28:44Z",
-"originalPublishDate": "2025-08-06T03:22:08Z",
-"duration": 22,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T03:22:08Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"SR",
-"MH",
-"CD",
-"SZ",
-"SS",
-"SN",
-"ZA",
-"ZM",
-"AU",
-"PE",
-"CV",
-"RW",
-"BB",
-"BI",
-"CL",
-"GA",
-"NG",
-"BQ",
-"TZ",
-"AS",
-"NE",
-"GW",
-"SL",
-"BO",
-"GU",
-"TG",
-"GP",
-"SV",
-"NI",
-"US",
-"MP",
-"PR",
-"VI",
-"UM",
-"TT",
-"PY",
-"MX",
-"GF",
-"GN",
-"CM",
-"MQ",
-"GM",
-"AI",
-"PW",
-"MG",
-"KY",
-"UY",
-"GD",
-"ML",
-"TC",
-"GY",
-"MU",
-"DO",
-"NZ",
-"CO",
-"MW",
-"RE",
-"GH",
-"LS",
-"PA",
-"AW",
-"GQ",
-"BJ",
-"ER",
-"CG",
-"KE",
-"BW",
-"AO",
-"BS",
-"VE",
-"EC",
-"AR",
-"CI",
-"HT",
-"NA",
-"KM",
-"UG",
-"CU",
-"MZ",
-"LC",
-"BM",
-"VG",
-"AG",
-"LR",
-"VC",
-"FJ",
-"MS",
-"BF",
-"CR",
-"BR",
-"JM",
-"BZ",
-"GB",
-"UK",
-"GT",
-"HN",
-"ST",
-"SC",
-"ZW",
-"AM",
-"FM",
-"SX",
-"CF",
-"ET",
-"KN",
-"MF"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911314",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911314",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=11cf941161248"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911314"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/47e6d3ce-2eed-4a9b-ae66-6c48a8177df5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911314",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911314"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/47e6d3ce-2eed-4a9b-ae66-6c48a8177df5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911314"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/47e6d3ce-2eed-4a9b-ae66-6c48a8177df5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911314"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911314"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/47e6d3ce-2eed-4a9b-ae66-6c48a8177df5"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/47e6d3ce-2eed-4a9b-ae66-6c48a8177df5/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0/528b1797-e96c-4a1c-bbf1-c4a6b672b8a0_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911314&videoDSI=11cf941161248"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Kelsey Mitchell sinks it from downtown) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_kelsey_mitchell_sinks_it_from_downtown"
-}
-},
-{
-"id": 45911341,
-"cerebroId": "6892cb1c1b3ab26bee04d39c",
-"source": "espn",
-"headline": "Natasha Howard rises to block the shot",
-"description": "Natasha Howard rises to block the shot, 08/05/2025",
-"lastModified": "2025-08-06T03:27:47Z",
-"originalPublishDate": "2025-08-06T03:25:08Z",
-"duration": 21,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T03:25:08Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"SR",
-"MH",
-"CD",
-"SZ",
-"SS",
-"SN",
-"ZA",
-"ZM",
-"AU",
-"PE",
-"CV",
-"RW",
-"BB",
-"BI",
-"CL",
-"GA",
-"NG",
-"BQ",
-"TZ",
-"AS",
-"NE",
-"GW",
-"SL",
-"BO",
-"GU",
-"TG",
-"GP",
-"SV",
-"NI",
-"US",
-"MP",
-"PR",
-"VI",
-"UM",
-"TT",
-"PY",
-"MX",
-"GF",
-"GN",
-"CM",
-"MQ",
-"GM",
-"AI",
-"PW",
-"MG",
-"KY",
-"UY",
-"GD",
-"ML",
-"TC",
-"GY",
-"MU",
-"DO",
-"NZ",
-"CO",
-"MW",
-"RE",
-"GH",
-"LS",
-"PA",
-"AW",
-"GQ",
-"BJ",
-"ER",
-"CG",
-"KE",
-"BW",
-"AO",
-"BS",
-"VE",
-"EC",
-"AR",
-"CI",
-"HT",
-"NA",
-"KM",
-"UG",
-"CU",
-"MZ",
-"LC",
-"BM",
-"VG",
-"AG",
-"LR",
-"VC",
-"FJ",
-"MS",
-"BF",
-"CR",
-"BR",
-"JM",
-"BZ",
-"GB",
-"UK",
-"GT",
-"HN",
-"ST",
-"SC",
-"ZW",
-"AM",
-"FM",
-"SX",
-"CF",
-"ET",
-"KN",
-"MF"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911341",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911341",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=d8905d0fc32ce"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911341"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a2c463b7-101d-4815-9540-82efaa9ce22d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911341",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911341"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a2c463b7-101d-4815-9540-82efaa9ce22d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911341"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a2c463b7-101d-4815-9540-82efaa9ce22d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911341"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911341"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/a2c463b7-101d-4815-9540-82efaa9ce22d"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/a2c463b7-101d-4815-9540-82efaa9ce22d/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/d1697f41-b071-4074-a86c-56564e0063e8/d1697f41-b071-4074-a86c-56564e0063e8_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911341&videoDSI=d8905d0fc32ce"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Natasha Howard rises to block the shot) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_natasha_howard_rises_to_block_the_shot"
-}
-},
-{
-"id": 45911411,
-"cerebroId": "6892ce031fdd1f6f84acb2da",
-"source": "espn",
-"headline": "Rickea Jackson gets T'd up for flexing after bucket",
-"description": "Rickea Jackson maneuvers to the basket and drops in a slick layup for the Sparks.",
-"lastModified": "2025-08-06T04:19:10Z",
-"originalPublishDate": "2025-08-06T03:37:33Z",
-"duration": 20,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T03:37:33Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"PY",
-"UM",
-"KE",
-"CL",
-"GT",
-"GF",
-"KM",
-"AS",
-"AR",
-"TC",
-"NZ",
-"GB",
-"UK",
-"LS",
-"MP",
-"LC",
-"UG",
-"AO",
-"MH",
-"ET",
-"MF",
-"BW",
-"SS",
-"AW",
-"TG",
-"VE",
-"SC",
-"BQ",
-"MG",
-"HN",
-"PR",
-"NI",
-"MS",
-"MU",
-"BZ",
-"NE",
-"CI",
-"GH",
-"PE",
-"BF",
-"CD",
-"RE",
-"RW",
-"KN",
-"BR",
-"ER",
-"CV",
-"TT",
-"KY",
-"VC",
-"UY",
-"GY",
-"SZ",
-"BJ",
-"GN",
-"SV",
-"BM",
-"PW",
-"ML",
-"GA",
-"AI",
-"MZ",
-"GP",
-"GU",
-"AM",
-"MX",
-"GM",
-"CG",
-"LR",
-"ZA",
-"AG",
-"SX",
-"ZM",
-"PA",
-"GQ",
-"BS",
-"BI",
-"MQ",
-"TZ",
-"MW",
-"US",
-"VI",
-"BO",
-"FM",
-"DO",
-"VG",
-"CM",
-"ZW",
-"CR",
-"CF",
-"HT",
-"CU",
-"EC",
-"SR",
-"JM",
-"FJ",
-"ST",
-"NA",
-"CO",
-"SN",
-"AU",
-"SL",
-"GD",
-"GW",
-"NG",
-"BB"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2025/0805/4f644e8e04b6437fa9231977c19a25ae1424/4f644e8e04b6437fa9231977c19a25ae1424.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911411",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911411",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=59e2fefe7686d"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911411"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ec371de-3de8-4a3f-a23b-a092c498f386/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911411",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911411"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ec371de-3de8-4a3f-a23b-a092c498f386/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911411"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ec371de-3de8-4a3f-a23b-a092c498f386/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911411"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911411"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/4ec371de-3de8-4a3f-a23b-a092c498f386"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/4ec371de-3de8-4a3f-a23b-a092c498f386/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/4f644e8e-04b6-437f-a923-1977c19a25ae/4f644e8e-04b6-437f-a923-1977c19a25ae_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911411&videoDSI=59e2fefe7686d"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Rickea Jackson gets T'd up for flexing after bucket) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_rickea_jackson_gets_td_up_for_flexing_after_bucket"
-}
-},
-{
-"id": 45911481,
-"cerebroId": "6892d3f11fdd1f6f84acb363",
-"source": "espn",
-"headline": "What a shot by Azura Stevens",
-"description": "Azura Stevens nails it from behind the arc, 08/05/2025",
-"lastModified": "2025-08-08T04:09:47Z",
-"originalPublishDate": "2025-08-06T04:02:52Z",
-"duration": 20,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T04:02:52Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"PY",
-"UM",
-"KE",
-"CL",
-"GT",
-"GF",
-"KM",
-"AS",
-"AR",
-"TC",
-"NZ",
-"GB",
-"UK",
-"LS",
-"MP",
-"LC",
-"UG",
-"AO",
-"MH",
-"ET",
-"MF",
-"BW",
-"SS",
-"AW",
-"TG",
-"VE",
-"SC",
-"BQ",
-"MG",
-"HN",
-"PR",
-"NI",
-"MS",
-"MU",
-"BZ",
-"NE",
-"CI",
-"GH",
-"PE",
-"BF",
-"CD",
-"RE",
-"RW",
-"KN",
-"BR",
-"ER",
-"CV",
-"TT",
-"KY",
-"VC",
-"UY",
-"GY",
-"SZ",
-"BJ",
-"GN",
-"SV",
-"BM",
-"PW",
-"ML",
-"GA",
-"AI",
-"MZ",
-"GP",
-"GU",
-"AM",
-"MX",
-"GM",
-"CG",
-"LR",
-"ZA",
-"AG",
-"SX",
-"ZM",
-"PA",
-"GQ",
-"BS",
-"BI",
-"MQ",
-"TZ",
-"MW",
-"US",
-"VI",
-"BO",
-"FM",
-"DO",
-"VG",
-"CM",
-"ZW",
-"CR",
-"CF",
-"HT",
-"CU",
-"EC",
-"SR",
-"JM",
-"FJ",
-"ST",
-"NA",
-"CO",
-"SN",
-"AU",
-"SL",
-"GD",
-"GW",
-"NG",
-"BB"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911481",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911481",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=2c05612748966"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911481"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f66deae1-8fd6-439f-b9ad-7af02a1a4066/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911481",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911481"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f66deae1-8fd6-439f-b9ad-7af02a1a4066/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911481"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f66deae1-8fd6-439f-b9ad-7af02a1a4066/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911481"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911481"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/f66deae1-8fd6-439f-b9ad-7af02a1a4066"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/f66deae1-8fd6-439f-b9ad-7af02a1a4066/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/7ba76ded-d2b2-415a-a456-4cca68332bbc/7ba76ded-d2b2-415a-a456-4cca68332bbc_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911481&videoDSI=2c05612748966"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (What a shot by Azura Stevens) 2025/08/06 ESHEET",
-"trackingId": "dm_20250806_WNBA_what_a_shot_by_azura_stevens"
-}
-},
-{
-"id": 45911551,
-"cerebroId": "6892d8271b3ab26bee04d5f2",
-"source": "espn",
-"headline": "Kelsey Plum, Rickea Jackson combine for 50 in Sparks' win",
-"description": "Kelsey Plum notches 25 points and 11 assists while Rickea Jackson scores 25 herself in the Sparks' 100-91 win over the Fever.",
-"lastModified": "2025-08-06T04:26:09Z",
-"originalPublishDate": "2025-08-06T04:20:50Z",
-"duration": 126,
-"timeRestrictions": {
-"embargoDate": "2025-08-06T04:20:50Z",
-"expirationDate": "2025-11-30T05:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"desktop",
-"ipad",
-"settop",
-"handset",
-"tablet"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"SR",
-"MH",
-"CD",
-"SZ",
-"SS",
-"SN",
-"ZA",
-"ZM",
-"AU",
-"PE",
-"CV",
-"RW",
-"BB",
-"BI",
-"CL",
-"GA",
-"NG",
-"BQ",
-"TZ",
-"AS",
-"NE",
-"GW",
-"SL",
-"BO",
-"GU",
-"TG",
-"GP",
-"SV",
-"NI",
-"US",
-"MP",
-"PR",
-"VI",
-"UM",
-"TT",
-"PY",
-"MX",
-"GF",
-"GN",
-"CM",
-"MQ",
-"GM",
-"AI",
-"PW",
-"MG",
-"KY",
-"UY",
-"GD",
-"ML",
-"TC",
-"GY",
-"MU",
-"DO",
-"NZ",
-"CO",
-"MW",
-"RE",
-"GH",
-"LS",
-"PA",
-"AW",
-"GQ",
-"BJ",
-"ER",
-"CG",
-"KE",
-"BW",
-"AO",
-"BS",
-"VE",
-"EC",
-"AR",
-"CI",
-"HT",
-"NA",
-"KM",
-"UG",
-"CU",
-"MZ",
-"LC",
-"BM",
-"VG",
-"AG",
-"LR",
-"VC",
-"FJ",
-"MS",
-"BF",
-"CR",
-"BR",
-"JM",
-"BZ",
-"GB",
-"UK",
-"GT",
-"HN",
-"ST",
-"SC",
-"ZW",
-"AM",
-"FM",
-"SX",
-"CF",
-"ET",
-"KN",
-"MF"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=45911551",
-"self": {
-"href": "https://www.espn.com/video/clip?id=45911551",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=fc6da90ddb7bf"
-}
-},
-"seo": {
-"href": "https://www.espn.com/video/clip/_/id/45911551"
-}
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/be540611-4e6c-4636-b733-86747c6567fa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911551",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=45911551"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/be540611-4e6c-4636-b733-86747c6567fa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911551"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/be540611-4e6c-4636-b733-86747c6567fa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=45911551"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/45911551"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/be540611-4e6c-4636-b733-86747c6567fa"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/be540611-4e6c-4636-b733-86747c6567fa/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2025/0806/53f7ee46-0605-487e-9f1e-d4662a1f2c89/53f7ee46-0605-487e-9f1e-d4662a1f2c89_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=45911551&videoDSI=fc6da90ddb7bf"
-}
-},
-"ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "wnba",
-"leagueName": "No League",
-"coverageType": "OnePlay",
-"trackingName": "COM_WNBA Highlight (Kelsey Plum, Rickea Jackson combine for 50 in Sparks' win) 2025/08/06 ESHEET SOTFULL",
-"trackingId": "dm_20250806_WNBA_kelsey_plum_rickea_jackson_combine_for_50_in_sparks_win"
-}
-},
-{
 "id": 45911642,
 "cerebroId": "6892dda21b3ab26bee04d700",
 "source": "espn",
@@ -21933,7 +20007,7 @@
 "text": "Full Standings",
 "href": "https://www.espn.com/wnba/standings"
 },
-"header": "2025 Standings",
+"header": "2025-26 Standings",
 "groups": [
 {
 "standings": {
@@ -21961,8 +20035,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 14.0,
-"displayValue": "14"
+"value": 0.0,
+"displayValue": "0"
 },
 {
 "name": "streak",
@@ -21971,8 +20045,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 6.0,
-"displayValue": "W6"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -21981,8 +20055,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6818182,
-"displayValue": ".682"
+"value": 1.0,
+"displayValue": "1.000"
 },
 {
 "name": "wins",
@@ -21991,226 +20065,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 30.0,
-"displayValue": "30"
+"value": 1.0,
+"displayValue": "1"
 }
 ],
 "logo": [
 {
 "href": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "New York",
-"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
-"id": "9",
-"uid": "s:40~l:59~t:9",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 17.0,
-"displayValue": "17"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 3.0,
-"displayValue": "W3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6136364,
-"displayValue": ".614"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 27.0,
-"displayValue": "27"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Indiana",
-"link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
-"id": "5",
-"uid": "s:40~l:59~t:5",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 6.0,
-"displayValue": "6"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 20.0,
-"displayValue": "20"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 3.0,
-"displayValue": "W3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.54545456,
-"displayValue": ".545"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 24.0,
-"displayValue": "24"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Washington",
-"link": "https://www.espn.com/wnba/team/_/name/wsh/washington-mystics",
-"id": "16",
-"uid": "s:40~l:59~t:16",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 14.0,
-"displayValue": "14"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 28.0,
-"displayValue": "28"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -10.0,
-"displayValue": "L10"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.36363637,
-"displayValue": ".364"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 16.0,
-"displayValue": "16"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -22235,8 +20096,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 19.0,
-"displayValue": "19"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "name": "losses",
@@ -22245,8 +20106,375 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 33.0,
-"displayValue": "33"
+"value": 0.0,
+"displayValue": "0"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 1.0,
+"displayValue": "1.000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 1.0,
+"displayValue": "1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-08-10T19:43Z"
+}
+]
+},
+{
+"team": "Indiana",
+"link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
+"id": "5",
+"uid": "s:40~l:59~t:5",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.5,
+"displayValue": "0.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.5,
+"displayValue": ".500"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 1.0,
+"displayValue": "1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "Toronto",
+"link": "https://www.espn.com/wnba/team/_/name/tor/toronto-tempo",
+"id": "131935",
+"uid": "s:40~l:59~t:131935",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.0,
+"displayValue": ".000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 0.0,
+"displayValue": "0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-11-19T15:53Z"
+}
+]
+},
+{
+"team": "Washington",
+"link": "https://www.espn.com/wnba/team/_/name/wsh/washington-mystics",
+"id": "16",
+"uid": "s:40~l:59~t:16",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.0,
+"displayValue": ".000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 0.0,
+"displayValue": "0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2026-03-11T19:53Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/wsh.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2026-03-11T19:52Z"
+}
+]
+},
+{
+"team": "New York",
+"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
+"id": "9",
+"uid": "s:40~l:59~t:9",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.0,
+"displayValue": ".000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 0.0,
+"displayValue": "0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "Chicago",
+"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
+"id": "19",
+"uid": "s:40~l:59~t:19",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.5,
+"displayValue": "1.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 2.0,
+"displayValue": "2"
 },
 {
 "name": "streak",
@@ -22265,8 +20493,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.25,
-"displayValue": ".250"
+"value": 0.0,
+"displayValue": ".000"
 },
 {
 "name": "wins",
@@ -22275,79 +20503,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 11.0,
-"displayValue": "11"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2025-08-10T19:43Z"
-}
-]
-},
-{
-"team": "Chicago",
-"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
-"id": "19",
-"uid": "s:40~l:59~t:19",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 20.0,
-"displayValue": "20"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 34.0,
-"displayValue": "34"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -4.0,
-"displayValue": "L4"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.22727273,
-"displayValue": ".227"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 10.0,
-"displayValue": "10"
+"value": 0.0,
+"displayValue": "0"
 }
 ],
 "logo": [
@@ -22366,7 +20523,7 @@
 }
 ]
 },
-"header": "2024-25 Eastern Conference Standings",
+"header": "2025-26 Eastern Conference Standings",
 "href": "https://www.espn.com/wnba/standings/_/group/1",
 "conferenceHeader": "Women's National Basketball Assoc.",
 "divisionHeader": "Eastern Conference"
@@ -22374,6 +20531,77 @@
 {
 "standings": {
 "entries": [
+{
+"team": "Phoenix",
+"link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
+"id": "11",
+"uid": "s:40~l:59~t:11",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 0.0,
+"displayValue": "0"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 2.0,
+"displayValue": "W2"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 1.0,
+"displayValue": "1.000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 2.0,
+"displayValue": "2"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-12-03T22:02Z"
+}
+]
+},
 {
 "team": "Minnesota",
 "link": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
@@ -22397,8 +20625,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 0.0,
+"displayValue": "0"
 },
 {
 "name": "streak",
@@ -22407,8 +20635,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": 2.0,
+"displayValue": "W2"
 },
 {
 "name": "winPercent",
@@ -22417,8 +20645,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.77272725,
-"displayValue": ".773"
+"value": 1.0,
+"displayValue": "1.000"
 },
 {
 "name": "wins",
@@ -22427,8 +20655,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 34.0,
-"displayValue": "34"
+"value": 2.0,
+"displayValue": "2"
 }
 ],
 "logo": [
@@ -22446,10 +20674,10 @@
 ]
 },
 {
-"team": "Las Vegas",
-"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
+"team": "Dallas",
+"link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
+"id": "3",
+"uid": "s:40~l:59~t:3",
 "stats": [
 {
 "name": "gamesBehind",
@@ -22458,8 +20686,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 4.0,
-"displayValue": "4"
+"value": 0.5,
+"displayValue": "0.5"
 },
 {
 "name": "losses",
@@ -22468,150 +20696,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 14.0,
-"displayValue": "14"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 16.0,
-"displayValue": "W16"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6818182,
-"displayValue": ".682"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 30.0,
-"displayValue": "30"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-05-01T20:55Z"
-}
-]
-},
-{
-"team": "Phoenix",
-"link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
-"id": "11",
-"uid": "s:40~l:59~t:11",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 7.0,
-"displayValue": "7"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 17.0,
-"displayValue": "17"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -3.0,
-"displayValue": "L3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6136364,
-"displayValue": ".614"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 27.0,
-"displayValue": "27"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Seattle",
-"link": "https://www.espn.com/wnba/team/_/name/sea/seattle-storm",
-"id": "14",
-"uid": "s:40~l:59~t:14",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 11.0,
-"displayValue": "11"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 21.0,
-"displayValue": "21"
+"value": 0.0,
+"displayValue": "0"
 },
 {
 "name": "streak",
@@ -22630,8 +20716,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.52272725,
-"displayValue": ".523"
+"value": 1.0,
+"displayValue": "1.000"
 },
 {
 "name": "wins",
@@ -22640,13 +20726,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 23.0,
-"displayValue": "23"
+"value": 1.0,
+"displayValue": "1"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -22655,18 +20741,6 @@
 "default"
 ],
 "lastUpdated": "2023-05-10T21:43Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/sea.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2021-03-08T15:25Z"
 }
 ]
 },
@@ -22683,8 +20757,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 11.0,
-"displayValue": "11"
+"value": 0.5,
+"displayValue": "0.5"
 },
 {
 "name": "losses",
@@ -22693,8 +20767,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 21.0,
-"displayValue": "21"
+"value": 0.0,
+"displayValue": "0"
 },
 {
 "name": "streak",
@@ -22703,8 +20777,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -3.0,
-"displayValue": "L3"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -22713,8 +20787,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.52272725,
-"displayValue": ".523"
+"value": 1.0,
+"displayValue": "1.000"
 },
 {
 "name": "wins",
@@ -22723,8 +20797,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 23.0,
-"displayValue": "23"
+"value": 1.0,
+"displayValue": "1"
 }
 ],
 "logo": [
@@ -22766,8 +20840,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 0.5,
+"displayValue": "0.5"
 },
 {
 "name": "losses",
@@ -22776,79 +20850,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 23.0,
-"displayValue": "23"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.47727272,
-"displayValue": ".477"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 21.0,
-"displayValue": "21"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Dallas",
-"link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-"id": "3",
-"uid": "s:40~l:59~t:3",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 24.0,
-"displayValue": "24"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 34.0,
-"displayValue": "34"
+"value": 0.0,
+"displayValue": "0"
 },
 {
 "name": "streak",
@@ -22867,8 +20870,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.22727273,
-"displayValue": ".227"
+"value": 1.0,
+"displayValue": "1.000"
 },
 {
 "name": "wins",
@@ -22877,13 +20880,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 10.0,
-"displayValue": "10"
+"value": 1.0,
+"displayValue": "1"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -22894,10 +20897,247 @@
 "lastUpdated": "2023-05-10T21:43Z"
 }
 ]
+},
+{
+"team": "Las Vegas",
+"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+"id": "17",
+"uid": "s:40~l:59~t:17",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.5,
+"displayValue": "0.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 0.0,
+"displayValue": "0"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 1.0,
+"displayValue": "1.000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 1.0,
+"displayValue": "1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-05-01T20:55Z"
 }
 ]
 },
-"header": "2024-25 Western Conference Standings",
+{
+"team": "Seattle",
+"link": "https://www.espn.com/wnba/team/_/name/sea/seattle-storm",
+"id": "14",
+"uid": "s:40~l:59~t:14",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.5,
+"displayValue": ".500"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 1.0,
+"displayValue": "1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/sea.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2021-03-08T15:25Z"
+}
+]
+},
+{
+"team": "Portland",
+"link": "https://www.espn.com/wnba/team/_/name/por/portland-fire",
+"id": "132052",
+"uid": "s:40~l:59~t:132052",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.5,
+"displayValue": "1.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.0,
+"displayValue": ".000"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 0.0,
+"displayValue": "0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2026-04-03T15:00Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2026-04-03T15:01Z"
+}
+]
+}
+]
+},
+"header": "2025-26 Western Conference Standings",
 "href": "https://www.espn.com/wnba/standings/_/group/2",
 "conferenceHeader": "Women's National Basketball Assoc.",
 "divisionHeader": "Western Conference"
