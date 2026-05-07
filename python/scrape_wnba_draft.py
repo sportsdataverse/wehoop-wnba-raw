@@ -150,8 +150,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "--rerun_existing",
         "-r",
-        action="store_true",
-        help="Re-scrape draft results even when the output file already exists.",
+        nargs="?",
+        const=True,
+        default=False,
+        type=lambda v: str(v).lower() in ("true", "1", "yes", "y", "t"),
+        help="Re-scrape draft results even when the output file already exists. Accepts a true/false value (e.g. `-r true`) for compat with the legacy umbrella workflow; bare `-r` defaults to True.",
     )
     parser.add_argument(
         "--force",
