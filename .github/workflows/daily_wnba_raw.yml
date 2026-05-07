@@ -97,7 +97,13 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add wnba/
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "chore(raw): daily scrape $(date -u +%Y-%m-%d) (run ${{ github.run_id }})"
+            # Commit message format must keep ONLY the start + end years
+            # as digits. The downstream `wehoop-wnba-data` daily
+            # workflow parses with `grep -oE '[0-9]+'` to extract
+            # START_YEAR (head -1) and END_YEAR (tail -1). Extra
+            # numbers (date, run id, etc.) get captured as END_YEAR
+            # and the parser fails. Match the legacy bot format.
+            git commit -m "WNBA Raw Update (Start: ${{ env.START_YEAR }} End: ${{ env.END_YEAR }})"
             git push
           else
             echo "No new files to commit"
