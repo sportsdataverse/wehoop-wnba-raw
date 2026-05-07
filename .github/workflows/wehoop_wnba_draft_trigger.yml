@@ -1,0 +1,24 @@
+on:
+    push:
+        paths:
+            - 'wnba/draft/json/**'
+    workflow_dispatch:
+
+name: wehoop WNBA Draft trigger
+
+jobs:
+    wehoop_wnba_draft_trigger:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger wehoop WNBA Draft pipeline
+              uses: peter-evans/repository-dispatch@v3
+              with:
+                  token: ${{ secrets.SDV_GH_TOKEN }}
+                  repository: sportsdataverse/wehoop-wnba-data
+                  event-type: annual_wnba_draft
+                  client-payload: |-
+                    {
+                      "ref": "refs/heads/main",
+                      "event_name": "annual_wnba_draft",
+                      "commit_message": "${{ github.event.head_commit.message }}"
+                    }
