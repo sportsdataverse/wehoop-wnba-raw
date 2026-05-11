@@ -1,4 +1,14 @@
-on: [push, workflow_dispatch]
+# Only fire when the scraped data tree actually changes. Pushes that
+# touch only scripts, workflows, .gitignore, or other repo plumbing
+# should NOT wake the downstream wehoop-wnba-data parser. The draft
+# subtree has its own trigger (wehoop_wnba_draft_trigger.yml) and is
+# excluded here so draft pushes don't fire both pipelines.
+on:
+  push:
+    paths:
+      - 'wnba/**'
+      - '!wnba/draft/**'
+  workflow_dispatch:
 
 name: wehoop WNBA Data trigger
 
