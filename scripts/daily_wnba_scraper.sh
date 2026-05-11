@@ -1,6 +1,14 @@
 #!/bin/bash
-# Scrape raw WNBA game JSON and schedules
-# Usage: bash scripts/daily_wnba_scraper.sh -s 2025 -e 2025
+# Scrape raw WNBA daily datasets per season:
+#   schedules, per-game JSON (PBP), team rosters, player season stats,
+#   team season stats, standings, per-game rosters, per-game officials.
+#
+# Mirrors the step order in .github/workflows/daily_wnba_raw.yml so local
+# runs and CI runs produce the same on-disk output. Draft is annual and
+# lives in scripts/annual_wnba_draft_scraper.sh — do not add it here, it
+# would re-trigger the downstream draft pipeline every day.
+#
+# Usage: bash scripts/daily_wnba_scraper.sh -s 2025 -e 2025 [-r false]
 
 while getopts s:e:r: flag
 do
@@ -25,8 +33,14 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        python3 python/scrape_wnba_schedules.py -s $i -e $i -r $RESCRAPE
-        python3 python/scrape_wnba_json.py -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_schedules.py    -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_json.py         -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_team_rosters.py -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_player_stats.py -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_team_stats.py   -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_standings.py    -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_game_rosters.py -s $i -e $i -r $RESCRAPE
+        python3 python/scrape_wnba_officials.py    -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add wnba/* >> /dev/null
         git pull >> /dev/null
