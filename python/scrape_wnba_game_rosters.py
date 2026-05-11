@@ -2,19 +2,24 @@
 """Scrape ESPN WNBA per-game rosters.
 
 Output: ``wnba/game_rosters/json/{game_id}.json`` -- raw ESPN response.
-The downstream R parser in ``wehoop-wnba-data`` reads these JSONs to
-build the per-game tidy roster frame (one row per athlete-team-game).
+The downstream R parser in ``wehoop-wnba-data`` reads these JSONs and
+navigates ``boxscore.players`` to build the per-game tidy roster frame
+(one row per athlete-team-game).
+
+Endpoint: ``site.api.espn.com/apis/site/v2/sports/basketball/wnba/summary``
+This is the same comprehensive game-summary endpoint scrape_wnba_json.py
+hits for play-by-play; it includes ``boxscore.players`` with per-team
+roster + per-athlete stats / starter / DNP / ejected flags.
+
+We deliberately hit ESPN directly instead of routing through
+``sportsdataverse.wnba.espn_wnba_game_rosters`` because that SDK helper
+ignores its own ``raw=True`` flag and always returns a polars DataFrame;
+combined with ``json.dump(..., default=str)`` it produced a stringified
+DataFrame repr on disk that no downstream parser could read.
 
 Game ids are sourced from the season's schedule parquet
 (``wnba/schedules/parquet/wnba_schedule_{year}.parquet``). If the parquet
 is missing, falls back to a fresh ``sdv.wnba.espn_wnba_schedule`` call.
-
-Requirements:
-    Depends on the ``espn_wnba_game_rosters`` helper added to
-    ``sportsdataverse-py`` (sportsdataverse/wnba/wnba_game_rosters.py). The
-    repo's ``requirements.txt`` should pin a version of sportsdataverse-py
-    that exports it; until that release lands, install sdv-py from source
-    (``pip install -e <path>/sdv-py``).
 """
 
 from __future__ import annotations
@@ -32,10 +37,9 @@ import pandas as pd
 import sportsdataverse as sdv
 from tqdm import tqdm
 
-# The new module is not yet re-exported from ``sportsdataverse.wnba``, so we
-# import the function directly from its module to avoid relying on the
-# top-level package surface.
-from sportsdataverse.wnba.wnba_game_rosters import espn_wnba_game_rosters
+# Bypass the broken espn_wnba_game_rosters helper (see module docstring);
+# call ESPN's summary endpoint via the SDK's HTTP helper instead.
+from sportsdataverse.dl_utils import download
 
 
 logging.basicConfig(
@@ -46,6 +50,7 @@ logger = logging.getLogger(__name__)
 
 PATH_TO_OUTPUT = "wnba/game_rosters/json"
 PATH_TO_SCHEDULES = "wnba/schedules/parquet"
+SUMMARY_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/wnba/summary?event={game_id}"
 MAX_THREADS = 8
 
 
@@ -106,9 +111,10 @@ def download_game_rosters(
     if out_path.exists() and not rerun_existing:
         return f"skip {game_id}"
     try:
-        raw: dict[str, Any] = espn_wnba_game_rosters(game_id=int(game_id), raw=True)
+        url = SUMMARY_URL.format(game_id=int(game_id))
+        raw: dict[str, Any] = download(url).json()
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False, default=str)
+            json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {game_id}"
     except Exception as e:
         # Per-game tolerance: 404s, schema drift, transient ESPN failures
