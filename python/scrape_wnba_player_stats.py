@@ -123,7 +123,7 @@ def download_player_stats(season, athlete_id, output_dir, rerun_existing):
             athlete_id=int(athlete_id), season=int(season), raw=True
         )
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False, default=str)
+            json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {athlete_id}"
     except Exception as e:
         logger.warning(

@@ -57,7 +57,7 @@ def download_draft(
     try:
         raw: dict[str, Any] = espn_wnba_draft(season=int(season), raw=True)
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=2, sort_keys=False, default=str)
+            json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {season}"
     except Exception as e:
         logger.warning(f"season={season} failed: {e!r}")

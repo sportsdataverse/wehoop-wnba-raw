@@ -110,7 +110,7 @@ def download_officials(
             game_id=int(game_id), raw=True
         )
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False, default=str)
+            json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {game_id}"
     except Exception as e:
         # Per-game tolerance: 404s (officials missing for some games),

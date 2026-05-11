@@ -87,7 +87,7 @@ def download_team_roster(season, team_id, output_dir, rerun_existing):
     try:
         raw = espn_wnba_team_roster(team_id=int(team_id), season=int(season), raw=True)
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False, default=str)
+            json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {team_id}"
     except Exception as e:
         logger.warning(
