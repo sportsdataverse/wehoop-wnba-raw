@@ -18,10 +18,7 @@ name: Daily WNBA Raw Scrape
 
 on:
   schedule:
-    - cron: '0 5 18-31 10 *'  # late October (preseason tail / late playoffs)
-    - cron: '0 5 * 11-12 *'   # November - December (offseason watch / draft prep)
-    - cron: '0 5 * 1-6 *'     # January - June (lead-up + regular season start)
-    - cron: '0 5 1-12 7 *'    # early July (regular season tail)
+    - cron: '30 6 1-12 5-10 *'    # May - October (regular season + playoffs)
   workflow_dispatch:
     inputs:
       start_year:
@@ -42,7 +39,7 @@ permissions:
 
 jobs:
   daily_wnba_raw:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, sdv-droplet]
     env:
       START_YEAR: ${{ github.event.inputs.start_year || '2026' }}
       END_YEAR: ${{ github.event.inputs.end_year || '2026' }}
