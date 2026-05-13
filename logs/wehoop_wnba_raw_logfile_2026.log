@@ -1,5 +1,3 @@
-From github.com:sportsdataverse/wehoop-wnba-raw
-   50064dfcc..136bc72ec  main       -> origin/main
 Traceback (most recent call last):
   File "python/scrape_wnba_team_rosters.py", line 31, in <module>
     from sportsdataverse.wnba.wnba_team_roster import espn_wnba_team_roster
@@ -16,15 +14,23 @@ Traceback (most recent call last):
   File "python/scrape_wnba_standings.py", line 35, in <module>
     from sportsdataverse.wnba.wnba_standings import espn_wnba_standings
 ModuleNotFoundError: No module named 'sportsdataverse.wnba.wnba_standings'
-WNBA game rosters 2026:   0%|          | 0/11 [00:00<?, ?it/s]WNBA game rosters 2026:   9%|▉         | 1/11 [00:00<00:09,  1.09it/s]WNBA game rosters 2026:  36%|███▋      | 4/11 [00:01<00:01,  4.92it/s]WNBA game rosters 2026:  64%|██████▎   | 7/11 [00:01<00:00,  8.38it/s]WNBA game rosters 2026:  82%|████████▏ | 9/11 [00:01<00:00, 10.18it/s]WNBA game rosters 2026: 100%|██████████| 11/11 [00:01<00:00,  8.14it/s]
+WNBA game rosters 2026:   0%|          | 0/14 [00:00<?, ?it/s]WNBA game rosters 2026:   7%|▋         | 1/14 [00:00<00:04,  2.98it/s]WNBA game rosters 2026:  14%|█▍        | 2/14 [00:00<00:03,  3.05it/s]WNBA game rosters 2026:  21%|██▏       | 3/14 [00:00<00:02,  4.36it/s]WNBA game rosters 2026:  29%|██▊       | 4/14 [00:00<00:01,  5.51it/s]WNBA game rosters 2026:  57%|█████▋    | 8/14 [00:01<00:00, 11.59it/s]WNBA game rosters 2026:  71%|███████▏  | 10/14 [00:01<00:00,  9.21it/s]WNBA game rosters 2026:  86%|████████▌ | 12/14 [00:01<00:00, 11.04it/s]WNBA game rosters 2026: 100%|██████████| 14/14 [00:01<00:00,  9.27it/s]
 Traceback (most recent call last):
   File "python/scrape_wnba_officials.py", line 38, in <module>
     from sportsdataverse.wnba.wnba_event_officials import espn_wnba_event_officials
 ModuleNotFoundError: No module named 'sportsdataverse.wnba.wnba_event_officials'
-[main 9d504616e] WNBA Raw Update (Start: 2026 End: 2026)
- 16 files changed, 100285 insertions(+), 100024 deletions(-)
- rewrite wnba/schedules/parquet/wnba_schedule_2026.parquet (85%)
- rewrite wnba/schedules/rds/wnba_schedule_2026.rds (99%)
- rewrite wnba/wnba_schedule_master.parquet (84%)
+[main 684e4bc52] WNBA Raw Update (Start: 2026 End: 2026)
+ 47 files changed, 435974 insertions(+), 137163 deletions(-)
+ create mode 100644 wnba/game_rosters/json/401856901.json
+ create mode 100644 wnba/game_rosters/json/401856902.json
+ create mode 100644 wnba/game_rosters/json/401856903.json
+ create mode 100644 wnba/json/final/401856901.json
+ create mode 100644 wnba/json/final/401856902.json
+ create mode 100644 wnba/json/final/401856903.json
+ create mode 100644 wnba/json/raw/401856901.json
+ create mode 100644 wnba/json/raw/401856902.json
+ create mode 100644 wnba/json/raw/401856903.json
+ rewrite wnba/schedules/parquet/wnba_schedule_2026.parquet (69%)
+ rewrite wnba/schedules/rds/wnba_schedule_2026.rds (96%)
 To github.com:sportsdataverse/wehoop-wnba-raw.git
-   136bc72ec..9d504616e  main -> main
+   28fb65bef..684e4bc52  main -> main
