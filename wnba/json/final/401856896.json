@@ -31390,6 +31390,22 @@
 "lang": "en",
 "region": "us",
 "isNational": false
+},
+{
+"type": {
+"id": "4",
+"shortName": "Streaming"
+},
+"market": {
+"id": "3",
+"type": "Away"
+},
+"media": {
+"shortName": "Prime Video-Seattle"
+},
+"lang": "en",
+"region": "us",
+"isNational": false
 }
 ],
 "series": [
@@ -31397,14 +31413,14 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "SEA leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "18",
 "uid": "s:40~l:59~t:18",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/18?lang=en&region=us"
@@ -32073,7 +32089,29 @@
 "clock": 300.0
 }
 },
-"broadcasts": [],
+"broadcasts": [
+{
+"type": {
+"id": "4",
+"shortName": "Streaming",
+"longName": "Streaming",
+"slug": "streaming"
+},
+"station": "Prime Video-Seattle",
+"market": {
+"id": "3",
+"type": "Away"
+},
+"media": {
+"callLetters": "Prime Video-Seattle",
+"name": "Prime Video - Seattle",
+"shortName": "Prime Video-Seattle"
+},
+"lang": "en",
+"region": "us",
+"isNational": false
+}
+],
 "videos": [
 {
 "id": 48733862,
@@ -34673,6 +34711,77 @@
 ]
 },
 {
+"team": "Dallas",
+"link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
+"id": "3",
+"uid": "s:40~l:59~t:3",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 2.0,
+"displayValue": "2"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 2.0,
+"displayValue": "W2"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6,
+"displayValue": ".600"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 3.0,
+"displayValue": "3"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
 "team": "Minnesota",
 "link": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
 "id": "8",
@@ -34744,160 +34853,6 @@
 ]
 },
 {
-"team": "Dallas",
-"link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-"id": "3",
-"uid": "s:40~l:59~t:3",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.5,
-"displayValue": "1.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 2.0,
-"displayValue": "2"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 2.0,
-"displayValue": "2"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Portland",
-"link": "https://www.espn.com/wnba/team/_/name/por/portland-fire",
-"id": "132052",
-"uid": "s:40~l:59~t:132052",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.5,
-"displayValue": "1.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 2.0,
-"displayValue": "2"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 2.0,
-"displayValue": "2"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2026-04-03T15:00Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/por.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2026-04-03T15:01Z"
-}
-]
-},
-{
 "team": "Phoenix",
 "link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
 "id": "11",
@@ -34965,6 +34920,89 @@
 "default"
 ],
 "lastUpdated": "2025-12-03T22:02Z"
+}
+]
+},
+{
+"team": "Portland",
+"link": "https://www.espn.com/wnba/team/_/name/por/portland-fire",
+"id": "132052",
+"uid": "s:40~l:59~t:132052",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 2.0,
+"displayValue": "2"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 3.0,
+"displayValue": "3"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.4,
+"displayValue": ".400"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 2.0,
+"displayValue": "2"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2026-04-03T15:00Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2026-04-03T15:01Z"
 }
 ]
 },
@@ -35052,8 +35090,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -35062,8 +35100,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 3.0,
-"displayValue": "3"
+"value": 4.0,
+"displayValue": "4"
 },
 {
 "name": "streak",
@@ -35072,8 +35110,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": -3.0,
+"displayValue": "L3"
 },
 {
 "name": "winPercent",
@@ -35082,8 +35120,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.25,
-"displayValue": ".250"
+"value": 0.2,
+"displayValue": ".200"
 },
 {
 "name": "wins",
@@ -35132,77 +35170,6 @@
 {
 "standings": {
 "entries": [
-{
-"team": "Chicago",
-"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
-"id": "19",
-"uid": "s:40~l:59~t:19",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 0.0,
-"displayValue": "-"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.75,
-"displayValue": ".750"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 3.0,
-"displayValue": "3"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
 {
 "team": "New York",
 "link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
@@ -35334,6 +35301,148 @@
 "logo": [
 {
 "href": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "Chicago",
+"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
+"id": "19",
+"uid": "s:40~l:59~t:19",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.5,
+"displayValue": "0.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 2.0,
+"displayValue": "2"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6,
+"displayValue": ".600"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 3.0,
+"displayValue": "3"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "Indiana",
+"link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
+"id": "5",
+"uid": "s:40~l:59~t:5",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.5,
+"displayValue": "0.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 2.0,
+"displayValue": "2"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 2.0,
+"displayValue": "W2"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6,
+"displayValue": ".600"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 3.0,
+"displayValue": "3"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -35500,77 +35609,6 @@
 ]
 },
 {
-"team": "Indiana",
-"link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
-"id": "5",
-"uid": "s:40~l:59~t:5",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 2.0,
-"displayValue": "2"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 2.0,
-"displayValue": "2"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
 "team": "Connecticut",
 "link": "https://www.espn.com/wnba/team/_/name/con/connecticut-sun",
 "id": "18",
@@ -35583,8 +35621,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 3.5,
-"displayValue": "3.5"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -35603,8 +35641,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -5.0,
-"displayValue": "L5"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -35613,8 +35651,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.0,
-"displayValue": ".000"
+"value": 0.16666667,
+"displayValue": ".167"
 },
 {
 "name": "wins",
@@ -35623,8 +35661,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 0.0,
-"displayValue": "0"
+"value": 1.0,
+"displayValue": "1"
 }
 ],
 "logo": [
@@ -36885,21 +36923,21 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/14?lang=en&region=us",
 "id": "14"
 },
-"status": "Out",
+"status": "Day-To-Day",
 "injuries": {
-"status": "Out",
-"date": "2026-05-20T00:09Z",
+"status": "Day-To-Day",
+"date": "2026-05-21T04:28Z",
 "type": {
-"id": "4",
-"name": "INJURY_STATUS_OUT",
-"description": "out",
-"abbreviation": "O"
+"id": "6",
+"name": "INJURY_STATUS_DAYTODAY",
+"description": "day-to-day",
+"abbreviation": "DD"
 },
 "details": {
 "fantasyStatus": {
-"description": "OUT",
-"abbreviation": "OUT",
-"displayDescription": "Out"
+"description": "GTD",
+"abbreviation": "GTD",
+"displayDescription": "GTD"
 },
 "type": "Concussion",
 "returnDate": "2026-05-22"
@@ -36951,12 +36989,12 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "SEA leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 3,
 "seriesLabel": "Regular Season",
-"seriesScore": "1-0",
-"shortSummary": "SEA leads season",
+"seriesScore": "1-1",
+"shortSummary": "Season tied",
 "events": [
 {
 "id": "401856896",
@@ -37126,67 +37164,21 @@
 "uid": "s:40~l:59~e:401856923~c:401856923",
 "date": "2026-05-21T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Wed, May 20th at 10:00 PM EDT",
-"shortDetail": "5/20 - 10:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
 "neutralSite": false,
-"broadcasts": [
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "CW Seattle"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "NBC Sports BO"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "14",
 "uid": "s:40~l:59~t:14",
@@ -37251,10 +37243,11 @@
 }
 ]
 },
-"score": "0"
+"score": "78"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "18",
 "uid": "s:40~l:59~t:18",
@@ -37296,7 +37289,7 @@
 }
 ]
 },
-"score": "0"
+"score": "80"
 }
 ],
 "links": [
@@ -38456,6 +38449,22 @@
 "lang": "en",
 "region": "us",
 "isNational": false
+},
+{
+"type": {
+"id": "4",
+"shortName": "Streaming"
+},
+"market": {
+"id": "3",
+"type": "Away"
+},
+"media": {
+"shortName": "Prime Video-Seattle"
+},
+"lang": "en",
+"region": "us",
+"isNational": false
 }
 ],
 "series": [
@@ -38463,14 +38472,14 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "SEA leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "18",
 "uid": "s:40~l:59~t:18",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/18?lang=en&region=us"
