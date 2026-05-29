@@ -46,7 +46,7 @@ jobs:
       RESCRAPE: ${{ github.event.inputs.rescrape || 'false' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.SDV_GH_TOKEN }}
           fetch-depth: 0
