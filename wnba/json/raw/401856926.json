@@ -2430,11 +2430,11 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "LA leads series 1-0",
+"summary": "LA leads series 2-0",
 "completed": false,
 "totalCompetitions": 4,
 "seriesLabel": "Regular Season",
-"seriesScore": "1-0",
+"seriesScore": "2-0",
 "shortSummary": "LA leads season",
 "events": [
 {
@@ -2593,82 +2593,22 @@
 "uid": "s:40~l:59~e:401856989~c:401856989",
 "date": "2026-06-14T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Sat, June 13th at 10:00 PM EDT",
-"shortDetail": "6/13 - 10:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final/OT",
+"shortDetail": "Final/OT",
+"altDetail": "OT"
 },
 "neutralSite": false,
-"broadcasts": [
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "Arizona's Family 3TV"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "Spectrum Sports Net"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "Merc+"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "11",
 "uid": "s:40~l:59~t:11",
@@ -2721,10 +2661,11 @@
 }
 ]
 },
-"score": "0"
+"score": "102"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "6",
 "uid": "s:40~l:59~t:6",
@@ -2766,7 +2707,7 @@
 }
 ]
 },
-"score": "0"
+"score": "111"
 }
 ],
 "links": [
@@ -6160,7 +6101,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "LA leads series 1-0",
+"summary": "LA leads series 2-0",
 "completed": false,
 "totalCompetitions": 4,
 "competitors": [
@@ -6176,7 +6117,7 @@
 {
 "id": "6",
 "uid": "s:40~l:59~t:6",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/6?lang=en&region=us"
@@ -27727,6 +27668,77 @@
 "standings": {
 "entries": [
 {
+"team": "Las Vegas",
+"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+"id": "17",
+"uid": "s:40~l:59~t:17",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 3.0,
+"displayValue": "3"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 6.0,
+"displayValue": "W6"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.7692308,
+"displayValue": ".769"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 10.0,
+"displayValue": "10"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-05-01T20:55Z"
+}
+]
+},
+{
 "team": "Minnesota",
 "link": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
 "id": "8",
@@ -27749,8 +27761,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 2.0,
-"displayValue": "2"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "streak",
@@ -27759,8 +27771,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 8.0,
-"displayValue": "W8"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -27769,8 +27781,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.8333333,
-"displayValue": ".833"
+"value": 0.7692308,
+"displayValue": ".769"
 },
 {
 "name": "wins",
@@ -27798,77 +27810,6 @@
 ]
 },
 {
-"team": "Las Vegas",
-"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 5.0,
-"displayValue": "W5"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.75,
-"displayValue": ".750"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 9.0,
-"displayValue": "9"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-05-01T20:55Z"
-}
-]
-},
-{
 "team": "Dallas",
 "link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
 "id": "3",
@@ -27891,8 +27832,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 4.0,
-"displayValue": "4"
+"value": 5.0,
+"displayValue": "5"
 },
 {
 "name": "streak",
@@ -27901,8 +27842,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -27911,8 +27852,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6666667,
-"displayValue": ".667"
+"value": 0.61538464,
+"displayValue": ".615"
 },
 {
 "name": "wins",
@@ -27952,8 +27893,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 2.0,
+"displayValue": "2"
 },
 {
 "name": "losses",
@@ -28035,8 +27976,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 4.0,
-"displayValue": "4"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -28055,8 +27996,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": 3.0,
+"displayValue": "W3"
 },
 {
 "name": "winPercent",
@@ -28065,8 +28006,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
+"value": 0.53846157,
+"displayValue": ".538"
 },
 {
 "name": "wins",
@@ -28075,8 +28016,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [
@@ -28106,8 +28047,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 4.0,
+"displayValue": "4"
 },
 {
 "name": "losses",
@@ -28126,8 +28067,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -28136,8 +28077,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.42857143,
-"displayValue": ".429"
+"value": 0.46666667,
+"displayValue": ".467"
 },
 {
 "name": "wins",
@@ -28146,8 +28087,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [
@@ -28199,8 +28140,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 11.0,
+"displayValue": "11"
 },
 {
 "name": "streak",
@@ -28209,8 +28150,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": -3.0,
+"displayValue": "L3"
 },
 {
 "name": "winPercent",
@@ -28219,8 +28160,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.2857143,
-"displayValue": ".286"
+"value": 0.26666668,
+"displayValue": ".267"
 },
 {
 "name": "wins",
@@ -28260,8 +28201,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 8.5,
-"displayValue": "8.5"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "name": "losses",
