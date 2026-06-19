@@ -1943,25 +1943,11 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/5?lang=en&region=us",
 "id": "5"
 },
-"status": "Day-To-Day",
-"injuries": {
-"status": "Day-To-Day",
-"date": "2026-06-17T21:07Z",
-"type": {
-"id": "6",
-"name": "INJURY_STATUS_DAYTODAY",
-"description": "day-to-day",
-"abbreviation": "DD"
-},
-"details": {
-"fantasyStatus": {
-"description": "GTD",
-"abbreviation": "GTD",
-"displayDescription": "GTD"
-},
-"type": "Back",
-"returnDate": "2026-06-18"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -2408,12 +2394,12 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "IND leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 4,
 "seriesLabel": "Regular Season",
-"seriesScore": "1-0",
-"shortSummary": "IND leads season",
+"seriesScore": "1-1",
+"shortSummary": "Season tied",
 "events": [
 {
 "id": "401856961",
@@ -2560,82 +2546,21 @@
 "uid": "s:40~l:59~e:401857002~c:401857002",
 "date": "2026-06-18T23:30:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Thu, June 18th at 7:30 PM EDT",
-"shortDetail": "6/18 - 7:30 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
 "neutralSite": false,
-"broadcasts": [
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "Prime Video"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "Atlanta News First"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "2",
-"type": "Home"
-},
-"media": {
-"shortName": "WTHR Channel 13"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "Victory+ ATL"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "5",
 "uid": "s:40~l:59~t:5",
@@ -2677,10 +2602,11 @@
 }
 ]
 },
-"score": "0"
+"score": "101"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "20",
 "uid": "s:40~l:59~t:20",
@@ -2722,7 +2648,7 @@
 }
 ]
 },
-"score": "0"
+"score": "108"
 }
 ],
 "links": [
@@ -5966,7 +5892,7 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "IND leads series 1-0",
+"summary": "Series tied 1-1",
 "completed": false,
 "totalCompetitions": 4,
 "competitors": [
@@ -5982,7 +5908,7 @@
 {
 "id": "20",
 "uid": "s:40~l:59~t:20",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/20?lang=en&region=us"
@@ -27870,8 +27796,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 1.0,
-"displayValue": "1"
+"value": 0.5,
+"displayValue": "0.5"
 },
 {
 "name": "losses",
@@ -27890,8 +27816,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 1.0,
-"displayValue": "W1"
+"value": 2.0,
+"displayValue": "W2"
 },
 {
 "name": "winPercent",
@@ -27900,8 +27826,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6923077,
-"displayValue": ".692"
+"value": 0.71428573,
+"displayValue": ".714"
 },
 {
 "name": "wins",
@@ -27910,8 +27836,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 9.0,
-"displayValue": "9"
+"value": 10.0,
+"displayValue": "10"
 }
 ],
 "logo": [
@@ -27941,8 +27867,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 1.5,
-"displayValue": "1.5"
+"value": 2.0,
+"displayValue": "2"
 },
 {
 "name": "losses",
@@ -27951,8 +27877,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 5.0,
-"displayValue": "5"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "name": "streak",
@@ -27961,8 +27887,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 4.0,
-"displayValue": "W4"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -27971,8 +27897,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64285713,
-"displayValue": ".643"
+"value": 0.6,
+"displayValue": ".600"
 },
 {
 "name": "wins",
