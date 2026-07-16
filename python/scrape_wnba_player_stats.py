@@ -30,7 +30,13 @@ from tqdm import tqdm
 
 # Imported direct from the module path because the new helpers are not yet
 # re-exported via sportsdataverse.wnba.__init__.
-from sportsdataverse.wnba.wnba_player_stats import espn_wnba_player_stats
+# _v3 == the site.web.api common/v3 .../athletes/{id}/stats CAREER endpoint,
+# which is what every file under wnba/player_season_stats/json/ is and what the
+# downstream parser reads (categories[].statistics[]). The unsuffixed
+# espn_wnba_player_stats is core-v2 /athletes/{id}/statistics -- a DIFFERENT
+# API returning $ref/season/athlete/splits. It imports fine and fails silently,
+# so do not "simplify" this import.
+from sportsdataverse.wnba import espn_wnba_player_stats_v3
 from sportsdataverse.dl_utils import download
 
 
@@ -100,8 +106,8 @@ def download_player_stats(season, athlete_id, output_dir, rerun_existing):
     if out_path.exists() and not rerun_existing:
         return f"skip {athlete_id}"
     try:
-        raw = espn_wnba_player_stats(
-            athlete_id=int(athlete_id), season=int(season), raw=True
+        raw = espn_wnba_player_stats_v3(
+            athlete_id=int(athlete_id), season=int(season), return_parsed=False
         )
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(raw, f, indent=0, sort_keys=False)
