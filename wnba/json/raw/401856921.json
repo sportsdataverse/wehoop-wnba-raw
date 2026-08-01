@@ -1906,26 +1906,11 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/5?lang=en&region=us",
 "id": "5"
 },
-"status": "Day-To-Day",
-"injuries": {
-"status": "Day-To-Day",
-"date": "2026-07-31T00:12Z",
-"type": {
-"id": "6",
-"name": "INJURY_STATUS_DAYTODAY",
-"description": "day-to-day",
-"abbreviation": "DD"
-},
-"details": {
-"fantasyStatus": {
-"description": "GTD",
-"abbreviation": "GTD",
-"displayDescription": "GTD"
-},
-"type": "Lower Leg",
-"side": "Right",
-"returnDate": "2026-07-31"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -2098,26 +2083,11 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/5?lang=en&region=us",
 "id": "5"
 },
-"status": "Day-To-Day",
-"injuries": {
-"status": "Day-To-Day",
-"date": "2026-07-31T00:12Z",
-"type": {
-"id": "6",
-"name": "INJURY_STATUS_DAYTODAY",
-"description": "day-to-day",
-"abbreviation": "DD"
-},
-"details": {
-"fantasyStatus": {
-"description": "GTD",
-"abbreviation": "GTD",
-"displayDescription": "GTD"
-},
-"type": "Lower Leg",
-"side": "Right",
-"returnDate": "2026-07-31"
-}
+"status": {
+"id": "1",
+"name": "Active",
+"type": "active",
+"abbreviation": "Active"
 }
 },
 "statistics": [
@@ -2510,12 +2480,12 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
-"completed": false,
+"summary": "IND wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "seriesLabel": "Regular Season",
-"seriesScore": "1-1",
-"shortSummary": "Season tied",
+"seriesScore": "2-1",
+"shortSummary": "IND wins season",
 "events": [
 {
 "id": "401856921",
@@ -2848,67 +2818,21 @@
 "uid": "s:40~l:59~e:401857104~c:401857104",
 "date": "2026-08-01T02:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Fri, July 31st at 10:00 PM EDT",
-"shortDetail": "7/31 - 10:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
 "neutralSite": false,
-"broadcasts": [
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "ION"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "6",
-"shortName": "Subscription Package"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "WNBA League Pass"
-},
-"lang": "en",
-"region": "us"
-},
-{
-"type": {
-"id": "1",
-"shortName": "TV"
-},
-"market": {
-"id": "3",
-"type": "Away"
-},
-"media": {
-"shortName": "WTHR Channel 13"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "132052",
 "uid": "s:40~l:59~t:132052",
@@ -2973,10 +2897,11 @@
 }
 ]
 },
-"score": "0"
+"score": "98"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "5",
 "uid": "s:40~l:59~t:5",
@@ -3018,7 +2943,7 @@
 }
 ]
 },
-"score": "0"
+"score": "112"
 }
 ],
 "links": [
@@ -6060,14 +5985,14 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "Series tied 1-1",
-"completed": false,
+"summary": "IND wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
 "id": "5",
 "uid": "s:40~l:59~t:5",
-"wins": 1,
+"wins": 2,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/5?lang=en&region=us"
@@ -26167,8 +26092,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 5.5,
+"displayValue": "5.5"
 },
 {
 "name": "losses",
@@ -26177,8 +26102,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 11.0,
+"displayValue": "11"
 },
 {
 "name": "streak",
@@ -26187,8 +26112,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -1.0,
-"displayValue": "L1"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -26197,8 +26122,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64285713,
-"displayValue": ".643"
+"value": 0.62068963,
+"displayValue": ".621"
 },
 {
 "name": "wins",
@@ -26222,89 +26147,6 @@
 "default"
 ],
 "lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Portland",
-"link": "https://www.espn.com/wnba/team/_/name/por/portland-fire",
-"id": "132052",
-"uid": "s:40~l:59~t:132052",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 12.0,
-"displayValue": "12"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 17.0,
-"displayValue": "17"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -3.0,
-"displayValue": "L3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.39285713,
-"displayValue": ".393"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 11.0,
-"displayValue": "11"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2026-04-03T15:00Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/por.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2026-04-03T15:01Z"
 }
 ]
 },
@@ -26376,6 +26218,89 @@
 "default"
 ],
 "lastUpdated": "2025-12-03T22:02Z"
+}
+]
+},
+{
+"team": "Portland",
+"link": "https://www.espn.com/wnba/team/_/name/por/portland-fire",
+"id": "132052",
+"uid": "s:40~l:59~t:132052",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 12.5,
+"displayValue": "12.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 18.0,
+"displayValue": "18"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -4.0,
+"displayValue": "L4"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.37931034,
+"displayValue": ".379"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 11.0,
+"displayValue": "11"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2026-04-03T15:00Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/por.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2026-04-03T15:01Z"
 }
 ]
 },
@@ -26463,8 +26388,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 18.0,
-"displayValue": "18"
+"value": 18.5,
+"displayValue": "18.5"
 },
 {
 "name": "losses",
@@ -26473,8 +26398,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 24.0,
-"displayValue": "24"
+"value": 25.0,
+"displayValue": "25"
 },
 {
 "name": "streak",
@@ -26483,8 +26408,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -7.0,
-"displayValue": "L7"
+"value": -8.0,
+"displayValue": "L8"
 },
 {
 "name": "winPercent",
@@ -26493,8 +26418,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.2,
-"displayValue": ".200"
+"value": 0.19354838,
+"displayValue": ".194"
 },
 {
 "name": "wins",
@@ -26576,8 +26501,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 4.0,
-"displayValue": "W4"
+"value": 5.0,
+"displayValue": "W5"
 },
 {
 "name": "winPercent",
@@ -26586,8 +26511,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64285713,
-"displayValue": ".643"
+"value": 0.6551724,
+"displayValue": ".655"
 },
 {
 "name": "wins",
@@ -26596,8 +26521,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 18.0,
-"displayValue": "18"
+"value": 19.0,
+"displayValue": "19"
 }
 ],
 "logo": [
@@ -26647,8 +26572,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 4.0,
-"displayValue": "W4"
+"value": 5.0,
+"displayValue": "W5"
 },
 {
 "name": "winPercent",
@@ -26657,8 +26582,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6296296,
-"displayValue": ".630"
+"value": 0.64285713,
+"displayValue": ".643"
 },
 {
 "name": "wins",
@@ -26667,8 +26592,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 17.0,
-"displayValue": "17"
+"value": 18.0,
+"displayValue": "18"
 }
 ],
 "logo": [
@@ -26718,8 +26643,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 3.0,
-"displayValue": "W3"
+"value": 4.0,
+"displayValue": "W4"
 },
 {
 "name": "winPercent",
@@ -26728,8 +26653,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5555556,
-"displayValue": ".556"
+"value": 0.5714286,
+"displayValue": ".571"
 },
 {
 "name": "wins",
@@ -26738,8 +26663,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 15.0,
-"displayValue": "15"
+"value": 16.0,
+"displayValue": "16"
 }
 ],
 "logo": [
@@ -26781,8 +26706,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -26852,8 +26777,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 8.5,
+"displayValue": "8.5"
 },
 {
 "name": "losses",
@@ -26923,8 +26848,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 8.5,
+"displayValue": "8.5"
 },
 {
 "name": "losses",
@@ -26994,8 +26919,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 11.5,
-"displayValue": "11.5"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "losses",
