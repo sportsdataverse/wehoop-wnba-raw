@@ -19,7 +19,6 @@ python3 python/scrape_wnba_json.py      -s 2025 -e 2025 -r false   # per-game PB
 # also: scrape_wnba_team_rosters / _player_stats / _player_core / _team_stats /
 #       _standings / _game_rosters / _officials  (same -s -e -r flags)
 python3 python/scrape_wnba_draft.py     -s 2025 -e 2025 [-r]   # annual; own trigger (NOT in daily flow)
-# helper: wnba_pbp_creation.py (PBP prototype, not in daily flow)
 ```
 
 `-r true` re-scrapes games already on disk; `-r false` skips them. Scrapers
