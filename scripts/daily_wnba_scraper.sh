@@ -1,7 +1,8 @@
 #!/bin/bash
 # Scrape raw WNBA daily datasets per season:
 #   schedules, per-game JSON (PBP), team rosters, player season stats,
-#   team season stats, standings, per-game rosters, per-game officials.
+#   player core (identity/bio), team season stats, standings,
+#   per-game rosters, per-game officials.
 #
 # Mirrors the step order in .github/workflows/daily_wnba_raw.yml so local
 # runs and CI runs produce the same on-disk output. Draft is annual and
@@ -63,6 +64,7 @@ do
         run_scraper json         python3 python/scrape_wnba_json.py         -s $i -e $i -r $RESCRAPE
         run_scraper team_rosters python3 python/scrape_wnba_team_rosters.py -s $i -e $i -r $RESCRAPE
         run_scraper player_stats python3 python/scrape_wnba_player_stats.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  python3 python/scrape_wnba_player_core.py  -s $i -e $i -r $RESCRAPE
         run_scraper team_stats   python3 python/scrape_wnba_team_stats.py   -s $i -e $i -r $RESCRAPE
         run_scraper standings    python3 python/scrape_wnba_standings.py    -s $i -e $i -r $RESCRAPE
         run_scraper game_rosters python3 python/scrape_wnba_game_rosters.py -s $i -e $i -r $RESCRAPE

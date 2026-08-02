@@ -16,8 +16,8 @@ commits + pushes). Scrapers take `--start_year/-s`, `--end_year/-e`,
 bash scripts/daily_wnba_scraper.sh -s 2025 -e 2025 -r false   # full daily flow
 python3 python/scrape_wnba_schedules.py -s 2025 -e 2025 -r false
 python3 python/scrape_wnba_json.py      -s 2025 -e 2025 -r false   # per-game PBP JSON
-# also: scrape_wnba_team_rosters / _player_stats / _team_stats / _standings /
-#       _game_rosters / _officials  (same -s -e -r flags)
+# also: scrape_wnba_team_rosters / _player_stats / _player_core / _team_stats /
+#       _standings / _game_rosters / _officials  (same -s -e -r flags)
 python3 python/scrape_wnba_draft.py     -s 2025 -e 2025 [-r]   # annual; own trigger (NOT in daily flow)
 # helper: wnba_pbp_creation.py (PBP prototype, not in daily flow)
 ```
@@ -32,6 +32,7 @@ depend on `sportsdataverse-py` (`requirements.txt`) and call
 - `wnba/json/final/{game_id}.json` — clean payload consumed by `wehoop-wnba-data`
 - `wnba/json/raw/{game_id}.json` — raw ESPN response (forensics); `wnba/errors/` — failed games
 - `wnba/{team_rosters,player_season_stats,team_stats,standings}/json/...` (season-keyed)
+- `wnba/player_core/json/{athlete_id}.json` — athlete identity/bio (athlete-keyed, deduped across seasons)
 - `wnba/draft/json/{season}.json` (annual)
 - `wnba/{game_rosters,officials}/json/{game_id}.json` (per-game)
 
