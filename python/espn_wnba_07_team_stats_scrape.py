@@ -1,11 +1,10 @@
-
 """Scrape ESPN WNBA team season stats per (season, team_id).
 
 Output: ``wnba/team_stats/json/{season}/{team_id}.json`` -- raw ESPN
 response. The downstream R parser in ``wehoop-wnba-data`` reads these
 JSONs to build the per-season tidy team-stats frame.
 
-Team ids are sourced from the same place ``scrape_wnba_team_rosters.py``
+Team ids are sourced from the same place ``espn_wnba_08_team_rosters_scrape.py``
 uses: the season's schedule parquet (``home_id`` / ``away_id``), with a
 fallback to ``sdv.wnba.espn_wnba_teams`` if the parquet is missing.
 
@@ -124,9 +123,7 @@ def download_team_stats(
             json.dump(raw, f, indent=0, sort_keys=False)
         return f"ok {team_id}"
     except Exception as e:
-        logger.warning(
-            f"season={season} team_id={team_id} failed: {e!r}"
-        )
+        logger.warning(f"season={season} team_id={team_id} failed: {e!r}")
         return f"err {team_id}: {e}"
 
 

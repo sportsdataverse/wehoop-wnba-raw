@@ -60,15 +60,15 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        run_scraper schedules    python3 python/scrape_wnba_schedules.py    -s $i -e $i -r $RESCRAPE
-        run_scraper json         python3 python/scrape_wnba_json.py         -s $i -e $i -r $RESCRAPE
-        run_scraper team_rosters python3 python/scrape_wnba_team_rosters.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_stats python3 python/scrape_wnba_player_stats.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_core  python3 python/scrape_wnba_player_core.py  -s $i -e $i -r $RESCRAPE
-        run_scraper team_stats   python3 python/scrape_wnba_team_stats.py   -s $i -e $i -r $RESCRAPE
-        run_scraper standings    python3 python/scrape_wnba_standings.py    -s $i -e $i -r $RESCRAPE
-        run_scraper game_rosters python3 python/scrape_wnba_game_rosters.py -s $i -e $i -r $RESCRAPE
-        run_scraper officials    python3 python/scrape_wnba_officials.py    -s $i -e $i -r $RESCRAPE
+        run_scraper schedules    python3 python/espn_wnba_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper pbp          python3 python/espn_wnba_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
+        run_scraper team_rosters python3 python/espn_wnba_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_stats python3 python/espn_wnba_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  python3 python/espn_wnba_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
+        run_scraper team_stats   python3 python/espn_wnba_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
+        run_scraper standings    python3 python/espn_wnba_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper game_rosters python3 python/espn_wnba_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper officials    python3 python/espn_wnba_10_officials_scrape.py    -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add wnba/* >> /dev/null
         git pull >> /dev/null

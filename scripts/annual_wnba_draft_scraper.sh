@@ -34,7 +34,7 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        python3 python/scrape_wnba_draft.py -s $i -e $i -r $RESCRAPE
+        python3 python/espn_wnba_05_draft_scrape.py -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add wnba/draft >> /dev/null
         git pull >> /dev/null

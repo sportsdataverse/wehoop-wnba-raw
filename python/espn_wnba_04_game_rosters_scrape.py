@@ -1,4 +1,3 @@
-
 """Scrape ESPN WNBA per-game rosters.
 
 Output: ``wnba/game_rosters/json/{game_id}.json`` -- raw ESPN response.
@@ -7,7 +6,7 @@ navigates ``boxscore.players`` to build the per-game tidy roster frame
 (one row per athlete-team-game).
 
 Endpoint: ``site.api.espn.com/apis/site/v2/sports/basketball/wnba/summary``
-This is the same comprehensive game-summary endpoint scrape_wnba_json.py
+This is the same comprehensive game-summary endpoint espn_wnba_02_pbp_scrape.py
 hits for play-by-play; it includes ``boxscore.players`` with per-team
 roster + per-athlete stats / starter / DNP / ejected flags.
 
@@ -91,9 +90,7 @@ def download_game_rosters_batch(
     threads = min(cores, max(1, len(game_ids)))
     with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
         futs = {
-            executor.submit(
-                download_game_rosters, gid, output_dir, rerun_existing
-            ): gid
+            executor.submit(download_game_rosters, gid, output_dir, rerun_existing): gid
             for gid in game_ids
         }
         for fut in tqdm(
@@ -104,9 +101,7 @@ def download_game_rosters_batch(
             fut.result()
 
 
-def download_game_rosters(
-    game_id: int, output_dir: Path, rerun_existing: bool
-) -> str:
+def download_game_rosters(game_id: int, output_dir: Path, rerun_existing: bool) -> str:
     out_path = Path(output_dir) / f"{game_id}.json"
     if out_path.exists() and not rerun_existing:
         return f"skip {game_id}"
@@ -134,9 +129,7 @@ def scrape_season(
         logger.info(f"No game ids for {season}; skipping")
         return
     t0 = time.time()
-    download_game_rosters_batch(
-        season, game_ids, output_dir, rerun_existing, cores
-    )
+    download_game_rosters_batch(season, game_ids, output_dir, rerun_existing, cores)
     t1 = time.time()
     logger.info(
         f"{(t1 - t0) / 60:.2f} minutes to download {len(game_ids)} game rosters for {season}."

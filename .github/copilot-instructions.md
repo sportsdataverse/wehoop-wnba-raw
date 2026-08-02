@@ -24,15 +24,16 @@ WNBA Stats API, which has no raw cache.
 
 ```sh
 bash scripts/daily_wnba_scraper.sh -s 2025 -e 2025 -r false
-python3 python/scrape_wnba_schedules.py    -s 2025 -e 2025 -r false
-python3 python/scrape_wnba_json.py         -s 2025 -e 2025 -r false
-python3 python/scrape_wnba_team_rosters.py -s 2025 -e 2025
-python3 python/scrape_wnba_player_stats.py -s 2025 -e 2025
-python3 python/scrape_wnba_team_stats.py   -s 2025 -e 2025
-python3 python/scrape_wnba_standings.py    -s 2025 -e 2025
-python3 python/scrape_wnba_draft.py        -s 2025 -e 2025   # annual; fires wehoop_wnba_draft_trigger.yml
-python3 python/scrape_wnba_game_rosters.py -s 2025 -e 2025
-python3 python/scrape_wnba_officials.py    -s 2025 -e 2025
+python3 python/espn_wnba_01_schedules_scrape.py    -s 2025 -e 2025 -r false
+python3 python/espn_wnba_02_pbp_scrape.py          -s 2025 -e 2025 -r false
+python3 python/espn_wnba_03_standings_scrape.py    -s 2025 -e 2025
+python3 python/espn_wnba_04_game_rosters_scrape.py -s 2025 -e 2025
+python3 python/espn_wnba_05_draft_scrape.py        -s 2025 -e 2025   # annual; fires wehoop_wnba_draft_trigger.yml
+python3 python/espn_wnba_06_player_stats_scrape.py -s 2025 -e 2025
+python3 python/espn_wnba_07_team_stats_scrape.py   -s 2025 -e 2025
+python3 python/espn_wnba_08_team_rosters_scrape.py -s 2025 -e 2025
+python3 python/espn_wnba_09_player_core_scrape.py  -s 2025 -e 2025
+python3 python/espn_wnba_10_officials_scrape.py    -s 2025 -e 2025
 ```
 
 `-r true` forces re-scrape; `-r false` skips files already on disk. Outputs:
@@ -64,11 +65,12 @@ push, which fires `wehoop_wnba_data_trigger.yml` exactly once per run.
 - Cron `0 5 UTC` daily, gated to the in-season windows used by
   `wehoop-wnba-data/daily_wnba.yml` (late Oct, Nov-Dec, Jan-Jun, early Jul).
 - `workflow_dispatch` inputs: `start_year`, `end_year`, `rescrape`.
-- Scripts in order: `scrape_wnba_schedules.py`, `scrape_wnba_json.py`,
-  `scrape_wnba_team_rosters.py`, `scrape_wnba_player_stats.py`,
-  `scrape_wnba_team_stats.py`, `scrape_wnba_standings.py`,
-  `scrape_wnba_game_rosters.py`, `scrape_wnba_officials.py`.
-- `scrape_wnba_draft.py` is intentionally excluded — it has its own annual
+- Scripts in order: `espn_wnba_01_schedules_scrape.py`, `espn_wnba_02_pbp_scrape.py`,
+  `espn_wnba_08_team_rosters_scrape.py`, `espn_wnba_06_player_stats_scrape.py`,
+  `espn_wnba_09_player_core_scrape.py`, `espn_wnba_07_team_stats_scrape.py`,
+  `espn_wnba_03_standings_scrape.py`, `espn_wnba_04_game_rosters_scrape.py`,
+  `espn_wnba_10_officials_scrape.py`.
+- `espn_wnba_05_draft_scrape.py` is intentionally excluded — it has its own annual
   trigger (`wehoop_wnba_draft_trigger.yml`) and shouldn't fire daily.
 - Single `git add wnba/` + commit + push at the end keeps the downstream
   dispatch count to one per run.

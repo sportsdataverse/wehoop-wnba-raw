@@ -12,13 +12,18 @@ Driven by `scripts/daily_wnba_scraper.sh` (getopts `-s -e -r`; loops seasons,
 commits + pushes). Scrapers take `--start_year/-s`, `--end_year/-e`,
 `--rescrape/-r`. Seasons are integer years.
 
+Scrapers are stage-numbered `espn_wnba_NN_{name}_scrape.py` — the NN semantics
+are canonical across the ESPN raw repos (01 schedules, 02 pbp, 03 standings,
+04 game_rosters, 05 draft, 06 player_stats, 07 team_stats, 08 team_rosters,
+09 player_core; 10 officials is a WNBA extra).
+
 ```sh
 bash scripts/daily_wnba_scraper.sh -s 2025 -e 2025 -r false   # full daily flow
-python3 python/scrape_wnba_schedules.py -s 2025 -e 2025 -r false
-python3 python/scrape_wnba_json.py      -s 2025 -e 2025 -r false   # per-game PBP JSON
-# also: scrape_wnba_team_rosters / _player_stats / _player_core / _team_stats /
-#       _standings / _game_rosters / _officials  (same -s -e -r flags)
-python3 python/scrape_wnba_draft.py     -s 2025 -e 2025 [-r]   # annual; own trigger (NOT in daily flow)
+python3 python/espn_wnba_01_schedules_scrape.py -s 2025 -e 2025 -r false
+python3 python/espn_wnba_02_pbp_scrape.py       -s 2025 -e 2025 -r false   # per-game PBP JSON
+# also: 03_standings / 04_game_rosters / 06_player_stats / 07_team_stats /
+#       08_team_rosters / 09_player_core / 10_officials  (same -s -e -r flags)
+python3 python/espn_wnba_05_draft_scrape.py     -s 2025 -e 2025 [-r]   # annual; own trigger (NOT in daily flow)
 ```
 
 `-r true` re-scrapes games already on disk; `-r false` skips them. Scrapers

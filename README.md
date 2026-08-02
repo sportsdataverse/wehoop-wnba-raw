@@ -15,7 +15,7 @@
 flowchart TB;
     subgraph A[wehoop-wnba-raw];
         direction TB;
-        A1[python/scrape_wnba_schedules.py]-->A2[python/scrape_wnba_json.py];
+        A1[python/espn_wnba_01_schedules_scrape.py]-->A2[python/espn_wnba_02_pbp_scrape.py];
     end;
 
     subgraph B[wehoop-wnba-data];
