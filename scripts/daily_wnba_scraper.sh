@@ -24,6 +24,15 @@ RESCRAPE=${RESCRAPE:-true}
 echo "Rescrape set to: $RESCRAPE"
 mkdir -p logs
 
+# Resolve the interpreter once, via the shared resolver. Deliberately not
+# `uv run`: that resyncs the venv to the lockfile mid-sweep (it can swap
+# sportsdataverse under a running multi-hour scrape) and makes uv a RUNTIME
+# dependency of every scrape. Build the venv ahead of time with `uv sync`.
+# shellcheck source=scripts/_venv.sh
+. "$(dirname "${BASH_SOURCE[0]}")/_venv.sh"
+PY="$SDV_PY"
+echo "Interpreter: $PY"
+
 # Scraper failures used to be swallowed: each scraper ran bare, so a crash left
 # the loop running, the partial day got committed, and the job still exited 0.
 # Four scrapers sat dead for two sportsdataverse-py release cycles that way --
@@ -60,15 +69,15 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        run_scraper schedules    python3 python/espn_wnba_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
-        run_scraper pbp          python3 python/espn_wnba_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
-        run_scraper team_rosters python3 python/espn_wnba_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_stats python3 python/espn_wnba_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_core  python3 python/espn_wnba_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
-        run_scraper team_stats   python3 python/espn_wnba_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
-        run_scraper standings    python3 python/espn_wnba_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
-        run_scraper game_rosters python3 python/espn_wnba_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
-        run_scraper officials    python3 python/espn_wnba_10_officials_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper schedules    $PY python/espn_wnba_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper pbp          $PY python/espn_wnba_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
+        run_scraper team_rosters $PY python/espn_wnba_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_stats $PY python/espn_wnba_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  $PY python/espn_wnba_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
+        run_scraper team_stats   $PY python/espn_wnba_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
+        run_scraper standings    $PY python/espn_wnba_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper game_rosters $PY python/espn_wnba_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper officials    $PY python/espn_wnba_10_officials_scrape.py    -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add wnba/* >> /dev/null
         git pull >> /dev/null
