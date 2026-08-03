@@ -54,32 +54,21 @@ jobs:
           token: ${{ secrets.SDV_GH_TOKEN }}
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
-          # --upgrade is load-bearing. This job runs on a SELF-HOSTED runner
-          # with a persistent site-packages, and pip does not upgrade when an
-          # installed version already satisfies the constraint. It sat on
-          # 0.0.50 for 25 releases, so every stage that used a symbol added
-          # after it failed -- see the verify step below.
-          pip install --upgrade "sportsdataverse[all] @ git+https://github.com/sportsdataverse/sportsdataverse-py@main" tqdm
-          # --upgrade is NOT sufficient for a git source. pip's satisfaction
-          # check is by VERSION: main still reports 0.0.75, so with 0.0.75
-          # already installed pip cloned the repo, resolved the commit, built
-          # the metadata -- and then skipped the install entirely, leaving the
-          # older code in place with no "Successfully installed" line to show
-          # for it. Only --force-reinstall guarantees the code actually lands.
-          # --no-deps keeps it to the one package; the line above already
-          # resolved the dependency tree.
-          pip install --force-reinstall --no-deps "sportsdataverse @ git+https://github.com/sportsdataverse/sportsdataverse-py@main"
+      # uv, not pip. This job runs on a SELF-HOSTED runner with a persistent
+      # site-packages, where pip's version-based satisfaction check silently
+      # skips upgrades: a bare `>=` floor left it on sportsdataverse 0.0.50 for
+      # 25 releases (three weeks of failed scrapes), and even `--upgrade`
+      # against the git branch was a no-op because main still reports 0.0.75 --
+      # pip cloned, resolved, built, then skipped the install. uv resolves the
+      # branch to a COMMIT recorded in uv.lock and syncs an isolated project
+      # venv, so neither failure mode is representable.
+      - name: Sync the locked project environment
+        run: uv sync --upgrade-package sportsdataverse
 
       # Fail at install time, loudly, instead of three stages into a scrape.
       # The 2026-07-12..08-02 outage was exactly this: stages 01-04 passed and
@@ -87,8 +76,8 @@ jobs:
       # weeks. These are every sportsdataverse symbol the stages import.
       - name: Verify the sportsdataverse surface the stages need
         run: |
-          python -c "from importlib.metadata import version; print('sportsdataverse', version('sportsdataverse'))"
-          python - <<'PY'
+          uv run --no-sync python -c "from importlib.metadata import version; print('sportsdataverse', version('sportsdataverse'))"
+          uv run --no-sync python - <<'PY'
           from sportsdataverse.dl_utils import download
           from sportsdataverse.scrape.espn.cli import str2bool
           from sportsdataverse.scrape.espn.persist import write_payload
@@ -102,31 +91,31 @@ jobs:
           PY
 
       - name: Scrape schedules
-        run: python python/espn_wnba_01_schedules_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_01_schedules_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape per-game JSON (PBP)
-        run: python python/espn_wnba_02_pbp_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_02_pbp_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape team rosters
-        run: python python/espn_wnba_08_team_rosters_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_08_team_rosters_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape player season stats
-        run: python python/espn_wnba_06_player_stats_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_06_player_stats_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape player core (identity/bio)
-        run: python python/espn_wnba_09_player_core_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_09_player_core_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape team season stats
-        run: python python/espn_wnba_07_team_stats_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_07_team_stats_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape standings
-        run: python python/espn_wnba_03_standings_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_03_standings_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape per-game rosters
-        run: python python/espn_wnba_04_game_rosters_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_04_game_rosters_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Scrape per-game officials
-        run: python python/espn_wnba_10_officials_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
+        run: uv run --no-sync python python/espn_wnba_10_officials_scrape.py --start_year "$START_YEAR" --end_year "$END_YEAR" -r "$RESCRAPE"
 
       - name: Commit any new JSON files
         run: |
