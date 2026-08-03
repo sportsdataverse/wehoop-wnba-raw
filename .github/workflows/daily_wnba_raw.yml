@@ -70,7 +70,7 @@ jobs:
           # installed version already satisfies the constraint. It sat on
           # 0.0.50 for 25 releases, so every stage that used a symbol added
           # after it failed -- see the verify step below.
-          pip install --upgrade "sportsdataverse[all]>=0.0.75" tqdm
+          pip install --upgrade "sportsdataverse[all] @ git+https://github.com/sportsdataverse/sportsdataverse-py@main" tqdm
 
       # Fail at install time, loudly, instead of three stages into a scrape.
       # The 2026-07-12..08-02 outage was exactly this: stages 01-04 passed and
@@ -81,6 +81,8 @@ jobs:
           python -c "from importlib.metadata import version; print('sportsdataverse', version('sportsdataverse'))"
           python - <<'PY'
           from sportsdataverse.dl_utils import download
+          from sportsdataverse.scrape.espn.cli import str2bool
+          from sportsdataverse.scrape.espn.persist import write_payload
           from sportsdataverse.wnba import espn_wnba_player_core, espn_wnba_player_stats_v3
           from sportsdataverse.wnba.wnba_draft import espn_wnba_draft
           from sportsdataverse.wnba.wnba_game_officials import espn_wnba_game_officials

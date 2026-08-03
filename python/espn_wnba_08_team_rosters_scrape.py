@@ -29,6 +29,7 @@ from tqdm import tqdm
 # import the function directly from its module to avoid relying on the
 # top-level package surface.
 from sportsdataverse.wnba.wnba_team_roster import espn_wnba_team_roster
+from sportsdataverse.scrape.espn.persist import write_payload
 
 
 logging.basicConfig(
@@ -86,8 +87,9 @@ def download_team_roster(season, team_id, output_dir, rerun_existing):
         return f"skip {team_id}"
     try:
         raw = espn_wnba_team_roster(team_id=int(team_id), season=int(season), raw=True)
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False)
+        if not write_payload(out_path, raw, indent=0):
+            logger.warning(f"refused error/empty payload: {out_path}")
+            return f"refused {out_path.stem}"
         return f"ok {team_id}"
     except Exception as e:
         logger.warning(

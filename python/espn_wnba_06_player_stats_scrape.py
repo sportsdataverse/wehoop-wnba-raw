@@ -38,6 +38,7 @@ from tqdm import tqdm
 # so do not "simplify" this import.
 from sportsdataverse.wnba import espn_wnba_player_stats_v3
 from sportsdataverse.dl_utils import download
+from sportsdataverse.scrape.espn.persist import write_payload
 
 
 logging.basicConfig(
@@ -109,8 +110,9 @@ def download_player_stats(season, athlete_id, output_dir, rerun_existing):
         raw = espn_wnba_player_stats_v3(
             athlete_id=int(athlete_id), season=int(season), return_parsed=False
         )
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False)
+        if not write_payload(out_path, raw, indent=0):
+            logger.warning(f"refused error/empty payload: {out_path}")
+            return f"refused {out_path.stem}"
         return f"ok {athlete_id}"
     except Exception as e:
         logger.warning(f"season={season} athlete_id={athlete_id} failed: {e!r}")

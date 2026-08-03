@@ -9,20 +9,10 @@ import time
 import gc
 from itertools import repeat
 from pathlib import Path
+from sportsdataverse.scrape.espn.cli import str2bool
 
 logging.basicConfig(level=logging.INFO, filename="wehoop_wnba_raw_logfile.txt")
 logger = logging.getLogger(__name__)
-
-
-def str2bool(value):
-    """Parse a shell-supplied boolean; ``argparse(type=bool)`` is a trap
-    (``bool("false")`` is True, so ``-r false`` silently full-rescraped).
-    Mirrors wehoop-wbb-raw's ``wbb_raw_scrape.cli.str2bool``: unrecognised
-    text is False -- the expensive mistake is re-scraping the archive,
-    not skipping a run."""
-    if isinstance(value, bool):
-        return value
-    return str(value).strip().lower() in {"1", "true", "t", "yes", "y", "on"}
 
 
 path_to_schedules = "wnba/schedules"

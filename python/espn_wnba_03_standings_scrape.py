@@ -33,6 +33,7 @@ from tqdm import tqdm
 # import the function directly from its module to avoid relying on the
 # top-level package surface.
 from sportsdataverse.wnba.wnba_standings import espn_wnba_standings
+from sportsdataverse.scrape.espn.persist import write_payload
 
 
 logging.basicConfig(
@@ -53,8 +54,9 @@ def download_standings(
         return f"skip {season}"
     try:
         raw: dict[str, Any] = espn_wnba_standings(season=int(season), raw=True)
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False)
+        if not write_payload(out_path, raw, indent=0):
+            logger.warning(f"refused error/empty payload: {out_path}")
+            return f"refused {out_path.stem}"
         return f"ok {season}"
     except Exception as e:
         logger.warning(f"season={season} failed: {e!r}")

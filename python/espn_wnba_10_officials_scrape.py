@@ -34,6 +34,7 @@ from tqdm import tqdm
 # The module is not re-exported from ``sportsdataverse.wnba``, so we import the
 # function directly from its module to avoid relying on the top-level surface.
 from sportsdataverse.wnba.wnba_game_officials import espn_wnba_game_officials
+from sportsdataverse.scrape.espn.persist import write_payload
 
 
 logging.basicConfig(
@@ -96,8 +97,9 @@ def download_officials(game_id: int, output_dir: Path, rerun_existing: bool) -> 
         return f"skip {game_id}"
     try:
         raw: dict[str, Any] = espn_wnba_game_officials(game_id=int(game_id), raw=True)
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(raw, f, indent=0, sort_keys=False)
+        if not write_payload(out_path, raw, indent=0):
+            logger.warning(f"refused error/empty payload: {out_path}")
+            return f"refused {out_path.stem}"
         return f"ok {game_id}"
     except Exception as e:
         # Per-game tolerance: 404s (officials missing for some games),

@@ -12,10 +12,15 @@ Werkzeug>=0.16.0
 xgboost>=1.2.0
 numpy>=1.19.4
 pandas>=1.1.4
-# Floor must stay >= the release that carries every symbol python/ imports.
-# espn_wnba_player_stats_v3 arrived with the 2026-06-08 codegen redesign; the
-# old >=0.0.32 floor let a self-hosted runner sit on 0.0.50 and fail stage 06.
-sportsdataverse[all]>=0.0.75
+# Tracks sdv-py main, the same source wehoop-wbb-raw pins. The stages import
+# sportsdataverse.scrape.espn (the shared ESPN raw engine), which is on main
+# and not yet in a PyPI release.
+#
+# A bare `>=` floor is NOT a pin on a persistent self-hosted runner: pip does
+# not upgrade an already-satisfied requirement, so `>=0.0.32` let this runner
+# sit on 0.0.50 for 25 releases and fail stage 06 for three weeks. Whatever the
+# source, the install line must use --upgrade.
+sportsdataverse[all] @ git+https://github.com/sportsdataverse/sportsdataverse-py@main
 pyreadr>=0.4.7
 pyarrow>=11.0.0
 tqdm>=4.65.0
