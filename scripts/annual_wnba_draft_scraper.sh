@@ -44,12 +44,9 @@ do
         git push >> /dev/null
     } 2>&1 | tee "$TMPLOG"
 
-    # Block is finished and pushed; tee has closed $TMPLOG. Now copy the log
-    # into its tracked location and commit/push it on its own.
+    # Block is finished and pushed; tee has closed $TMPLOG. Keep a local copy
+    # under logs/ (gitignored since 66c07f883 -- run logs are no longer
+    # committed, so there is no log commit/push here). Mirrors the daily driver.
     cp "$TMPLOG" "$LOGFILE"
-    git pull --rebase >> /dev/null || true
-    git add "$LOGFILE"
-    git commit -m "WNBA Draft log update (Start: $i End: $i)" >> /dev/null || echo "No log changes to commit"
-    git push >> /dev/null
     rm -f "$TMPLOG"
 done
