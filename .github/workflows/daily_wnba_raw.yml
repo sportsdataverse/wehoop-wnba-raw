@@ -71,6 +71,15 @@ jobs:
           # 0.0.50 for 25 releases, so every stage that used a symbol added
           # after it failed -- see the verify step below.
           pip install --upgrade "sportsdataverse[all] @ git+https://github.com/sportsdataverse/sportsdataverse-py@main" tqdm
+          # --upgrade is NOT sufficient for a git source. pip's satisfaction
+          # check is by VERSION: main still reports 0.0.75, so with 0.0.75
+          # already installed pip cloned the repo, resolved the commit, built
+          # the metadata -- and then skipped the install entirely, leaving the
+          # older code in place with no "Successfully installed" line to show
+          # for it. Only --force-reinstall guarantees the code actually lands.
+          # --no-deps keeps it to the one package; the line above already
+          # resolved the dependency tree.
+          pip install --force-reinstall --no-deps "sportsdataverse @ git+https://github.com/sportsdataverse/sportsdataverse-py@main"
 
       # Fail at install time, loudly, instead of three stages into a scrape.
       # The 2026-07-12..08-02 outage was exactly this: stages 01-04 passed and
