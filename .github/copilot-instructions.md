@@ -54,7 +54,9 @@ python3 python/espn_wnba_10_officials_scrape.py    -s 2025 -e 2025
 - Follow the parent SDK's Python conventions: snake_case, 4-space indent.
 - Prefer `pathlib.Path`, `concurrent.futures` for parallelism, `tqdm` for progress.
 - Don't add bespoke ESPN parsing here — call into `sportsdataverse.wnba.*` and persist its output.
-- Keep `requirements.txt` minimal.
+- Deps live in `pyproject.toml` + `uv.lock` (no `requirements.txt`);
+  `sportsdataverse` is pinned to git `main` via `[tool.uv.sources]` and CI
+  installs with `uv sync --frozen --dev`. Keep the dependency list minimal.
 
 ## Daily Umbrella Workflow
 
