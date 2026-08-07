@@ -1,0 +1,58 @@
+name: tests
+
+# Offline test gate, mirroring the hoopR-mbb-raw / wehoop-wbb-raw template.
+# Without it the suite only runs on a developer's machine: a broken import or
+# a reintroduced type=bool would ship and be discovered by a failing cron
+# instead of the PR that caused it. These tests touch no network.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # wnba/ holds tens of thousands of committed per-game JSON files; a
+          # full checkout spends its time cloning payloads no test reads.
+          # Sparse-checkout the code only and skip wnba/ entirely -- which is
+          # why the archive-backed tests are marked and deselected below.
+          sparse-checkout: |
+            python
+            tests
+            scripts
+            pyproject.toml
+            uv.lock
+          sparse-checkout-cone-mode: false
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          cache-dependency-glob: uv.lock
+
+      - name: Install
+        # --frozen: a PR must not silently re-resolve the lockfile.
+        run: uv sync --frozen --dev
+
+      - name: Tests
+        # `archive` tests read the committed wnba/ tree, which isn't checked
+        # out here.
+        run: uv run --no-sync pytest -q -m "not archive"
+
+      - name: Lint
+        run: uv run --no-sync ruff check python tests
+
+      - name: Shell syntax
+        # scripts/ is bash-only by convention; the scrape entry points are not
+        # otherwise exercised by CI.
+        run: |
+          for f in scripts/*.sh; do
+            bash -n "$f" || exit 1
+          done

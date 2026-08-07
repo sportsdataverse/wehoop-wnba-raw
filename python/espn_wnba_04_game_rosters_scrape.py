@@ -26,7 +26,6 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import gc
-import json
 import logging
 import time
 from pathlib import Path
@@ -34,13 +33,12 @@ from typing import Any
 
 import pandas as pd
 import sportsdataverse as sdv
-from tqdm import tqdm
 
 # Bypass the broken espn_wnba_game_rosters helper (see module docstring);
 # call ESPN's summary endpoint via the SDK's HTTP helper instead.
 from sportsdataverse.dl_utils import download
 from sportsdataverse.scrape.espn.persist import write_payload
-
+from tqdm import tqdm
 
 logging.basicConfig(
     level=logging.INFO,
