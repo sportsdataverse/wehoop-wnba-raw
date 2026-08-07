@@ -26,8 +26,9 @@ python3 python/espn_wnba_02_pbp_scrape.py       -s 2025 -e 2025 -r false   # per
 python3 python/espn_wnba_05_draft_scrape.py     -s 2025 -e 2025 [-r]   # annual; own trigger (NOT in daily flow)
 ```
 
-`-r true` re-scrapes games already on disk; `-r false` skips them. Scrapers
-depend on `sportsdataverse-py` (`requirements.txt`) and call
+`-r true` re-scrapes games already on disk; `-r false` skips them. Dependencies
+live in `pyproject.toml` + `uv.lock` (there is no `requirements.txt`);
+`sportsdataverse` is pinned to git `main` via `[tool.uv.sources]`. Scrapers call
 `sdv.wnba.espn_wnba_*(..., raw=True)` — fix ESPN parsing in `sportsdataverse-py`, not here.
 
 ## Outputs (committed to git, under `wnba/`)
