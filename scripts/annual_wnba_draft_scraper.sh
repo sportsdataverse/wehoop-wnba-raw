@@ -23,6 +23,16 @@ done
 RESCRAPE=${RESCRAPE:-true}
 echo "Rescrape set to: $RESCRAPE"
 mkdir -p logs
+
+# Resolve the interpreter the same way the daily driver does. This used to be a
+# bare `python3`, which on a host whose .venv had been swept resolved to the
+# ambient 3.8 and its years-old sportsdataverse -- the annual cadence just means
+# the breakage would have waited until draft night to show up.
+# shellcheck source=scripts/_venv.sh
+. "$(dirname "${BASH_SOURCE[0]}")/_venv.sh"
+PY="$SDV_PY"
+echo "Interpreter: $PY"
+sdv_preflight sportsdataverse.wnba
 for i in $(seq "${START_YEAR}" "${END_YEAR}")
 do
     LOGFILE="logs/wehoop_wnba_draft_logfile_${i}.log"
@@ -34,7 +44,7 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        python3 python/espn_wnba_05_draft_scrape.py -s $i -e $i -r $RESCRAPE
+        $PY python/espn_wnba_05_draft_scrape.py -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add wnba/draft >> /dev/null
         git pull >> /dev/null
