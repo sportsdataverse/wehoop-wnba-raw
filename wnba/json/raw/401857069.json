@@ -1550,8 +1550,8 @@
 "id": "5345478",
 "uid": "s:40~l:59~a:5345478",
 "guid": "744bdcfa-1a5b-39c2-9501-1ae60cae2925",
-"displayName": "Eliska Hamzova",
-"shortName": "E. Hamzova",
+"displayName": "Eliska Joklova",
+"shortName": "Hamzova",
 "links": [
 {
 "rel": [
@@ -1559,13 +1559,13 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/wnba/player/_/id/5345478/eliska-hamzova",
+"href": "https://www.espn.com/wnba/player/_/id/5345478/eliska-joklova",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/wnba/players/full/5345478.png",
-"alt": "Eliska Hamzova"
+"alt": "Eliska Joklova"
 },
 "jersey": "11",
 "position": {
@@ -2271,11 +2271,25 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/6?lang=en&region=us",
 "id": "6"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Out",
+"injuries": {
+"status": "Out",
+"date": "2026-08-18T21:07Z",
+"type": {
+"id": "4",
+"name": "INJURY_STATUS_OUT",
+"description": "out",
+"abbreviation": "O"
+},
+"details": {
+"fantasyStatus": {
+"description": "OUT",
+"abbreviation": "OUT",
+"displayDescription": "Out"
+},
+"type": "Ankle",
+"returnDate": "2026-08-20"
+}
 }
 },
 "statistics": [
@@ -2416,12 +2430,12 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "MIN leads series 2-0",
-"completed": false,
+"summary": "MIN wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "seriesLabel": "Regular Season",
-"seriesScore": "2-0",
-"shortSummary": "MIN leads season",
+"seriesScore": "2-1",
+"shortSummary": "MIN wins season",
 "events": [
 {
 "id": "401856999",
@@ -2708,37 +2722,21 @@
 "uid": "s:40~l:59~e:401857120~c:401857120",
 "date": "2026-08-07T01:00:00Z",
 "timeValid": true,
-"status": "pre",
+"status": "post",
 "statusType": {
-"id": "1",
-"name": "STATUS_SCHEDULED",
-"state": "pre",
-"completed": false,
-"description": "Scheduled",
-"detail": "Thu, August 6th at 9:00 PM EDT",
-"shortDetail": "8/6 - 9:00 PM EDT"
+"id": "3",
+"name": "STATUS_FINAL",
+"state": "post",
+"completed": true,
+"description": "Final",
+"detail": "Final",
+"shortDetail": "Final"
 },
 "neutralSite": false,
-"broadcasts": [
-{
-"type": {
-"id": "4",
-"shortName": "Streaming"
-},
-"market": {
-"id": "1",
-"type": "National"
-},
-"media": {
-"shortName": "Prime Video"
-},
-"lang": "en",
-"region": "us"
-}
-],
 "competitors": [
 {
 "homeAway": "home",
+"winner": false,
 "team": {
 "id": "8",
 "uid": "s:40~l:59~t:8",
@@ -2780,10 +2778,11 @@
 }
 ]
 },
-"score": "0"
+"score": "82"
 },
 {
 "homeAway": "away",
+"winner": true,
 "team": {
 "id": "6",
 "uid": "s:40~l:59~t:6",
@@ -2825,7 +2824,7 @@
 }
 ]
 },
-"score": "0"
+"score": "89"
 }
 ],
 "links": [
@@ -5702,8 +5701,8 @@
 "type": "season",
 "title": "Regular Season Series",
 "description": "Regular Season Series",
-"summary": "MIN leads series 2-0",
-"completed": false,
+"summary": "MIN wins series 2-1",
+"completed": true,
 "totalCompetitions": 3,
 "competitors": [
 {
@@ -5718,7 +5717,7 @@
 {
 "id": "6",
 "uid": "s:40~l:59~t:6",
-"wins": 0,
+"wins": 1,
 "ties": 0,
 "team": {
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/6?lang=en&region=us"
@@ -21242,17 +21241,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -21360,7 +21358,8 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
 "gameId": 401857069,
 "thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.jpg",
@@ -21384,9 +21383,6 @@
 "full": {
 "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.jpg"
 },
-"wide": {
-"href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_5x2.jpg"
-},
 "square": {
 "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_1x1.jpg"
 },
@@ -21395,54 +21391,45 @@
 },
 "verticalFirstFrame": {
 "href": "https://service-pkgespn.akamaized.net/opp/img/espn/9x16/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/thumb-1-w406-h720-f4.jpg"
+},
+"wide": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_5x2.jpg"
 }
 },
 "links": {
-"web": {
-"href": "https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle",
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/242d4a26-5986-497b-862d-e91dfad5390b"
+},
 "self": {
-"href": "https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=f62140b596190"
-}
+"href": "https://content.core.api.espn.com/v1/video/clips/49371071"
 }
 },
 "mobile": {
 "href": "https://watch.auth.api.espn.com/video/auth/brightcove/242d4a26-5986-497b-862d-e91dfad5390b/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.mp4"
-},
 "alert": {
 "href": "https://m.espn.com/general/video/videoAlert?vid=49371071"
 },
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/242d4a26-5986-497b-862d-e91dfad5390b/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle"
-},
 "progressiveDownload": {
 "href": "https://watch.auth.api.espn.com/video/auth/brightcove/242d4a26-5986-497b-862d-e91dfad5390b/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle"
-}
 },
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49371071"
+"source": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.mp4"
 },
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/242d4a26-5986-497b-862d-e91dfad5390b"
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/242d4a26-5986-497b-862d-e91dfad5390b/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle"
 }
 },
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_rel.smil/manifest.f4m"
+"HD": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_720p30_2896k.mp4"
 },
 "HLS": {
 "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/playlist.m3u8",
+"9x16": {
+"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/playlist.m3u8"
+},
 "HD": {
 "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/playlist.m3u8"
 },
@@ -21452,22 +21439,34 @@
 "href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/playlist.m3u8"
 }
 },
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/playlist.m3u8"
-},
 "shield": {
 "href": "https://watch.auth.api.espn.com/video/auth/media/242d4a26-5986-497b-862d-e91dfad5390b/asset"
 }
 },
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_720p30_2896k.mp4"
+"flash": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.smil"
 },
 "full": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_360p30_1464k.mp4"
+},
+"hds": {
+"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c_rel.smil/manifest.f4m"
+},
+"mezzanine": {
+"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0715/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c/aa0fae4a-2bd4-4c27-8af2-7e8bebdbba1c.mp4"
 }
 },
 "sportscenter": {
 "href": "sportscenter://x-callback-url/showVideo?videoID=49371071&videoDSI=f62140b596190"
+},
+"web": {
+"href": "https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle",
+"self": {
+"href": "https://www.espn.com/video/clip/_/id/49371071/olivia-miles-helped-court-rolling-ankle",
+"dsi": {
+"href": "https://www.espn.com/video/clip?id=f62140b596190"
+}
+}
 }
 },
 "categories": [
@@ -21484,12 +21483,12 @@
 "description": "WNBA",
 "abbreviation": "WNBA",
 "links": {
-"web": {
+"mobile": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
 },
-"mobile": {
+"web": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
@@ -21533,12 +21532,12 @@
 "id": 4433791,
 "description": "Olivia Miles",
 "links": {
-"web": {
+"mobile": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/4433791/olivia-miles"
 }
 },
-"mobile": {
+"web": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/4433791/olivia-miles"
 }
@@ -21560,12 +21559,12 @@
 "abbreviation": "MIN",
 "shortDisplayName": "Lynx",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx"
 }
@@ -21591,66 +21590,34 @@
 "league": "wnba",
 "description": "Los Angeles Sparks @ Minnesota Lynx",
 "links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401857069"
-}
-},
 "mobile": {
 "event": {
 "href": "https://www.espn.com/wnba/game/_/gameId/401857069"
 }
+},
+"web": {
+"event": {
+"href": "https://www.espn.com/wnba/game/_/gameId/401857069"
 }
 }
 }
-},
-{
-"type": "guid",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68"
-},
-{
-"type": "guid",
-"guid": "3d170ccb-7b75-54f1-78c4-cfbf3ee3322d"
-},
-{
-"type": "guid",
-"guid": "6630c533-d8f8-4b4f-8228-138d2ff23ef5"
-},
-{
-"type": "guid",
-"guid": "fe879255-6324-4784-385f-a1a18c22b5cc"
-},
-{
-"type": "guid",
-"guid": "9b981a71-c55e-3b7f-81a2-1663a2d50ea3"
-},
-{
-"type": "guid",
-"guid": "d815e23c-aa3e-3490-d7be-f876d1e30e8a"
-},
-{
-"type": "guid",
-"guid": "e8acf0b3-14b1-3a2f-813e-54390eff67c3"
-},
-{
-"type": "guid",
-"guid": "d7869e09-1f0c-34e6-ace1-62dea7eb5b8e"
+}
 }
 ],
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
-"coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Olivia Miles helped off court after rolling ankle) 2026/07/15 ESHEET",
-"trackingId": "dm_WNBA_olivia_miles_helped_off_court_after_rolling_ankle",
-"program": "WNBA"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "contributingPartner": "wsc",
-"contributingSystem": "wsc"
+"contributingSystem": "wsc",
+"tracking": {
+"coverageType": "OnePlay",
+"leagueName": "WNBA",
+"program": "WNBA",
+"sportName": "basketball",
+"trackingId": "dm_WNBA_olivia_miles_helped_off_court_after_rolling_ankle",
+"trackingName": "WNBA_One-Play (Olivia Miles helped off court after rolling ankle) 2026/07/15 ESHEET"
+}
 }
 ],
 "categories": [
@@ -21667,12 +21634,12 @@
 "description": "WNBA",
 "abbreviation": "WNBA",
 "links": {
-"web": {
+"mobile": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
 },
-"mobile": {
+"web": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
@@ -21694,12 +21661,12 @@
 "abbreviation": "MIN",
 "shortDisplayName": "Lynx",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/min/minnesota-lynx"
 }
@@ -21721,12 +21688,12 @@
 "abbreviation": "LA",
 "shortDisplayName": "Sparks",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
@@ -21746,34 +21713,18 @@
 "league": "wnba",
 "description": "Los Angeles Sparks @ Minnesota Lynx",
 "links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401857069"
-}
-},
 "mobile": {
 "event": {
 "href": "https://www.espn.com/wnba/game/_/gameId/401857069"
 }
+},
+"web": {
+"event": {
+"href": "https://www.espn.com/wnba/game/_/gameId/401857069"
 }
 }
 }
-},
-{
-"type": "guid",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68"
-},
-{
-"type": "guid",
-"guid": "d815e23c-aa3e-3490-d7be-f876d1e30e8a"
-},
-{
-"type": "guid",
-"guid": "fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737"
-},
-{
-"type": "guid",
-"guid": "d7869e09-1f0c-34e6-ace1-62dea7eb5b8e"
+}
 }
 ],
 "keywords": [
@@ -21783,15 +21734,11 @@
 "Los Angeles Sparks @ Minnesota Lynx"
 ],
 "story": "\r\n              MINNEAPOLIS -- \u2014 Kayla McBride scored 24 for her fifth straight 20-point performance, Courtney Williams added 19 points, and the Minnesota Lynx beat the Los Angeles Sparks 96-87 on Wednesday for their fourth straight victory. \n\n\r\n              Minnesota went on a 19-3 run, scoring on 10 straight possessions, to take a 63-56 lead with 2:36 left in the third quarter.\n\n\r\n              McBride made her first 3-pointer with four minutes left in the fourth for an 84-74 lead. Nia Coffey banked in a 3-pointer on the Lynx\u2019s next possession for an 11-point lead.\n\n\r\n              Minnesota went 8 of 14 from 3-point range in the second half after missing 11 straight before halftime. Six of those makes came from different players. \n\n\r\n              Minnesota rookie Olivia Miles had 18 points in 26 minutes for Minnesota (19-6). Miles went to the floor with 6:03 left in the fourth and she did not return after appearing to roll her ankle on a driving layup.\n\n\r\n              Rae Burrell scored 24 points, and Nneka Ogwumike had 23 points, 12 rebounds and five assists for Los Angeles (10-13). Cameron Brink scored 10 points in her first game since June 15. The Sparks turned it over 20 times, leading to 30 points for Minnesota.\n\n\r\n              <hl2>Up next</hl2>\r\n              Sparks: At Chicago on Friday. \n\n\r\n              Lynx: Host Portland on Saturday.\n\n\r\n              ------\n\n\r\n              AP WNBA: <a href=\"https://apnews.com/hub/wnba-basketball\">https://apnews.com/hub/wnba-basketball</a>\n\n\r\n            ",
-"premium": false,
+"allowComments": true,
+"allowContentReactions": false,
+"allowSearch": true,
 "isLiveBlog": false,
 "links": {
-"web": {
-"href": "http://www.espn.com/wnba/recap?gameId=401857069"
-},
-"mobile": {
-"href": "http://m.espn.go.com/wnba/story?storyId=49368932"
-},
 "api": {
 "self": {
 "href": "https://content.core.api.espn.com/v1/sports/news/49368932"
@@ -21801,11 +21748,15 @@
 "sportscenter": {
 "href": "sportscenter://x-callback-url/showStory?uid=49368932"
 }
+},
+"mobile": {
+"href": "http://m.espn.go.com/wnba/story?storyId=49368932"
+},
+"web": {
+"href": "http://www.espn.com/wnba/recap?gameId=401857069"
 }
 },
-"allowComments": true,
-"allowSearch": true,
-"allowContentReactions": false
+"premium": false
 },
 "videos": [
 {
@@ -21822,17 +21773,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -21940,10 +21890,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49368844"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49368844"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49368844&videoDSI=f588130a2df60"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights",
 "self": {
@@ -21952,81 +21971,19 @@
 "href": "https://www.espn.com/video/clip?id=f588130a2df60"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49368844"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49368844/minnesota-lynx-vs-los-angeles-sparks-game-highlights"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49368844"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/c22cd674-f60f-4f1f-a6cc-7ee7bb18864f/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0715/c86287f6-f5e9-4554-8d29-365ce02e88be/c86287f6-f5e9-4554-8d29-365ce02e88be_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49368844&videoDSI=f588130a2df60"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "Final Game Highlight",
-"trackingName": "WNBA_One-Play (Minnesota Lynx vs. Los Angeles Sparks - Game Highlights) 2026/07/15 ESHEET",
+"leagueName": "WNBA",
+"program": "WNBA",
+"sportName": "basketball",
 "trackingId": "dm_20260715_WNBA_minnesota_lynx_vs_los_angeles_sparks_game_highlights",
-"program": "WNBA"
+"trackingName": "WNBA_One-Play (Minnesota Lynx vs. Los Angeles Sparks - Game Highlights) 2026/07/15 ESHEET"
 }
 }
 ],
@@ -22063,8 +22020,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "name": "streak",
@@ -22073,8 +22030,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 9.0,
-"displayValue": "W9"
+"value": 4.0,
+"displayValue": "W4"
 },
 {
 "name": "winPercent",
@@ -22083,8 +22040,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.8,
-"displayValue": ".800"
+"value": 0.8055556,
+"displayValue": ".806"
 },
 {
 "name": "wins",
@@ -22093,8 +22050,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 24.0,
-"displayValue": "24"
+"value": 29.0,
+"displayValue": "29"
 }
 ],
 "logo": [
@@ -22112,77 +22069,6 @@
 ]
 },
 {
-"team": "Las Vegas",
-"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 3.5,
-"displayValue": "3.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 9.0,
-"displayValue": "9"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6896552,
-"displayValue": ".690"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 20.0,
-"displayValue": "20"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-05-01T20:55Z"
-}
-]
-},
-{
 "team": "Golden State",
 "link": "https://www.espn.com/wnba/team/_/name/gs/golden-state-valkyries",
 "id": "129689",
@@ -22195,8 +22081,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 4.0,
-"displayValue": "4"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -22215,8 +22101,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": 6.0,
+"displayValue": "W6"
 },
 {
 "name": "winPercent",
@@ -22225,8 +22111,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6785714,
-"displayValue": ".679"
+"value": 0.7352941,
+"displayValue": ".735"
 },
 {
 "name": "wins",
@@ -22235,8 +22121,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 19.0,
-"displayValue": "19"
+"value": 25.0,
+"displayValue": "25"
 }
 ],
 "logo": [
@@ -22266,6 +22152,77 @@
 ]
 },
 {
+"team": "Las Vegas",
+"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+"id": "17",
+"uid": "s:40~l:59~t:17",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 5.0,
+"displayValue": "5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 12.0,
+"displayValue": "12"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6666667,
+"displayValue": ".667"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 24.0,
+"displayValue": "24"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-05-01T20:55Z"
+}
+]
+},
+{
 "team": "Dallas",
 "link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
 "id": "3",
@@ -22278,8 +22235,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 5.5,
-"displayValue": "5.5"
+"value": 9.0,
+"displayValue": "9"
 },
 {
 "name": "losses",
@@ -22288,8 +22245,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 11.0,
-"displayValue": "11"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "streak",
@@ -22308,8 +22265,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.62068963,
-"displayValue": ".621"
+"value": 0.5555556,
+"displayValue": ".556"
 },
 {
 "name": "wins",
@@ -22318,8 +22275,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 18.0,
-"displayValue": "18"
+"value": 20.0,
+"displayValue": "20"
 }
 ],
 "logo": [
@@ -22349,8 +22306,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 12.5,
-"displayValue": "12.5"
+"value": 13.5,
+"displayValue": "13.5"
 },
 {
 "name": "losses",
@@ -22359,8 +22316,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 18.0,
-"displayValue": "18"
+"value": 20.0,
+"displayValue": "20"
 },
 {
 "name": "streak",
@@ -22369,8 +22326,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": 2.0,
+"displayValue": "W2"
 },
 {
 "name": "winPercent",
@@ -22379,8 +22336,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.37931034,
-"displayValue": ".379"
+"value": 0.42857143,
+"displayValue": ".429"
 },
 {
 "name": "wins",
@@ -22389,8 +22346,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 11.0,
-"displayValue": "11"
+"value": 15.0,
+"displayValue": "15"
 }
 ],
 "logo": [
@@ -22420,77 +22377,6 @@
 ]
 },
 {
-"team": "Los Angeles",
-"link": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks",
-"id": "6",
-"uid": "s:40~l:59~t:6",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 12.5,
-"displayValue": "12.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 17.0,
-"displayValue": "17"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -6.0,
-"displayValue": "L6"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.37037036,
-"displayValue": ".370"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 10.0,
-"displayValue": "10"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
 "team": "Phoenix",
 "link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
 "id": "11",
@@ -22503,8 +22389,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "losses",
@@ -22513,8 +22399,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 19.0,
-"displayValue": "19"
+"value": 23.0,
+"displayValue": "23"
 },
 {
 "name": "streak",
@@ -22533,8 +22419,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.36666667,
-"displayValue": ".367"
+"value": 0.3611111,
+"displayValue": ".361"
 },
 {
 "name": "wins",
@@ -22543,8 +22429,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 11.0,
-"displayValue": "11"
+"value": 13.0,
+"displayValue": "13"
 }
 ],
 "logo": [
@@ -22562,6 +22448,77 @@
 ]
 },
 {
+"team": "Los Angeles",
+"link": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks",
+"id": "6",
+"uid": "s:40~l:59~t:6",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 16.0,
+"displayValue": "16"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 22.0,
+"displayValue": "22"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -4.0,
+"displayValue": "L4"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.3529412,
+"displayValue": ".353"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 12.0,
+"displayValue": "12"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
 "team": "Seattle",
 "link": "https://www.espn.com/wnba/team/_/name/sea/seattle-storm",
 "id": "14",
@@ -22574,8 +22531,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 18.5,
-"displayValue": "18.5"
+"value": 22.5,
+"displayValue": "22.5"
 },
 {
 "name": "losses",
@@ -22584,8 +22541,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 25.0,
-"displayValue": "25"
+"value": 30.0,
+"displayValue": "30"
 },
 {
 "name": "streak",
@@ -22594,8 +22551,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -8.0,
-"displayValue": "L8"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -22604,8 +22561,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.19354838,
-"displayValue": ".194"
+"value": 0.1891892,
+"displayValue": ".189"
 },
 {
 "name": "wins",
@@ -22614,8 +22571,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [

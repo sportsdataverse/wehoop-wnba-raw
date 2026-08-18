@@ -1860,11 +1860,25 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/20?lang=en&region=us",
 "id": "20"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Day-To-Day",
+"injuries": {
+"status": "Day-To-Day",
+"date": "2026-08-18T00:06Z",
+"type": {
+"id": "6",
+"name": "INJURY_STATUS_DAYTODAY",
+"description": "day-to-day",
+"abbreviation": "DD"
+},
+"details": {
+"fantasyStatus": {
+"description": "GTD",
+"abbreviation": "GTD",
+"displayDescription": "GTD"
+},
+"type": "Illness",
+"returnDate": "2026-08-18"
+}
 }
 },
 "statistics": [
@@ -2082,11 +2096,25 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/seasons/2026/teams/6?lang=en&region=us",
 "id": "6"
 },
-"status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"status": "Out",
+"injuries": {
+"status": "Out",
+"date": "2026-08-18T21:07Z",
+"type": {
+"id": "4",
+"name": "INJURY_STATUS_OUT",
+"description": "out",
+"abbreviation": "O"
+},
+"details": {
+"fantasyStatus": {
+"description": "OUT",
+"abbreviation": "OUT",
+"displayDescription": "Out"
+},
+"type": "Ankle",
+"returnDate": "2026-08-20"
+}
 }
 },
 "statistics": [
@@ -22035,17 +22063,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -22153,7 +22180,8 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
 "gameId": 401857064,
 "plays": [
@@ -22182,9 +22210,6 @@
 "full": {
 "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.jpg"
 },
-"wide": {
-"href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_5x2.jpg"
-},
 "square": {
 "href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_1x1.jpg"
 },
@@ -22193,54 +22218,45 @@
 },
 "verticalFirstFrame": {
 "href": "https://service-pkgespn.akamaized.net/opp/img/espn/9x16/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/thumb-1-w406-h720-f4.jpg"
+},
+"wide": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_5x2.jpg"
 }
 },
 "links": {
-"web": {
-"href": "https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights",
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/1002579b-f377-492b-9044-9809a741d2e8"
+},
 "self": {
-"href": "https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=7f19388ba4be6"
-}
+"href": "https://content.core.api.espn.com/v1/video/clips/49354739"
 }
 },
 "mobile": {
 "href": "https://watch.auth.api.espn.com/video/auth/brightcove/1002579b-f377-492b-9044-9809a741d2e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.mp4"
-},
 "alert": {
 "href": "https://m.espn.com/general/video/videoAlert?vid=49354739"
 },
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1002579b-f377-492b-9044-9809a741d2e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights"
-},
 "progressiveDownload": {
 "href": "https://watch.auth.api.espn.com/video/auth/brightcove/1002579b-f377-492b-9044-9809a741d2e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights"
-}
 },
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354739"
+"source": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.mp4"
 },
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/1002579b-f377-492b-9044-9809a741d2e8"
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1002579b-f377-492b-9044-9809a741d2e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights"
 }
 },
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_rel.smil/manifest.f4m"
+"HD": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_720p30_2896k.mp4"
 },
 "HLS": {
 "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/playlist.m3u8",
+"9x16": {
+"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/playlist.m3u8"
+},
 "HD": {
 "href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/playlist.m3u8"
 },
@@ -22250,22 +22266,34 @@
 "href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/playlist.m3u8"
 }
 },
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198/playlist.m3u8"
-},
 "shield": {
 "href": "https://watch.auth.api.espn.com/video/auth/media/1002579b-f377-492b-9044-9809a741d2e8/asset"
 }
 },
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_720p30_2896k.mp4"
+"flash": {
+"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.smil"
 },
 "full": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_360p30_1464k.mp4"
+},
+"hds": {
+"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198_rel.smil/manifest.f4m"
+},
+"mezzanine": {
+"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/13f8c00b-769a-4906-8391-8ca6fcc22198/13f8c00b-769a-4906-8391-8ca6fcc22198.mp4"
 }
 },
 "sportscenter": {
 "href": "sportscenter://x-callback-url/showVideo?videoID=49354739&videoDSI=7f19388ba4be6"
+},
+"web": {
+"href": "https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights",
+"self": {
+"href": "https://www.espn.com/video/clip/_/id/49354739/atlanta-dream-vs-los-angeles-sparks-game-highlights",
+"dsi": {
+"href": "https://www.espn.com/video/clip?id=7f19388ba4be6"
+}
+}
 }
 },
 "categories": [
@@ -22283,12 +22311,12 @@
 "abbreviation": "ATL",
 "shortDisplayName": "Dream",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream"
 }
@@ -22310,12 +22338,12 @@
 "abbreviation": "LA",
 "shortDisplayName": "Sparks",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
@@ -22341,12 +22369,12 @@
 "id": 4433402,
 "description": "Angel Reese",
 "links": {
-"web": {
+"mobile": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/4433402/angel-reese"
 }
 },
-"mobile": {
+"web": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/4433402/angel-reese"
 }
@@ -22379,12 +22407,12 @@
 "description": "WNBA",
 "abbreviation": "WNBA",
 "links": {
-"web": {
+"mobile": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
 },
-"mobile": {
+"web": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
@@ -22404,12 +22432,12 @@
 "id": 2491214,
 "description": "Erica Wheeler",
 "links": {
-"web": {
+"mobile": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/2491214/erica-wheeler"
 }
 },
-"mobile": {
+"web": {
 "athletes": {
 "href": "https://www.espn.com/wnba/player/_/id/2491214/erica-wheeler"
 }
@@ -22453,82 +22481,34 @@
 "league": "wnba",
 "description": "Los Angeles Sparks @ Atlanta Dream",
 "links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401857064"
-}
-},
 "mobile": {
 "event": {
 "href": "https://www.espn.com/wnba/game/_/gameId/401857064"
 }
+},
+"web": {
+"event": {
+"href": "https://www.espn.com/wnba/game/_/gameId/401857064"
 }
 }
 }
-},
-{
-"type": "guid",
-"guid": "bceea196-4263-d338-17a7-9ae40f3aed3f"
-},
-{
-"type": "guid",
-"guid": "fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737"
-},
-{
-"type": "guid",
-"guid": "f3e05446-8d07-3064-a239-c10c32884ea2"
-},
-{
-"type": "guid",
-"guid": "198d799e-9709-3062-8402-34f309bf151e"
-},
-{
-"type": "guid",
-"guid": "26380a67-7938-32a0-9c82-33abab9f7ad4"
-},
-{
-"type": "guid",
-"guid": "d348c764-47d9-3e31-bd75-d39dfde52c26"
-},
-{
-"type": "guid",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68"
-},
-{
-"type": "guid",
-"guid": "10a2cf09-7845-e376-c86e-0fa06cbdd524"
-},
-{
-"type": "guid",
-"guid": "3d170ccb-7b75-54f1-78c4-cfbf3ee3322d"
-},
-{
-"type": "guid",
-"guid": "6630c533-d8f8-4b4f-8228-138d2ff23ef5"
-},
-{
-"type": "guid",
-"guid": "fe879255-6324-4784-385f-a1a18c22b5cc"
-},
-{
-"type": "guid",
-"guid": "5dc80ccd-46e4-36cb-9471-c5d179ca8f42"
+}
 }
 ],
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
-"coverageType": "Final Game Highlight",
-"trackingName": "WNBA_One-Play (Atlanta Dream vs. Los Angeles Sparks - Game Highlights) 2026/07/13 ESHEET",
-"trackingId": "dm_20260713_WNBA_atlanta_dream_vs_los_angeles_sparks_game_highlights",
-"program": "USA Network"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "contributingPartner": "wsc",
-"contributingSystem": "wsc"
+"contributingSystem": "wsc",
+"tracking": {
+"coverageType": "Final Game Highlight",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
+"trackingId": "dm_20260713_WNBA_atlanta_dream_vs_los_angeles_sparks_game_highlights",
+"trackingName": "WNBA_One-Play (Atlanta Dream vs. Los Angeles Sparks - Game Highlights) 2026/07/13 ESHEET"
+}
 }
 ],
 "categories": [
@@ -22545,12 +22525,12 @@
 "description": "WNBA",
 "abbreviation": "WNBA",
 "links": {
-"web": {
+"mobile": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
 },
-"mobile": {
+"web": {
 "leagues": {
 "href": "https://www.espn.com/wnba/"
 }
@@ -22572,12 +22552,12 @@
 "abbreviation": "ATL",
 "shortDisplayName": "Dream",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream"
 }
@@ -22599,12 +22579,12 @@
 "abbreviation": "LA",
 "shortDisplayName": "Sparks",
 "links": {
-"web": {
+"mobile": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
 },
-"mobile": {
+"web": {
 "teams": {
 "href": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks"
 }
@@ -22624,34 +22604,18 @@
 "league": "wnba",
 "description": "Los Angeles Sparks @ Atlanta Dream",
 "links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/wnba/game/_/gameId/401857064"
-}
-},
 "mobile": {
 "event": {
 "href": "https://www.espn.com/wnba/game/_/gameId/401857064"
 }
+},
+"web": {
+"event": {
+"href": "https://www.espn.com/wnba/game/_/gameId/401857064"
 }
 }
 }
-},
-{
-"type": "guid",
-"guid": "f74a6d24-af0c-30a0-bc20-e987c7093a68"
-},
-{
-"type": "guid",
-"guid": "bceea196-4263-d338-17a7-9ae40f3aed3f"
-},
-{
-"type": "guid",
-"guid": "fc3d2f98-2a3d-9ef8-4d5b-b8d5168d7737"
-},
-{
-"type": "guid",
-"guid": "5dc80ccd-46e4-36cb-9471-c5d179ca8f42"
+}
 }
 ],
 "keywords": [
@@ -22661,15 +22625,11 @@
 "Los Angeles Sparks @ Atlanta Dream"
 ],
 "story": "\r\n              COLLEGE PARK, Ga. -- \u2014 Angel Reese had 23 points and 13 rebounds for her WNBA-leading 16th double-double of the season, Allisha Gray added 20 points, and the Atlanta Dream beat the Los Angeles Sparks 101-92 on Monday night.\n\n\r\n              Gray made Atlanta\u2019s first field goal of the fourth quarter with 4:07 remaining to tie it at 87. Then, <a href=\"https://x.com/WNBA/status/2076837226546114891\">Reese got a friendly roll on her third made 3-pointer of the season</a> to make it 90-87 and she added two free throws on the next possession for a five-point lead. Jordin Canada capped the 9-0 run for a 94-87 lead.\n\n\r\n              Canada finished with 16 points and Rhyne Howard added 11 for Atlanta (14-10), which had lost six of its last seven games. Reese, who missed Saturday's game against Portland, was 7 of 11 from the field and made all eight of her free throws in 32 minutes. \n\n\r\n              Erica Wheeler scored 20 points, Nneka Ogwumike added 19 and Rae Burrell 18 for Los Angeles (10-12). Cameron Brink (left ankle) missed her eighth straight game, and Kelsey Plum (lower left leg) missed her sixth straight.\n\n\r\n              Hamby made a driving layup with 4:21 remaining in the fourth to give Los Angeles its first lead at 87-85 since early in the second period.\n\n\r\n              <hl2>Up next</hl2>\r\n              Sparks: At Minnesota on Wednesday. \n\n\r\n              Dream: At Toronto on Friday. \n\n\r\n              ------\n\n\r\n              AP WNBA: <a href=\"https://apnews.com/hub/wnba-basketball\">https://apnews.com/hub/wnba-basketball</a>\n\n\r\n            ",
-"premium": false,
+"allowComments": true,
+"allowContentReactions": false,
+"allowSearch": true,
 "isLiveBlog": false,
 "links": {
-"web": {
-"href": "http://www.espn.com/wnba/recap?gameId=401857064"
-},
-"mobile": {
-"href": "http://m.espn.go.com/wnba/story?storyId=49354763"
-},
 "api": {
 "self": {
 "href": "https://content.core.api.espn.com/v1/sports/news/49354763"
@@ -22679,11 +22639,15 @@
 "sportscenter": {
 "href": "sportscenter://x-callback-url/showStory?uid=49354763"
 }
+},
+"mobile": {
+"href": "http://m.espn.go.com/wnba/story?storyId=49354763"
+},
+"web": {
+"href": "http://www.espn.com/wnba/recap?gameId=401857064"
 }
 },
-"allowComments": true,
-"allowSearch": true,
-"allowContentReactions": false
+"premium": false
 },
 "videos": [
 {
@@ -22700,17 +22664,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -22818,10 +22781,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/81abdbfa-6d84-4c4d-b6da-7b446703f8ea"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354059"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354059"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354059&videoDSI=3c04a2f0a8c34"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul",
 "self": {
@@ -22830,81 +22862,19 @@
 "href": "https://www.espn.com/video/clip?id=3c04a2f0a8c34"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354059"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354059/naz-hillmon-gets-basket-plus-foul"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354059"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/81abdbfa-6d84-4c4d-b6da-7b446703f8ea"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/81abdbfa-6d84-4c4d-b6da-7b446703f8ea/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/6787b8d4-baf7-4a27-b737-02a37b5a9df1/6787b8d4-baf7-4a27-b737-02a37b5a9df1_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354059&videoDSI=3c04a2f0a8c34"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Naz Hillmon gets the basket plus the foul) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_naz_hillmon_gets_the_basket_plus_the_foul",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Naz Hillmon gets the basket plus the foul) 2026/07/13 ESHEET"
 }
 },
 {
@@ -22921,17 +22891,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -23039,10 +23008,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354067"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354067"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354067&videoDSI=05669eed3758a"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple",
 "self": {
@@ -23051,81 +23089,19 @@
 "href": "https://www.espn.com/video/clip?id=05669eed3758a"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354067"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354067/rae-burrell-knocks-triple"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354067"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/dd7a62bc-37f5-4bbf-9c8b-9c9d15171e01/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/bd446cfb-a698-42b6-8639-89d88305fa11/bd446cfb-a698-42b6-8639-89d88305fa11_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354067&videoDSI=05669eed3758a"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Rae Burrell knocks down the triple) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_rae_burrell_knocks_down_the_triple",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Rae Burrell knocks down the triple) 2026/07/13 ESHEET"
 }
 },
 {
@@ -23142,17 +23118,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -23260,10 +23235,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354165"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354165"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354165&videoDSI=a989110f2a196"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket",
 "self": {
@@ -23272,81 +23316,19 @@
 "href": "https://www.espn.com/video/clip?id=a989110f2a196"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354165"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354165/jordin-canada-1-bucket"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354165"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/c1b2f178-6ca1-48fd-b2f3-35e182d1c5b8/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/2066d216-aee4-482a-82f2-e24e95c8ebab/2066d216-aee4-482a-82f2-e24e95c8ebab_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354165&videoDSI=a989110f2a196"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Jordin Canada with the and-1 bucket) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_jordin_canada_with_the_and1_bucket",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Jordin Canada with the and-1 bucket) 2026/07/13 ESHEET"
 }
 },
 {
@@ -23363,17 +23345,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -23481,10 +23462,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/17cfa2ec-9ccc-4065-ba53-69c841df794f"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354166"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354166"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354166&videoDSI=31616ac0f825e"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown",
 "self": {
@@ -23493,81 +23543,19 @@
 "href": "https://www.espn.com/video/clip?id=31616ac0f825e"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354166"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354166/rae-burrell-drains-downtown"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354166"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/17cfa2ec-9ccc-4065-ba53-69c841df794f"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/17cfa2ec-9ccc-4065-ba53-69c841df794f/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/cc33295c-dccf-4556-a764-cffc112e6282/cc33295c-dccf-4556-a764-cffc112e6282_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354166&videoDSI=31616ac0f825e"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Rae Burrell drains it from downtown) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_rae_burrell_drains_it_from_downtown",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Rae Burrell drains it from downtown) 2026/07/13 ESHEET"
 }
 },
 {
@@ -23584,17 +23572,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -23702,10 +23689,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/5e108f65-4eb5-4243-8190-20081fb045b8"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354197"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354197"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/5e108f65-4eb5-4243-8190-20081fb045b8/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354197&videoDSI=0a5ffe2909907"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey",
 "self": {
@@ -23714,81 +23770,19 @@
 "href": "https://www.espn.com/video/clip?id=0a5ffe2909907"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354197"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e108f65-4eb5-4243-8190-20081fb045b8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354197/kiana-williams-knocks-trey"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354197"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/5e108f65-4eb5-4243-8190-20081fb045b8"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/5e108f65-4eb5-4243-8190-20081fb045b8/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9286af0b-4375-4735-a863-9c725151affa/9286af0b-4375-4735-a863-9c725151affa_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354197&videoDSI=0a5ffe2909907"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Kiana Williams knocks down the trey) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_kiana_williams_knocks_down_the_trey",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Kiana Williams knocks down the trey) 2026/07/13 ESHEET"
 }
 },
 {
@@ -23805,17 +23799,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -23923,10 +23916,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/1f79b252-2daa-46ad-bb87-580ffc0220c8"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354220"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354220"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354220&videoDSI=10b939786f6cb"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey",
 "self": {
@@ -23935,81 +23997,19 @@
 "href": "https://www.espn.com/video/clip?id=10b939786f6cb"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354220"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354220/emma-cannon-drains-trey"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354220"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/1f79b252-2daa-46ad-bb87-580ffc0220c8"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/1f79b252-2daa-46ad-bb87-580ffc0220c8/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/4a41d91c-8ea8-47dd-81a9-2d3bc9614379/4a41d91c-8ea8-47dd-81a9-2d3bc9614379_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354220&videoDSI=10b939786f6cb"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Emma Cannon drains trey) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_emma_cannon_drains_trey",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Emma Cannon drains trey) 2026/07/13 ESHEET"
 }
 },
 {
@@ -24026,17 +24026,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -24144,10 +24143,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/9a216806-7620-46e3-8b14-545419f302a8"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354251"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354251"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/9a216806-7620-46e3-8b14-545419f302a8/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354251&videoDSI=6284cb76d43bb"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3",
 "self": {
@@ -24156,81 +24224,19 @@
 "href": "https://www.espn.com/video/clip?id=6284cb76d43bb"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354251"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9a216806-7620-46e3-8b14-545419f302a8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354251/allisha-gray-hits-3"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354251"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/9a216806-7620-46e3-8b14-545419f302a8"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/9a216806-7620-46e3-8b14-545419f302a8/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/986cf5a6-c0fa-4e00-8eaf-db094a44e42f/986cf5a6-c0fa-4e00-8eaf-db094a44e42f_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354251&videoDSI=6284cb76d43bb"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Allisha Gray hits the 3) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_allisha_gray_hits_the_3",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Allisha Gray hits the 3) 2026/07/13 ESHEET"
 }
 },
 {
@@ -24247,17 +24253,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -24365,10 +24370,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/41294e04-918c-4f3c-89e0-349980154ce8"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354257"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354257"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/41294e04-918c-4f3c-89e0-349980154ce8/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354257&videoDSI=00e3b3b4ce633"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3",
 "self": {
@@ -24377,81 +24451,19 @@
 "href": "https://www.espn.com/video/clip?id=00e3b3b4ce633"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354257"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/41294e04-918c-4f3c-89e0-349980154ce8/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354257/rhyne-howard-nails-3"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354257"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/41294e04-918c-4f3c-89e0-349980154ce8"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/41294e04-918c-4f3c-89e0-349980154ce8/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0713/9f302625-cd3b-4963-8f5e-de3fb1b2448a/9f302625-cd3b-4963-8f5e-de3fb1b2448a_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354257&videoDSI=00e3b3b4ce633"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Rhyne Howard nails the 3) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_rhyne_howard_nails_the_3",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Rhyne Howard nails the 3) 2026/07/13 ESHEET"
 }
 },
 {
@@ -24468,17 +24480,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -24586,10 +24597,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/5a240533-a4a9-4bd1-8cea-f6bda459a331"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354315"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354315"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354315&videoDSI=8cf347889e4ec"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream",
 "self": {
@@ -24598,81 +24678,19 @@
 "href": "https://www.espn.com/video/clip?id=8cf347889e4ec"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354315"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354315/angel-reese-gets-putback-bucket-beat-buzzer-dream"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354315"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/5a240533-a4a9-4bd1-8cea-f6bda459a331"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/5a240533-a4a9-4bd1-8cea-f6bda459a331/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/e9b98ddb-9dde-4263-91b8-75bee509f1be/e9b98ddb-9dde-4263-91b8-75bee509f1be_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354315&videoDSI=8cf347889e4ec"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Angel Reese gets putback bucket to beat the buzzer for the Dream) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_angel_reese_makes_the_bucket",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Angel Reese gets putback bucket to beat the buzzer for the Dream) 2026/07/13 ESHEET"
 }
 },
 {
@@ -24689,17 +24707,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -24807,10 +24824,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/a64ce05c-43c7-4612-8262-b3f706bad622"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354461"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354461"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/a64ce05c-43c7-4612-8262-b3f706bad622/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354461&videoDSI=ca67f2dae2931"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket",
 "self": {
@@ -24819,81 +24905,19 @@
 "href": "https://www.espn.com/video/clip?id=ca67f2dae2931"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354461"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a64ce05c-43c7-4612-8262-b3f706bad622/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354461/naz-hillmon-1-bucket"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354461"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/a64ce05c-43c7-4612-8262-b3f706bad622"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/a64ce05c-43c7-4612-8262-b3f706bad622/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/1aaff456-9a59-4082-a50c-1f8981fc33ed/1aaff456-9a59-4082-a50c-1f8981fc33ed_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354461&videoDSI=ca67f2dae2931"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Naz Hillmon with the and-1 bucket) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_naz_hillmon_with_the_and1_bucket",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Naz Hillmon with the and-1 bucket) 2026/07/13 ESHEET"
 }
 },
 {
@@ -24910,17 +24934,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -25028,10 +25051,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354467"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354467"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354467&videoDSI=318773929dbf0"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple",
 "self": {
@@ -25040,81 +25132,19 @@
 "href": "https://www.espn.com/video/clip?id=318773929dbf0"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354467"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354467/nneka-ogwumike-drains-triple"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354467"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/8858ee07-a933-4f87-8d6c-e9c3ffe30e6d/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/7b8d8462-1b33-4d54-be47-77433f7479c9/7b8d8462-1b33-4d54-be47-77433f7479c9_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354467&videoDSI=318773929dbf0"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Nneka Ogwumike drains triple) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_nneka_ogwumike_drains_triple",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Nneka Ogwumike drains triple) 2026/07/13 ESHEET"
 }
 },
 {
@@ -25131,17 +25161,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -25249,10 +25278,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/dff92637-fe25-4921-ae86-14fd6f34e182"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354473"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354473"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/dff92637-fe25-4921-ae86-14fd6f34e182/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354473&videoDSI=136533981f684"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall",
 "self": {
@@ -25261,81 +25359,19 @@
 "href": "https://www.espn.com/video/clip?id=136533981f684"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354473"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dff92637-fe25-4921-ae86-14fd6f34e182/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354473/dearica-hamby-gets-1-fall"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354473"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/dff92637-fe25-4921-ae86-14fd6f34e182"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/dff92637-fe25-4921-ae86-14fd6f34e182/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/9154ea48-f1ae-4ab4-b319-347714102231/9154ea48-f1ae-4ab4-b319-347714102231_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354473&videoDSI=136533981f684"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Dearica Hamby gets the and-1 to fall) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_dearica_hamby_gets_the_and1_to_fall",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Dearica Hamby gets the and-1 to fall) 2026/07/13 ESHEET"
 }
 },
 {
@@ -25352,17 +25388,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -25470,10 +25505,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/aa4d86b2-78bf-46f5-ae2e-491d2094a482"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354645"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354645"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354645&videoDSI=838005d37c914"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3",
 "self": {
@@ -25482,81 +25586,19 @@
 "href": "https://www.espn.com/video/clip?id=838005d37c914"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354645"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354645/angel-reese-knocks-3"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354645"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/aa4d86b2-78bf-46f5-ae2e-491d2094a482"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/aa4d86b2-78bf-46f5-ae2e-491d2094a482/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/6046f2b2-0583-4774-9a46-b5cee5f1eed0/6046f2b2-0583-4774-9a46-b5cee5f1eed0_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354645&videoDSI=838005d37c914"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Angel Reese knocks down the 3) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_angel_reese_knocks_down_the_3",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Angel Reese knocks down the 3) 2026/07/13 ESHEET"
 }
 },
 {
@@ -25573,17 +25615,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -25691,10 +25732,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/2f83439d-ec19-4c32-8d36-3e0aa5f599b1"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354716"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354716"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354716&videoDSI=3d5bd08ba12c9"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey",
 "self": {
@@ -25703,81 +25813,19 @@
 "href": "https://www.espn.com/video/clip?id=3d5bd08ba12c9"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354716"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354716/erica-wheeler-nails-trey"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354716"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/2f83439d-ec19-4c32-8d36-3e0aa5f599b1"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/2f83439d-ec19-4c32-8d36-3e0aa5f599b1/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a/b2c02e03-72fb-4be8-a9f5-3f820fc7dd1a_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354716&videoDSI=3d5bd08ba12c9"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Erica Wheeler nails the trey) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_erica_wheeler_nails_the_trey",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Erica Wheeler nails the trey) 2026/07/13 ESHEET"
 }
 },
 {
@@ -25794,17 +25842,16 @@
 "expirationDate": "2026-11-30T05:00:00Z"
 },
 "deviceRestrictions": {
-"type": "whitelist",
 "devices": [
 "settop",
 "tablet",
 "handset",
 "ipad",
 "desktop"
-]
+],
+"type": "whitelist"
 },
 "geoRestrictions": {
-"type": "whitelist",
 "countries": [
 "PR",
 "HN",
@@ -25912,10 +25959,79 @@
 "PA",
 "GY",
 "PE"
-]
+],
+"type": "whitelist"
 },
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.jpg",
+"thumbnail": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.jpg",
 "links": {
+"api": {
+"artwork": {
+"href": "https://artwork.api.espn.com/artwork/collections/media/55b4d0e6-9896-40c1-8131-c15cf70a67ee"
+},
+"self": {
+"href": "https://content.core.api.espn.com/v1/video/clips/49354719"
+}
+},
+"mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer",
+"alert": {
+"href": "https://m.espn.com/general/video/videoAlert?vid=49354719"
+},
+"progressiveDownload": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer"
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+},
+"streaming": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer"
+}
+},
+"source": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4",
+"HD": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+},
+"HLS": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/9x16/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
+},
+"HD": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
+},
+"cmaf": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8",
+"9x16": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/9x16/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/cmaf/espn/cmb/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
+}
+},
+"cmb": {
+"href": "https://cmp-espn.media.dssott.com/opp/hls/espn/cmb/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
+},
+"shield": {
+"href": "https://watch.auth.api.espn.com/video/auth/media/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset"
+}
+},
+"flash": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+},
+"full": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+},
+"hds": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+},
+"mezzanine": {
+"href": "https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
+}
+},
+"sportscenter": {
+"href": "sportscenter://x-callback-url/showVideo?videoID=49354719&videoDSI=71fd7eb5066bb"
+},
 "web": {
 "href": "https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer",
 "self": {
@@ -25924,81 +26040,19 @@
 "href": "https://www.espn.com/video/clip?id=71fd7eb5066bb"
 }
 }
-},
-"mobile": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer",
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=49354719"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset?UMADPARAMreferer=https://www.espn.com/video/clip/_/id/49354719/rhyne-howard-hits-3-pointer"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/49354719"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/55b4d0e6-9896-40c1-8131-c15cf70a67ee"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/55b4d0e6-9896-40c1-8131-c15cf70a67ee/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0714/d12b4ef1-d705-49e8-bbb6-047ed5c3d487/d12b4ef1-d705-49e8-bbb6-047ed5c3d487_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=49354719&videoDSI=71fd7eb5066bb"
 }
 },
 "ad": {
-"sport": "wnba",
-"bundle": "wnba_top_plays_highlights"
+"bundle": "wnba_top_plays_highlights",
+"sport": "wnba"
 },
 "tracking": {
-"sportName": "basketball",
-"leagueName": "WNBA",
 "coverageType": "OnePlay",
-"trackingName": "WNBA_One-Play (Rhyne Howard hits the 3-pointer) 2026/07/13 ESHEET",
+"leagueName": "WNBA",
+"program": "USA Network",
+"sportName": "basketball",
 "trackingId": "dm_20260713_WNBA_rhyne_howard_hits_the_3pointer",
-"program": "USA Network"
+"trackingName": "WNBA_One-Play (Rhyne Howard hits the 3-pointer) 2026/07/13 ESHEET"
 }
 }
 ],
@@ -26035,8 +26089,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "name": "streak",
@@ -26045,8 +26099,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 9.0,
-"displayValue": "W9"
+"value": 4.0,
+"displayValue": "W4"
 },
 {
 "name": "winPercent",
@@ -26055,8 +26109,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.8,
-"displayValue": ".800"
+"value": 0.8055556,
+"displayValue": ".806"
 },
 {
 "name": "wins",
@@ -26065,8 +26119,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 24.0,
-"displayValue": "24"
+"value": 29.0,
+"displayValue": "29"
 }
 ],
 "logo": [
@@ -26084,77 +26138,6 @@
 ]
 },
 {
-"team": "Las Vegas",
-"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 3.5,
-"displayValue": "3.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 9.0,
-"displayValue": "9"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6896552,
-"displayValue": ".690"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 20.0,
-"displayValue": "20"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-05-01T20:55Z"
-}
-]
-},
-{
 "team": "Golden State",
 "link": "https://www.espn.com/wnba/team/_/name/gs/golden-state-valkyries",
 "id": "129689",
@@ -26167,8 +26150,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 4.0,
-"displayValue": "4"
+"value": 3.0,
+"displayValue": "3"
 },
 {
 "name": "losses",
@@ -26187,8 +26170,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -2.0,
-"displayValue": "L2"
+"value": 6.0,
+"displayValue": "W6"
 },
 {
 "name": "winPercent",
@@ -26197,8 +26180,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6785714,
-"displayValue": ".679"
+"value": 0.7352941,
+"displayValue": ".735"
 },
 {
 "name": "wins",
@@ -26207,8 +26190,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 19.0,
-"displayValue": "19"
+"value": 25.0,
+"displayValue": "25"
 }
 ],
 "logo": [
@@ -26238,6 +26221,77 @@
 ]
 },
 {
+"team": "Las Vegas",
+"link": "https://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
+"id": "17",
+"uid": "s:40~l:59~t:17",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 5.0,
+"displayValue": "5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 12.0,
+"displayValue": "12"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6666667,
+"displayValue": ".667"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 24.0,
+"displayValue": "24"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-05-01T20:55Z"
+}
+]
+},
+{
 "team": "Dallas",
 "link": "https://www.espn.com/wnba/team/_/name/dal/dallas-wings",
 "id": "3",
@@ -26250,8 +26304,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 5.5,
-"displayValue": "5.5"
+"value": 9.0,
+"displayValue": "9"
 },
 {
 "name": "losses",
@@ -26260,8 +26314,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 11.0,
-"displayValue": "11"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "streak",
@@ -26280,8 +26334,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.62068963,
-"displayValue": ".621"
+"value": 0.5555556,
+"displayValue": ".556"
 },
 {
 "name": "wins",
@@ -26290,8 +26344,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 18.0,
-"displayValue": "18"
+"value": 20.0,
+"displayValue": "20"
 }
 ],
 "logo": [
@@ -26321,8 +26375,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 12.5,
-"displayValue": "12.5"
+"value": 13.5,
+"displayValue": "13.5"
 },
 {
 "name": "losses",
@@ -26331,8 +26385,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 18.0,
-"displayValue": "18"
+"value": 20.0,
+"displayValue": "20"
 },
 {
 "name": "streak",
@@ -26341,8 +26395,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": 2.0,
+"displayValue": "W2"
 },
 {
 "name": "winPercent",
@@ -26351,8 +26405,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.37931034,
-"displayValue": ".379"
+"value": 0.42857143,
+"displayValue": ".429"
 },
 {
 "name": "wins",
@@ -26361,8 +26415,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 11.0,
-"displayValue": "11"
+"value": 15.0,
+"displayValue": "15"
 }
 ],
 "logo": [
@@ -26392,77 +26446,6 @@
 ]
 },
 {
-"team": "Los Angeles",
-"link": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks",
-"id": "6",
-"uid": "s:40~l:59~t:6",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 12.5,
-"displayValue": "12.5"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 17.0,
-"displayValue": "17"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -6.0,
-"displayValue": "L6"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.37037036,
-"displayValue": ".370"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 10.0,
-"displayValue": "10"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
 "team": "Phoenix",
 "link": "https://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
 "id": "11",
@@ -26475,8 +26458,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "losses",
@@ -26485,8 +26468,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 19.0,
-"displayValue": "19"
+"value": 23.0,
+"displayValue": "23"
 },
 {
 "name": "streak",
@@ -26505,8 +26488,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.36666667,
-"displayValue": ".367"
+"value": 0.3611111,
+"displayValue": ".361"
 },
 {
 "name": "wins",
@@ -26515,8 +26498,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 11.0,
-"displayValue": "11"
+"value": 13.0,
+"displayValue": "13"
 }
 ],
 "logo": [
@@ -26534,6 +26517,77 @@
 ]
 },
 {
+"team": "Los Angeles",
+"link": "https://www.espn.com/wnba/team/_/name/la/los-angeles-sparks",
+"id": "6",
+"uid": "s:40~l:59~t:6",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 16.0,
+"displayValue": "16"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 22.0,
+"displayValue": "22"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -4.0,
+"displayValue": "L4"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.3529412,
+"displayValue": ".353"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 12.0,
+"displayValue": "12"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
 "team": "Seattle",
 "link": "https://www.espn.com/wnba/team/_/name/sea/seattle-storm",
 "id": "14",
@@ -26546,8 +26600,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 18.5,
-"displayValue": "18.5"
+"value": 22.5,
+"displayValue": "22.5"
 },
 {
 "name": "losses",
@@ -26556,8 +26610,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 25.0,
-"displayValue": "25"
+"value": 30.0,
+"displayValue": "30"
 },
 {
 "name": "streak",
@@ -26566,8 +26620,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -8.0,
-"displayValue": "L8"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -26576,8 +26630,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.19354838,
-"displayValue": ".194"
+"value": 0.1891892,
+"displayValue": ".189"
 },
 {
 "name": "wins",
@@ -26586,8 +26640,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 }
 ],
 "logo": [
@@ -26649,8 +26703,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "streak",
@@ -26659,8 +26713,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 5.0,
-"displayValue": "W5"
+"value": 4.0,
+"displayValue": "W4"
 },
 {
 "name": "winPercent",
@@ -26669,8 +26723,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6551724,
-"displayValue": ".655"
+"value": 0.6571429,
+"displayValue": ".657"
 },
 {
 "name": "wins",
@@ -26679,8 +26733,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 19.0,
-"displayValue": "19"
+"value": 23.0,
+"displayValue": "23"
 }
 ],
 "logo": [
@@ -26710,8 +26764,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 0.5,
-"displayValue": "0.5"
+"value": 1.5,
+"displayValue": "1.5"
 },
 {
 "name": "losses",
@@ -26720,8 +26774,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 13.0,
+"displayValue": "13"
 },
 {
 "name": "streak",
@@ -26730,8 +26784,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 5.0,
-"displayValue": "W5"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -26740,8 +26794,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.64285713,
-"displayValue": ".643"
+"value": 0.61764705,
+"displayValue": ".618"
 },
 {
 "name": "wins",
@@ -26750,13 +26804,84 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 18.0,
-"displayValue": "18"
+"value": 21.0,
+"displayValue": "21"
 }
 ],
 "logo": [
 {
 "href": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "New York",
+"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
+"id": "9",
+"uid": "s:40~l:59~t:9",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 1.5,
+"displayValue": "1.5"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 14.0,
+"displayValue": "14"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 2.0,
+"displayValue": "W2"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6111111,
+"displayValue": ".611"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 22.0,
+"displayValue": "22"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -26791,8 +26916,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 12.0,
-"displayValue": "12"
+"value": 14.0,
+"displayValue": "14"
 },
 {
 "name": "streak",
@@ -26801,8 +26926,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 4.0,
-"displayValue": "W4"
+"value": 1.0,
+"displayValue": "W1"
 },
 {
 "name": "winPercent",
@@ -26811,8 +26936,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.5714286,
-"displayValue": ".571"
+"value": 0.5882353,
+"displayValue": ".588"
 },
 {
 "name": "wins",
@@ -26821,8 +26946,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 16.0,
-"displayValue": "16"
+"value": 20.0,
+"displayValue": "20"
 }
 ],
 "logo": [
@@ -26852,10 +26977,10 @@
 ]
 },
 {
-"team": "New York",
-"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
-"id": "9",
-"uid": "s:40~l:59~t:9",
+"team": "Chicago",
+"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
+"id": "19",
+"uid": "s:40~l:59~t:19",
 "stats": [
 {
 "name": "gamesBehind",
@@ -26864,8 +26989,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 2.5,
-"displayValue": "2.5"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "name": "losses",
@@ -26874,8 +26999,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 13.0,
-"displayValue": "13"
+"value": 22.0,
+"displayValue": "22"
 },
 {
 "name": "streak",
@@ -26894,8 +27019,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.56666666,
-"displayValue": ".567"
+"value": 0.37142858,
+"displayValue": ".371"
 },
 {
 "name": "wins",
@@ -26904,79 +27029,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 17.0,
-"displayValue": "17"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-05-10T21:43Z"
-}
-]
-},
-{
-"team": "Chicago",
-"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
-"id": "19",
-"uid": "s:40~l:59~t:19",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 8.0,
-"displayValue": "8"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 18.0,
-"displayValue": "18"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 2.0,
-"displayValue": "W2"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.37931034,
-"displayValue": ".379"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 11.0,
-"displayValue": "11"
+"value": 13.0,
+"displayValue": "13"
 }
 ],
 "logo": [
@@ -27006,8 +27060,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 8.5,
-"displayValue": "8.5"
+"value": 12.0,
+"displayValue": "12"
 },
 {
 "name": "losses",
@@ -27016,8 +27070,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 18.0,
-"displayValue": "18"
+"value": 23.0,
+"displayValue": "23"
 },
 {
 "name": "streak",
@@ -27026,8 +27080,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -5.0,
-"displayValue": "L5"
+"value": -10.0,
+"displayValue": "L10"
 },
 {
 "name": "winPercent",
@@ -27036,8 +27090,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.35714287,
-"displayValue": ".357"
+"value": 0.3030303,
+"displayValue": ".303"
 },
 {
 "name": "wins",
@@ -27052,7 +27106,7 @@
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/guid/9e09cc68-e065-3a02-a870-9b4c1562ea68/logos/default.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -27060,7 +27114,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2026-07-22T20:35Z"
+"lastUpdated": "2025-11-19T15:53Z"
 }
 ]
 },
@@ -27077,8 +27131,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 12.0,
-"displayValue": "12"
+"value": 14.0,
+"displayValue": "14"
 },
 {
 "name": "losses",
@@ -27087,8 +27141,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 22.0,
-"displayValue": "22"
+"value": 25.0,
+"displayValue": "25"
 },
 {
 "name": "streak",
@@ -27097,8 +27151,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -4.0,
-"displayValue": "L4"
+"value": -2.0,
+"displayValue": "L2"
 },
 {
 "name": "winPercent",
@@ -27107,8 +27161,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.2413793,
-"displayValue": ".241"
+"value": 0.24242425,
+"displayValue": ".242"
 },
 {
 "name": "wins",
@@ -27117,8 +27171,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 7.0,
-"displayValue": "7"
+"value": 8.0,
+"displayValue": "8"
 }
 ],
 "logo": [
