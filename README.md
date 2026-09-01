@@ -152,3 +152,25 @@ daily drivers (the `00` role); stage numbers are intended build order, not run o
 | [![wehoop_wnba_draft_trigger.yml](https://github.com/sportsdataverse/wehoop-wnba-raw/actions/workflows/wehoop_wnba_draft_trigger.yml/badge.svg)](https://github.com/sportsdataverse/wehoop-wnba-raw/actions/workflows/wehoop_wnba_draft_trigger.yml) | on push / dispatch | 2026-05-11 |
 
 <!-- END GENERATED: status -->
+
+## Consumers
+
+The packages that read what this repo produces:
+
+- **R:** [wehoop](https://wehoop.sportsdataverse.org) — docs at <https://wehoop.sportsdataverse.org>
+- **Python:** [`sportsdataverse.wnba`](https://github.com/sportsdataverse/sportsdataverse-py) — docs at <https://py.sportsdataverse.org>
+
+## Stage inventory
+
+Every numbered pipeline stage in `python/` (auto-listed; run subsets with the `scripts/*.sh` drivers by number or name):
+
+- `python/espn_wnba_01_schedules_scrape.py`
+- `python/espn_wnba_02_pbp_scrape.py`
+- `python/espn_wnba_03_standings_scrape.py`
+- `python/espn_wnba_04_game_rosters_scrape.py`
+- `python/espn_wnba_05_draft_scrape.py`
+- `python/espn_wnba_06_player_stats_scrape.py`
+- `python/espn_wnba_07_team_stats_scrape.py`
+- `python/espn_wnba_08_team_rosters_scrape.py`
+- `python/espn_wnba_09_player_core_scrape.py`
+- `python/espn_wnba_10_officials_scrape.py`
