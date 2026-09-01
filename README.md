@@ -118,6 +118,50 @@ daily drivers (the `00` role); stage numbers are intended build order, not run o
 [ESPN WNBA Player Boxscores](https://github.com/sportsdataverse/sportsdataverse-data/releases/tag/espn_wnba_player_boxscores)
 
 
+## Repository layout
+
+<!-- BEGIN GENERATED: layout -->
+
+```
+wehoop-wnba-raw/
+├── logs/   # per-run logs (gitignored where large)
+├── ops/   # cron definitions and runbooks
+│   └── oneoff/
+├── python/   # Python pipeline stages, numbered in build order
+│   ├── espn_wnba_01_schedules_scrape.py
+│   ├── espn_wnba_02_pbp_scrape.py
+│   ├── espn_wnba_03_standings_scrape.py
+│   ├── espn_wnba_04_game_rosters_scrape.py
+│   ├── espn_wnba_05_draft_scrape.py
+│   ├── espn_wnba_06_player_stats_scrape.py
+│   ├── espn_wnba_07_team_stats_scrape.py
+│   ├── espn_wnba_08_team_rosters_scrape.py
+│   ├── espn_wnba_09_player_core_scrape.py
+│   └── espn_wnba_10_officials_scrape.py
+├── scripts/   # bash drivers (the daily/weekly entry points)
+│   ├── _venv.sh
+│   ├── annual_wnba_draft_scraper.sh
+│   └── daily_wnba_scraper.sh
+├── tests/   # test suite
+│   ├── test_cli_contract.py
+│   ├── test_payload_schemas.py
+│   ├── test_persist_guard.py
+│   ├── test_schedule_master.py
+│   └── test_scripts_importable.py
+└── wnba/
+    ├── draft/
+    ├── game_rosters/
+    ├── json/
+    ├── officials/
+    ├── player_core/
+    ├── player_season_stats/
+    ├── schedules/
+    ├── standings/
+    └── … 2 more
+```
+
+<!-- END GENERATED: layout -->
+
 ## Reports & explainers
 
 <!-- BEGIN GENERATED: reports -->
