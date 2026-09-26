@@ -6,10 +6,8 @@ name: Daily WNBA Raw Scrape
 # repository_dispatch to wehoop-wnba-data, so one push per day means one
 # downstream dispatch per day.
 #
-# Cadence is staggered ~2h ahead of wehoop-wnba-data/daily_wnba.yml (which
-# fires at 07:00 UTC) so the parser side always sees fresh raw JSON. The
-# month/day windows mirror the in-season ranges used by the data repo's
-# daily workflow so we don't burn compute scraping during the offseason.
+# Manual-only (workflow_dispatch). The daily run is the droplet crontab line
+# `30 6 * 5-10 *` -> scripts/daily_wnba_scraper.sh; see the note under `on:`.
 #
 # Note: espn_wnba_05_draft_scrape.py is intentionally NOT included here. The
 # draft scrape has its own annual workflow that fires
@@ -29,8 +27,12 @@ concurrency:
   cancel-in-progress: false
 
 on:
-  schedule:
-    - cron: '30 6 1-12 5-10 *'    # May - October (regular season + playoffs)
+  # NO `schedule:` here, on purpose. The droplet crontab owns the daily run
+  # (`30 6 * 5-10 *` -> scripts/daily_wnba_scraper.sh). A schedule here makes a
+  # SECOND producer of the same commits -- two scrapes racing to push, each
+  # push firing its own downstream dispatch. The old cron ('30 6 1-12 5-10 *',
+  # a day-of-month typo from c5370d7e4) did exactly that on days 1-12.
+  # Keep this manual-only; change the cadence in the crontab, not here.
   workflow_dispatch:
     inputs:
       start_year:

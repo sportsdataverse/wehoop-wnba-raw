@@ -61,12 +61,12 @@ python3 python/espn_wnba_10_officials_scrape.py    -s 2025 -e 2025
 ## Daily Umbrella Workflow
 
 `.github/workflows/daily_wnba_raw.yml` runs every WNBA scraper sequentially
-on a single GitHub Actions cron and commits the cumulative output in one
-push, which fires `wehoop_wnba_data_trigger.yml` exactly once per run.
+and commits the cumulative output in one push, which fires
+`wehoop_wnba_data_trigger.yml` exactly once per run.
 
-- Cron `0 5 UTC` daily, gated to the in-season windows used by
-  `wehoop-wnba-data/daily_wnba.yml` (late Oct, Nov-Dec, Jan-Jun, early Jul).
-- `workflow_dispatch` inputs: `start_year`, `end_year`, `rescrape`.
+- Manual only (`workflow_dispatch` inputs: `start_year`, `end_year`, `rescrape`).
+  The daily run is the droplet crontab (`30 6 * 5-10 *` ->
+  `scripts/daily_wnba_scraper.sh`); do not add a `schedule:` to the workflow.
 - Scripts in order: `espn_wnba_01_schedules_scrape.py`, `espn_wnba_02_pbp_scrape.py`,
   `espn_wnba_08_team_rosters_scrape.py`, `espn_wnba_06_player_stats_scrape.py`,
   `espn_wnba_09_player_core_scrape.py`, `espn_wnba_07_team_stats_scrape.py`,
@@ -76,8 +76,6 @@ push, which fires `wehoop_wnba_data_trigger.yml` exactly once per run.
   trigger (`wehoop_wnba_draft_trigger.yml`) and shouldn't fire daily.
 - Single `git add wnba/` + commit + push at the end keeps the downstream
   dispatch count to one per run.
-- Eventually replaces `scripts/daily_wnba_scraper.sh` for CI use; the
-  shell script remains for local + external scheduler invocation.
 
 ## Cross-Repo References
 

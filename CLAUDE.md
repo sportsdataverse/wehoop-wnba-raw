@@ -43,10 +43,12 @@ live in `pyproject.toml` + `uv.lock` (there is no `requirements.txt`);
 
 ## CI
 
-- `.github/workflows/daily_wnba_raw.yml` — cron (in-season windows, `0 5 UTC`,
-  2h before the data repo's parser); runs all daily scrapers then one
-  `git add wnba/` + commit + push. `workflow_dispatch` inputs
-  `start_year`/`end_year`/`rescrape`. Draft is excluded — it has its own pipeline.
+- The daily run is the **droplet crontab** (`30 6 * 5-10 *` ->
+  `scripts/daily_wnba_scraper.sh`), not GitHub Actions.
+  `.github/workflows/daily_wnba_raw.yml` is `workflow_dispatch`-only (inputs
+  `start_year`/`end_year`/`rescrape`): runs all daily scrapers then one
+  `git add wnba/` + commit + push. Never re-add a `schedule:` to it — that makes
+  a second producer racing the crontab. Draft is excluded — it has its own pipeline.
 - `.github/workflows/wehoop_wnba_data_trigger.yml` — on push to `wnba/**`
   (excluding `wnba/draft/**`), fires `repository_dispatch` event-type
   `daily_wnba_data` at `sportsdataverse/wehoop-wnba-data`.
