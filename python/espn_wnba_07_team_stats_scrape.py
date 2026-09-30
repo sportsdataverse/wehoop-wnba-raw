@@ -21,7 +21,6 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import gc
-import json
 import logging
 import time
 from pathlib import Path
@@ -29,14 +28,13 @@ from typing import Any
 
 import pandas as pd
 import sportsdataverse as sdv
-from tqdm import tqdm
+from sportsdataverse.scrape.espn.persist import write_payload
 
 # The new module is not yet re-exported from ``sportsdataverse.wnba``, so we
 # import the function directly from its module to avoid relying on the
 # top-level package surface.
 from sportsdataverse.wnba.wnba_team_stats import espn_wnba_team_stats
-from sportsdataverse.scrape.espn.persist import write_payload
-
+from tqdm import tqdm
 
 logging.basicConfig(
     level=logging.INFO,

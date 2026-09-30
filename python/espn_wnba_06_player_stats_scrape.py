@@ -21,12 +21,12 @@ import argparse
 import concurrent.futures
 import gc
 import io
-import json
 import logging
 import time
 from pathlib import Path
 
-from tqdm import tqdm
+from sportsdataverse.dl_utils import download
+from sportsdataverse.scrape.espn.persist import write_payload
 
 # Imported direct from the module path because the new helpers are not yet
 # re-exported via sportsdataverse.wnba.__init__.
@@ -37,9 +37,7 @@ from tqdm import tqdm
 # API returning $ref/season/athlete/splits. It imports fine and fails silently,
 # so do not "simplify" this import.
 from sportsdataverse.wnba import espn_wnba_player_stats_v3
-from sportsdataverse.dl_utils import download
-from sportsdataverse.scrape.espn.persist import write_payload
-
+from tqdm import tqdm
 
 logging.basicConfig(
     level=logging.INFO,
