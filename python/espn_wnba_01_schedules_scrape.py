@@ -8,9 +8,11 @@ from itertools import repeat
 from pathlib import Path
 
 import pandas as pd
+import polars as pl
 import pyreadr
 import sportsdataverse as sdv
 from sportsdataverse.scrape.espn.cli import str2bool
+from sportsdataverse.scrape.espn.ids import with_int64_ids
 
 logging.basicConfig(level=logging.INFO, filename="wehoop_wnba_raw_logfile.txt")
 logger = logging.getLogger(__name__)
@@ -19,6 +21,45 @@ logger = logging.getLogger(__name__)
 path_to_schedules = "wnba/schedules"
 final_file_name = "wnba/wnba_schedule_master.parquet"
 MAX_THREADS = 30
+
+# Published id dtype: Int64 for every `id` / `*_id` column of the schedule (id, type_id,
+# status_type_id, game_id, home_id, away_id, venue_id, home_venue_id, away_venue_id,
+# home_conference_id, away_conference_id, groups_id, tournament_id), whatever dtype sdv-py
+# returns (String before its Int64 id contract, Int64 after it). The .rds gets R integer.
+INT32_MAX = 2**31 - 1
+
+
+def is_id_column(name: str) -> bool:
+    return name == "id" or name.endswith("_id")
+
+
+def _id_prep(df: pl.DataFrame, c: str) -> pl.Expr:
+    dtype = df.schema[c]
+    if dtype == pl.String:
+        return pl.col(c).str.strip_chars().replace("", None)
+    if dtype.is_float():
+        return pl.col(c).fill_nan(None)
+    return pl.col(c).cast(pl.Int64) if dtype == pl.Null else pl.col(c)
+
+
+def cast_ids_int64(df: pl.DataFrame | pd.DataFrame, *, rds: bool = False):
+    """Cast every id column to Int64, strictly; a pandas frame comes back pandas.
+
+    Strings are stripped and ``""`` becomes null; a whole-number float is accepted and NaN
+    becomes null. Anything else (``"abc"``, ``1.5``) raises ``ValueError`` instead of nulling.
+    ``rds=True`` (pandas only) returns nullable ``Int32`` instead: pyreadr writes that as R
+    integer with NA, and cannot write an ``Int64`` NA at all.
+    """
+    if isinstance(df, pd.DataFrame):
+        out = df.copy()
+        for c in filter(is_id_column, out.columns):
+            col = cast_ids_int64(pl.DataFrame({c: pl.from_pandas(out[c])})).get_column(c)
+            if rds and (col.abs() > INT32_MAX).any():  # Int64 -> Int32 would wrap silently
+                raise ValueError(f"{c!r} exceeds the R integer range")
+            out[c] = pd.array(col.to_list(), dtype="Int32" if rds else "Int64")
+        return out
+    cols = [c for c in df.columns if is_id_column(c)]
+    return with_int64_ids(df.with_columns(_id_prep(df, c) for c in cols), *cols)
 
 
 def download_game_schedules(seasons, path_to_schedules):
@@ -45,8 +86,10 @@ def download_schedule(season, path_to_schedules=None):
     Path(f"{path_to_schedules}/parquet").mkdir(parents=True, exist_ok=True)
     Path(f"{path_to_schedules}/rds").mkdir(parents=True, exist_ok=True)
     if path_to_schedules is not None:
-        ev.to_parquet(f"{path_to_schedules}/parquet/wnba_schedule_{season}.parquet", index=False)
-        pyreadr.write_rds(f"{path_to_schedules}/rds/wnba_schedule_{season}.rds", ev, compress="gzip")
+        ids = cast_ids_int64(ev)
+        ids.to_parquet(f"{path_to_schedules}/parquet/wnba_schedule_{season}.parquet", index=False)
+        rds = cast_ids_int64(ev, rds=True)
+        pyreadr.write_rds(f"{path_to_schedules}/rds/wnba_schedule_{season}.rds", rds, compress="gzip")
 
 
 def main():
@@ -74,6 +117,7 @@ def main():
     glued_data = pd.DataFrame()
     for index, js in enumerate(parquet_files):
         x = pd.read_parquet(f"{path_to_schedules}/parquet/{js}.parquet", engine="auto", columns=None)
+        x = cast_ids_int64(x)  # every season Int64 before the concat, whatever wrote it
         glued_data = pd.concat([glued_data, x], axis=0)
     glued_data["status_display_clock"] = glued_data["status_display_clock"].astype(str)
     glued_data.to_parquet(final_file_name, index=False)

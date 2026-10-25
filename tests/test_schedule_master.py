@@ -188,3 +188,23 @@ def test_coverage_carries_the_date_range():
     coverage = build_coverage(build_master([_season(2026, 4, 4)]))
     row = coverage.to_dicts()[0]
     assert row["first_date"] <= row["last_date"]
+
+
+# --- write-site id cast (published dtype Int64) -------------------------------
+
+
+def test_cast_ids_int64_is_strict_and_keeps_nulls():
+    import pandas as pd
+    from espn_wnba_01_schedules_scrape import cast_ids_int64
+
+    raw = pd.DataFrame({"id": [" 7 ", "", None], "tournament_id": [1.0, float("nan"), 3.0]})
+    out = cast_ids_int64(raw)
+    assert [str(out[c].dtype) for c in out] == ["Int64", "Int64"]
+    assert out["id"].tolist()[0] == 7 and out["id"].isna().tolist() == [False, True, True]
+    assert str(cast_ids_int64(raw, rds=True)["id"].dtype) == "Int32"  # R integer via pyreadr
+    assert cast_ids_int64(pl.DataFrame({"home_id": ["12"]})).schema["home_id"] == pl.Int64
+    for bad in (["abc"], [1.5]):
+        with pytest.raises(ValueError):
+            cast_ids_int64(pd.DataFrame({"away_id": bad}))
+    with pytest.raises(ValueError, match="R integer"):
+        cast_ids_int64(pd.DataFrame({"game_id": [2**40]}), rds=True)
