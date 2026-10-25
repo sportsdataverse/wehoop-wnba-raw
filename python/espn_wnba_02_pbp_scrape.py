@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 import pyreadr
 import sportsdataverse as sdv
+from espn_wnba_01_schedules_scrape import cast_ids_int64
 from sportsdataverse.scrape.espn.cli import str2bool
 
 logging.basicConfig(level=logging.INFO, filename="wehoop_wnba_raw_logfile.txt")
@@ -107,8 +108,10 @@ def add_game_to_schedule(schedule, year):
         ),
         None,
     )
-    schedule.to_parquet(f"wnba/schedules/parquet/wnba_schedule_{year}.parquet", index=None)
-    pyreadr.write_rds(f"wnba/schedules/rds/wnba_schedule_{year}.rds", schedule, compress="gzip")
+    ids = cast_ids_int64(schedule)
+    ids.to_parquet(f"wnba/schedules/parquet/wnba_schedule_{year}.parquet", index=None)
+    rds = cast_ids_int64(schedule, rds=True)
+    pyreadr.write_rds(f"wnba/schedules/rds/wnba_schedule_{year}.rds", rds, compress="gzip")
     return
 
 
