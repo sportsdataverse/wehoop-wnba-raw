@@ -12,6 +12,9 @@ dependencies = [
     "pandas>=2.0",
     "pyarrow>=15.0",
     "pyreadr>=0.4.7",
+    # Reads the raw payload schemas shipped by sportsdataverse.schemas, which
+    # imports yaml lazily precisely because it is not an sdv-py runtime dep.
+    "pyyaml>=6.0",
     "tqdm>=4.66",
 ]
 
