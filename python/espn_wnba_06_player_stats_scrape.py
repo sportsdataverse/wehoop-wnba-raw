@@ -50,6 +50,11 @@ PLAYER_BOX_RELEASE = (
     "https://github.com/sportsdataverse/sportsdataverse-data/releases/"
     "download/espn_wnba_player_boxscores/player_box_{season}.parquet"
 )
+# Site-web statistics-by-athlete: every athlete with stats in the season (one
+# request; it honours ``season``, unlike core-v2 ``seasons/{y}/athletes`` and
+# ``seasons/{y}/teams/{t}/athletes``, which return today's athletes for any
+# year). Used only when the season has no player_box release (1997-2001).
+BYATHLETE = "https://site.web.api.espn.com/apis/common/v3/sports/basketball/wnba/statistics/byathlete"
 # Player stats endpoint is per-athlete; ESPN rate-limits more aggressively
 # here than on the per-team roster endpoint, so default cores is lower.
 DEFAULT_THREADS = 4
@@ -80,6 +85,30 @@ def fetch_athlete_ids_for_season(season):
         return ids
     except Exception as e:  # noqa: BLE001
         logger.warning(f"could not list player_box athletes for {season}: {e!r}")
+        return []
+
+
+def fetch_byathlete_ids_for_season(season):
+    """Athlete ids with regular-season stats in ``season`` (statistics/byathlete).
+
+    Asserts the payload is for the requested season. Never raises (logs and
+    returns ``[]``).
+    """
+    from sportsdataverse._codegen_runtime import _download_json
+
+    params = {"season": int(season), "seasontype": 2, "isqualified": "false", "limit": 1000, "page": 1}
+    try:
+        body = _download_json(download, BYATHLETE, params=params)
+        got = (body.get("requestedSeason") or {}).get("year")
+        if got != int(season):
+            logger.warning(f"byathlete answered season {got} for {season}; ignoring")
+            return []
+        if int((body.get("pagination") or {}).get("pages") or 1) > 1:
+            logger.warning(f"season={season} byathlete has more than one page; only page 1 read")
+        ids = {int(a["athlete"]["id"]) for a in body.get("athletes") or [] if str((a.get("athlete") or {}).get("id", "")).isdigit()}
+        return sorted(ids)
+    except Exception as e:  # noqa: BLE001
+        logger.warning(f"could not list byathlete athletes for {season}: {e!r}")
         return []
 
 
@@ -121,6 +150,9 @@ def scrape_season(season, cores, rerun_existing):
     output_dir = Path(f"{PATH_TO_OUTPUT}/{season}")
     output_dir.mkdir(parents=True, exist_ok=True)
     athlete_ids = fetch_athlete_ids_for_season(season)
+    if not athlete_ids and season < 2002:
+        # No player_box release before 2002: list the season from statistics/byathlete.
+        athlete_ids = fetch_byathlete_ids_for_season(season)
     logger.info(f"season={season} athletes={len(athlete_ids)}")
     if not athlete_ids:
         logger.info(f"No athlete ids for {season}; skipping")
