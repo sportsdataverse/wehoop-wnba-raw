@@ -91,8 +91,10 @@ def fetch_athlete_ids_for_season(season):
 def fetch_byathlete_ids_for_season(season):
     """Athlete ids with regular-season stats in ``season`` (statistics/byathlete).
 
-    Asserts the payload is for the requested season. Never raises (logs and
-    returns ``[]``).
+    Asserts the payload is for the requested season and keeps it at
+    ``wnba/player_season_stats/byathlete/{season}.json``: the season has no
+    player_box, so the builder takes athlete names from it. Never raises (logs
+    and returns ``[]``).
     """
     from sportsdataverse._codegen_runtime import _download_json
 
@@ -103,6 +105,9 @@ def fetch_byathlete_ids_for_season(season):
         if got != int(season):
             logger.warning(f"byathlete answered season {got} for {season}; ignoring")
             return []
+        out = Path("wnba/player_season_stats/byathlete") / f"{int(season)}.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        write_payload(out, body, indent=0)
         if int((body.get("pagination") or {}).get("pages") or 1) > 1:
             logger.warning(f"season={season} byathlete has more than one page; only page 1 read")
         ids = {int(a["athlete"]["id"]) for a in body.get("athletes") or [] if str((a.get("athlete") or {}).get("id", "")).isdigit()}
