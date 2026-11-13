@@ -16,7 +16,9 @@
 "shortDisplayName": "Sting",
 "logo": "https://a.espncdn.com/i/teamlogos/wnba/500/cha.png"
 },
-"statistics": []
+"statistics": [],
+"displayOrder": 1,
+"homeAway": "away"
 },
 {
 "team": {
@@ -29,7 +31,9 @@
 "displayName": "Utah Starzz",
 "shortDisplayName": "Starzz"
 },
-"statistics": []
+"statistics": [],
+"displayOrder": 2,
+"homeAway": "home"
 }
 ],
 "players": [
@@ -49,72 +53,73 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
+"OREB",
+"DREB",
 "PF",
-"+/-",
-"PTS"
+"+/-"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
+"offensiveRebounds",
+"defensiveRebounds",
 "fouls",
-"plusMinus",
-"points"
+"plusMinus"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
+"OREB",
+"DREB",
 "PF",
-"+/-",
-"PTS"
+"+/-"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
+"Offensive Rebounds",
+"Defensive Rebounds",
 "Personal Fouls",
-"Teams net points while player is on the court.",
-"Points"
+"Teams net points while player is on the court."
 ],
 "athletes": [],
 "totals": []
 }
-]
+],
+"displayOrder": 1
 },
 {
 "team": {
@@ -131,72 +136,73 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
+"OREB",
+"DREB",
 "PF",
-"+/-",
-"PTS"
+"+/-"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
+"offensiveRebounds",
+"defensiveRebounds",
 "fouls",
-"plusMinus",
-"points"
+"plusMinus"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
+"OREB",
+"DREB",
 "PF",
-"+/-",
-"PTS"
+"+/-"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
+"Offensive Rebounds",
+"Defensive Rebounds",
 "Personal Fouls",
-"Teams net points while player is on the court.",
-"Points"
+"Teams net points while player is on the court."
 ],
 "athletes": [],
 "totals": []
 }
-]
+],
+"displayOrder": 2
 }
 ]
 },
@@ -205,6 +211,7 @@
 "uid": "s:40~l:59~e:220608015",
 "season": {
 "year": 2002,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -223,6 +230,7 @@
 "possessionArrowAvailable": false,
 "onWatchESPN": false,
 "recent": false,
+"wallclockAvailable": false,
 "boxscoreSource": "none",
 "playByPlaySource": "none",
 "competitors": [
@@ -345,9 +353,11 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/220608015?lang=en&region=us",
 "id": "220608015"
 }
-]
+],
+"startDate": "2002-06-09T01:00Z"
 }
 ],
+"boxscoreMinutes": false,
 "home": {
 "id": "15",
 "uid": "s:40~l:59~t:15",
@@ -399,21 +409,9 @@
 "desktop",
 "event"
 ],
-"href": "https://www.espn.com/wnba/game/_/gameId/220608015",
+"href": "https://www.espn.com/wnba/game/_/gameId/220608015/sting-starzz",
 "text": "Gamecast",
 "shortText": "Summary",
-"isExternal": false,
-"isPremium": false
-},
-{
-"rel": [
-"recap",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/wnba/recap?gameId=220608015",
-"text": "Recap",
-"shortText": "Recap",
 "isExternal": false,
 "isPremium": false
 }
@@ -423,6 +421,7 @@
 "uid": "s:40~l:59",
 "name": "Women's National Basketball Association",
 "abbreviation": "WNBA",
+"shortName": "WNBA",
 "slug": "wnba",
 "isTournament": false,
 "links": [
@@ -470,7 +469,7 @@
 "desktop",
 "league"
 ],
-"href": "http://www.espn.com/wnba/standings",
+"href": "https://www.espn.com/wnba/standings",
 "text": "Standings"
 },
 {
@@ -490,6 +489,16 @@
 "league"
 ],
 "href": "https://www.espn.com/wnba/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:59&section=rankings",
 "text": "Rankings"
 },
 {
@@ -522,11 +531,21 @@
 },
 {
 "rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:59&section=stats",
+"text": "Stats"
+},
+{
+"rel": [
 "teams",
 "desktop",
 "league"
 ],
-"href": "http://www.espn.com/wnba/teams",
+"href": "https://www.espn.com/wnba/teams",
 "text": "Teams"
 },
 {
@@ -535,7 +554,7 @@
 "desktop",
 "league"
 ],
-"href": "http://www.espn.com/wnba/players",
+"href": "https://www.espn.com/wnba/players",
 "text": "Players"
 },
 {
@@ -546,6 +565,60 @@
 ],
 "href": "https://www.espn.com/wnba/injuries",
 "text": "Injuries"
+},
+{
+"rel": [
+"odds",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/wnba/odds",
+"text": "Odds"
+},
+{
+"rel": [
+"odds",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:59&section=odds",
+"text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/wnba/playoff-bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:59&section=bracket",
+"text": "Bracket"
+}
+],
+"logos": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/leagues/500/wnba.png",
+"rel": [
+"full",
+"default"
+]
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/leagues/500-dark/wnba.png",
+"rel": [
+"full",
+"dark"
+]
 }
 ]
 }
@@ -558,6 +631,8 @@
 "clock": 1200.0
 },
 "overtime": {
+"displayName": "Half",
+"slug": "half",
 "clock": 300.0
 }
 },
@@ -567,17 +642,18 @@
 "standings": {
 "fullViewLink": {
 "text": "Full Standings",
-"href": "http://www.espn.com/wnba/standings"
+"href": "https://www.espn.com/wnba/standings"
 },
+"header": "2025-26 Standings",
 "groups": [
 {
 "standings": {
 "entries": [
 {
-"team": "Chicago",
-"link": "http://www.espn.com/wnba/team/_/name/chi/chicago-sky",
-"id": "19",
-"uid": "s:40~l:59~t:19",
+"team": "Atlanta",
+"link": "https://www.espn.com/wnba/team/_/name/atl/atlanta-dream",
+"id": "20",
+"uid": "s:40~l:59~t:20",
 "stats": [
 {
 "name": "gamesBehind",
@@ -596,148 +672,6 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 10.0,
-"displayValue": "10"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.7222222,
-"displayValue": ".722"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 26.0,
-"displayValue": "26"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-16T15:38Z"
-}
-]
-},
-{
-"team": "Connecticut",
-"link": "http://www.espn.com/wnba/team/_/name/conn/connecticut-sun",
-"id": "18",
-"uid": "s:40~l:59~t:18",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 11.0,
-"displayValue": "11"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 3.0,
-"displayValue": "W3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6944444,
-"displayValue": ".694"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 25.0,
-"displayValue": "25"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/conn.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2021-02-01T18:05Z"
-}
-]
-},
-{
-"team": "Washington",
-"link": "http://www.espn.com/wnba/team/_/name/wsh/washington-mystics",
-"id": "16",
-"uid": "s:40~l:59~t:16",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 4.0,
-"displayValue": "4"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
 "value": 14.0,
 "displayValue": "14"
 },
@@ -748,8 +682,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": 2.0,
-"displayValue": "W2"
+"value": 5.0,
+"displayValue": "W5"
 },
 {
 "name": "winPercent",
@@ -758,8 +692,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.6111111,
-"displayValue": ".611"
+"value": 0.6818182,
+"displayValue": ".682"
 },
 {
 "name": "wins",
@@ -768,150 +702,8 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 22.0,
-"displayValue": "22"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-28T16:46Z"
-}
-]
-},
-{
-"team": "New York",
-"link": "http://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
-"id": "9",
-"uid": "s:40~l:59~t:9",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 10.0,
-"displayValue": "10"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 20.0,
-"displayValue": "20"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 3.0,
-"displayValue": "W3"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.44444445,
-"displayValue": ".444"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 16.0,
-"displayValue": "16"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-14T20:57Z"
-}
-]
-},
-{
-"team": "Atlanta",
-"link": "http://www.espn.com/wnba/team/_/name/atl/atlanta-dream",
-"id": "20",
-"uid": "s:40~l:59~t:20",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 12.0,
-"displayValue": "12"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 22.0,
-"displayValue": "22"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -4.0,
-"displayValue": "L4"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.3888889,
-"displayValue": ".389"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 14.0,
-"displayValue": "14"
+"value": 30.0,
+"displayValue": "30"
 }
 ],
 "logo": [
@@ -924,15 +716,15 @@
 "full",
 "default"
 ],
-"lastUpdated": "2020-07-16T15:43Z"
+"lastUpdated": "2023-05-10T21:43Z"
 }
 ]
 },
 {
-"team": "Indiana",
-"link": "http://www.espn.com/wnba/team/_/name/ind/indiana-fever",
-"id": "5",
-"uid": "s:40~l:59~t:5",
+"team": "Washington",
+"link": "https://www.espn.com/wnba/team/_/name/wsh/washington-mystics",
+"id": "16",
+"uid": "s:40~l:59~t:16",
 "stats": [
 {
 "name": "gamesBehind",
@@ -941,8 +733,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 21.0,
-"displayValue": "21"
+"value": 2.0,
+"displayValue": "2"
 },
 {
 "name": "losses",
@@ -951,87 +743,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 31.0,
-"displayValue": "31"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -18.0,
-"displayValue": "L18"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.1388889,
-"displayValue": ".139"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 5.0,
-"displayValue": "5"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-15T15:28Z"
-}
-]
-}
-]
-},
-"header": "2021-22 Eastern Conference Standings",
-"href": "https://www.espn.com/wnba/standings/_/group/1"
-},
-{
-"standings": {
-"entries": [
-{
-"team": "Las Vegas",
-"link": "http://www.espn.com/wnba/team/_/name/lv/las-vegas-aces",
-"id": "17",
-"uid": "s:40~l:59~t:17",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 0.0,
-"displayValue": "-"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 10.0,
-"displayValue": "10"
+"value": 16.0,
+"displayValue": "16"
 },
 {
 "name": "streak",
@@ -1050,8 +763,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.7222222,
-"displayValue": ".722"
+"value": 0.6363636,
+"displayValue": ".636"
 },
 {
 "name": "wins",
@@ -1060,13 +773,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 26.0,
-"displayValue": "26"
+"value": 28.0,
+"displayValue": "28"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/wsh.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -1074,15 +787,98 @@
 "full",
 "default"
 ],
-"lastUpdated": "2020-07-15T15:18Z"
+"lastUpdated": "2026-03-11T19:53Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/wsh.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"scoreboard",
+"dark"
+],
+"lastUpdated": "2026-03-11T19:52Z"
 }
 ]
 },
 {
-"team": "Seattle",
-"link": "http://www.espn.com/wnba/team/_/name/sea/seattle-storm",
-"id": "14",
-"uid": "s:40~l:59~t:14",
+"team": "Indiana",
+"link": "https://www.espn.com/wnba/team/_/name/ind/indiana-fever",
+"id": "5",
+"uid": "s:40~l:59~t:5",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 2.0,
+"displayValue": "2"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 16.0,
+"displayValue": "16"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -1.0,
+"displayValue": "L1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.6363636,
+"displayValue": ".636"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 28.0,
+"displayValue": "28"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "New York",
+"link": "https://www.espn.com/wnba/team/_/name/ny/new-york-liberty",
+"id": "9",
+"uid": "s:40~l:59~t:9",
 "stats": [
 {
 "name": "gamesBehind",
@@ -1101,233 +897,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 14.0,
-"displayValue": "14"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.6111111,
-"displayValue": ".611"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 22.0,
-"displayValue": "22"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/scoreboard/sea.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard"
-],
-"lastUpdated": "2021-03-08T15:24Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500-dark/scoreboard/sea.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"scoreboard",
-"dark"
-],
-"lastUpdated": "2021-03-08T15:25Z"
-}
-]
-},
-{
-"team": "Dallas",
-"link": "http://www.espn.com/wnba/team/_/name/dal/dallas-wings",
-"id": "3",
-"uid": "s:40~l:59~t:3",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 8.0,
-"displayValue": "8"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
 "value": 18.0,
 "displayValue": "18"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": 1.0,
-"displayValue": "W1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.5,
-"displayValue": ".500"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 18.0,
-"displayValue": "18"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-15T15:36Z"
-}
-]
-},
-{
-"team": "Phoenix",
-"link": "http://www.espn.com/wnba/team/_/name/phx/phoenix-mercury",
-"id": "11",
-"uid": "s:40~l:59~t:11",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 11.0,
-"displayValue": "11"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 21.0,
-"displayValue": "21"
-},
-{
-"name": "streak",
-"displayName": "Streak",
-"shortDisplayName": "STRK",
-"description": "Current Streak",
-"abbreviation": "STRK",
-"type": "streak",
-"value": -1.0,
-"displayValue": "L1"
-},
-{
-"name": "winPercent",
-"displayName": "Win Percentage",
-"shortDisplayName": "PCT",
-"description": "Winning Percentage",
-"abbreviation": "PCT",
-"type": "winpercent",
-"value": 0.41666666,
-"displayValue": ".417"
-},
-{
-"name": "wins",
-"displayName": "Wins",
-"shortDisplayName": "W",
-"description": "Wins",
-"abbreviation": "W",
-"type": "wins",
-"value": 15.0,
-"displayValue": "15"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2020-07-14T19:45Z"
-}
-]
-},
-{
-"team": "Minnesota",
-"link": "http://www.espn.com/wnba/team/_/name/min/minnesota-lynx",
-"id": "8",
-"uid": "s:40~l:59~t:8",
-"stats": [
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "gamesbehind",
-"value": 12.0,
-"displayValue": "12"
-},
-{
-"name": "losses",
-"displayName": "Losses",
-"shortDisplayName": "L",
-"description": "Losses",
-"abbreviation": "L",
-"type": "losses",
-"value": 22.0,
-"displayValue": "22"
 },
 {
 "name": "streak",
@@ -1346,8 +917,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.3888889,
-"displayValue": ".389"
+"value": 0.59090906,
+"displayValue": ".591"
 },
 {
 "name": "wins",
@@ -1356,13 +927,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 14.0,
-"displayValue": "14"
+"value": 26.0,
+"displayValue": "26"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -1370,15 +941,15 @@
 "full",
 "default"
 ],
-"lastUpdated": "2020-07-15T15:04Z"
+"lastUpdated": "2023-05-10T21:43Z"
 }
 ]
 },
 {
-"team": "Los Angeles",
-"link": "http://www.espn.com/wnba/team/_/name/la/los-angeles-sparks",
-"id": "6",
-"uid": "s:40~l:59~t:6",
+"team": "Chicago",
+"link": "https://www.espn.com/wnba/team/_/name/chi/chicago-sky",
+"id": "19",
+"uid": "s:40~l:59~t:19",
 "stats": [
 {
 "name": "gamesBehind",
@@ -1387,8 +958,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 14.0,
+"displayValue": "14"
 },
 {
 "name": "losses",
@@ -1397,8 +968,8 @@
 "description": "Losses",
 "abbreviation": "L",
 "type": "losses",
-"value": 23.0,
-"displayValue": "23"
+"value": 28.0,
+"displayValue": "28"
 },
 {
 "name": "streak",
@@ -1407,8 +978,8 @@
 "description": "Current Streak",
 "abbreviation": "STRK",
 "type": "streak",
-"value": -3.0,
-"displayValue": "L3"
+"value": -1.0,
+"displayValue": "L1"
 },
 {
 "name": "winPercent",
@@ -1417,8 +988,8 @@
 "description": "Winning Percentage",
 "abbreviation": "PCT",
 "type": "winpercent",
-"value": 0.3611111,
-"displayValue": ".361"
+"value": 0.36363637,
+"displayValue": ".364"
 },
 {
 "name": "wins",
@@ -1427,13 +998,13 @@
 "description": "Wins",
 "abbreviation": "W",
 "type": "wins",
-"value": 13.0,
-"displayValue": "13"
+"value": 16.0,
+"displayValue": "16"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png",
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -1441,57 +1012,162 @@
 "full",
 "default"
 ],
-"lastUpdated": "2021-05-20T14:35Z"
+"lastUpdated": "2023-05-10T21:43Z"
+}
+]
+},
+{
+"team": "Toronto",
+"link": "https://www.espn.com/wnba/team/_/name/tor/toronto-tempo",
+"id": "131935",
+"uid": "s:40~l:59~t:131935",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 19.0,
+"displayValue": "19"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 33.0,
+"displayValue": "33"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": -8.0,
+"displayValue": "L8"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.25,
+"displayValue": ".250"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 11.0,
+"displayValue": "11"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/tor.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-11-19T15:53Z"
+}
+]
+},
+{
+"team": "Connecticut",
+"id": "18",
+"uid": "s:40~l:59~t:18",
+"stats": [
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "gamesbehind",
+"value": 19.0,
+"displayValue": "19"
+},
+{
+"name": "losses",
+"displayName": "Losses",
+"shortDisplayName": "L",
+"description": "Losses",
+"abbreviation": "L",
+"type": "losses",
+"value": 33.0,
+"displayValue": "33"
+},
+{
+"name": "streak",
+"displayName": "Streak",
+"shortDisplayName": "STRK",
+"description": "Current Streak",
+"abbreviation": "STRK",
+"type": "streak",
+"value": 1.0,
+"displayValue": "W1"
+},
+{
+"name": "winPercent",
+"displayName": "Win Percentage",
+"shortDisplayName": "PCT",
+"description": "Winning Percentage",
+"abbreviation": "PCT",
+"type": "winpercent",
+"value": 0.25,
+"displayValue": ".250"
+},
+{
+"name": "wins",
+"displayName": "Wins",
+"shortDisplayName": "W",
+"description": "Wins",
+"abbreviation": "W",
+"type": "wins",
+"value": 11.0,
+"displayValue": "11"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-08-10T19:43Z"
 }
 ]
 }
 ]
 },
-"header": "2021-22 Western Conference Standings",
-"href": "https://www.espn.com/wnba/standings/_/group/2"
+"header": "2025-26 Eastern Conference Standings",
+"href": "https://www.espn.com/wnba/standings/_/group/1",
+"conferenceHeader": "Women's National Basketball Assoc.",
+"divisionHeader": "Eastern Conference"
 }
-]
+],
+"isSameConference": true
 },
-"article": {
-"keywords": [],
-"description": "Adrienne Goodson scored 17 points \r\nand Jennifer Azzi added 12 as the Utah Starzz avoided a\r\nthree-game losing streak with a 69-64 victory over the Charlotte Sting.",
-"video": [],
-"type": "Recap",
-"nowId": "1-1392649",
-"premium": false,
-"related": [],
-"links": {
-"api": {
-"news": {
-"href": "http://now.core.api.espn.com/v1/sports/news/1392649"
-},
-"events": {
-"href": "http://now.core.api.espn.com/v1/sports/basketball/wnba/events/220608015"
-}
-},
-"web": {
-"href": "http://espn.go.com/wnba/2001/20020608/recap/charlotteutah.html",
-"short": {}
-},
-"app": {
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showStory?uid=1392649"
-}
-},
-"mobile": {
-"href": "http://scores.espn.com/wnba/gamecast?gameId=220608015&version=mobile"
-}
-},
-"id": 1392649,
-"categories": [],
-"headline": "Johnson seals win with clutch free throws",
-"gameId": "220608015",
-"images": [],
-"linkText": "Sting seeing Starzz after stumbling in Utah",
-"published": "2002-06-09T04:05:54Z",
-"lastModified": "2002-06-09T04:39:44Z",
-"story": "SALT LAKE CITY -- LaTonya Johnson shot her first free throws\nof the season -- with the game on the line. And she wasn't even\nnervous.\n\n\t   Johnson made two fouls shots with 19.6 seconds remaining, and\nAdrienne Goodson scored 17 points as the Utah Starzz edged the\nCharlotte Sting 69-64 Saturday night.\n\n\t   \"I just really wanted to focus,'' Johnson said. \"We had just\nbeen going through these situations in practice so I felt ready.''\n\n\t   Johnson missed the first three games of the season with a knee\ninjury and had played just six minutes coming into Saturday's\ncontest. But she was in the right place at the right time in this\ngame.\n\n\t   With the Starzz (3-2) clinging to a 63-62 lead with 21.9 seconds\nleft, Natalie Williams missed two free throws but Johnson grabbed\nthe long rebound. Johnson's ensuing foul shots gave Utah a 65-62\nlead.\n\n\t   \"That was a huge rebound at the end of the game. Johnson came\nup huge for us,'' Utah coach Candi Harvey said.\n\n\t   The Starzz held Charlotte to just one field goal over a\nsix-minute span late in the game.\n\n\t   Summer Erb made a baseline jumper, just the second field goal\nfor the Sting (2-2) in the last 6:30, but the Starzz sealed the win\nas Goodson and Marie Ferdinand made four free throws in the last\n12.8 seconds.\n\n\t   Jennifer Azzi scored 10 of her 12 points in the second half and\nMargo Dydek added 11 as Utah snapped a two-game losing skid.\n\n\t   \"We made such a better effort defensively. That made the\ndifference,'' Azzi said.\n\n\t   Foul trouble hurt the Sting down the stretch as Charlotte Smith\nand Tammy Sutton-Brown both fouled out. Sutton-Brown had 14 points\nand 10 rebounds while Smith scored 13.\n\n\t   The Starzz took their first lead of the game midway through the\nsecond half but the Sting responded with a 12-3 run, capped by Dawn\nStaley's driving lay up to put Charlotte ahead 57-49 with 6:31 to\nplay.\n\n\t   But the Sting had a long stretch of missed shots as the Starzz's\ndefense increased their pressure.\n\n\t   \"Down the stretch, we didn't execute,'' Charlotte coach Anne\nDonovan said. \"We had a seven-point lead going down the stretch\nand we turned the ball over too much.''\n\n\t   Charlotte also missed three of its last four free throws.\n\n\t   The Starzz shot just 29 percent in the first half but trailed by\njust 26-24 at intermission.\n\n<font class=subhead>Game notes</font><br>Charlotte didn't attempt a single free throw in the first\nhalf, but Allison Feaster went to the line on the first possession\nof the second half and the Sting ended up shooting 18 free throws.\n... Citing a need for more toughness, Amy Herrig started in place\nof 7-foot-2 Dydek at center for Utah. ... All five of Utah's games\nhave been decided by eight points or less.\n"
-},
+"article": {},
 "leaders": [
 {
 "team": {
@@ -1546,6 +1222,9 @@
 "summary": "",
 "completed": true,
 "totalCompetitions": 1,
+"seriesLabel": "Regular Season",
+"seriesScore": "1-0",
+"shortSummary": "UTH wins season",
 "events": [
 {
 "id": "220608015",
@@ -1562,6 +1241,7 @@
 "detail": "Final",
 "shortDetail": "Final"
 },
+"neutralSite": false,
 "competitors": [
 {
 "homeAway": "home",
@@ -1620,7 +1300,7 @@
 "desktop",
 "event"
 ],
-"href": "https://www.espn.com/wnba/game/_/gameId/220608015",
+"href": "https://www.espn.com/wnba/game/_/gameId/220608015/sting-starzz",
 "text": "Gamecast",
 "shortText": "Summary",
 "isExternal": false,
@@ -1722,6 +1402,7 @@
 "possessionArrowAvailable": false,
 "onWatchESPN": false,
 "recent": false,
+"wallclockAvailable": false,
 "boxscoreSource": "none",
 "playByPlaySource": "none",
 "competitors": [
@@ -1844,9 +1525,11 @@
 "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/wnba/events/220608015?lang=en&region=us",
 "id": "220608015"
 }
-]
+],
+"startDate": "2002-06-09T01:00Z"
 }
 ],
+"boxscoreMinutes": false,
 "home": {
 "id": "15",
 "uid": "s:40~l:59~t:15",
@@ -1892,6 +1575,7 @@
 },
 "season": {
 "year": 2002,
+"current": false,
 "type": 2
 }
 }
